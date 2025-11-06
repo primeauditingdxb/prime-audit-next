@@ -3,8 +3,14 @@ import { getMarkdownSync } from '@/lib/content'
 import MarkdownRenderer from './components/MarkdownRenderer'
 import Link from 'next/link'
 
+const data = getMarkdownSync('home')
+
+export const metadata = {
+  title: data.meta.title || 'Prime Audit Solutions',
+  description: data.meta.description || 'Trusted bookkeeping, auditing and software customization services.',
+}
+
 export default function HomePage() {
-  const data = getMarkdownSync('home')
   const banner = data.meta.bannerImage || '/images/office-hero.jpg'
 
   return (

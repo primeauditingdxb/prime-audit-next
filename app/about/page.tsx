@@ -1,6 +1,11 @@
 import { getMarkdownSync } from '@/lib/content'
 import MarkdownRenderer from '../components/MarkdownRenderer'
 
+export const metadata = {
+  title: 'About — Prime Audit Solutions',
+  description: 'About Prime Audit Solutions: bookkeeping, auditing and software customization.',
+}
+
 export default function AboutPage() {
   const data = getMarkdownSync('about')
   return (
