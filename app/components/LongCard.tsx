@@ -24,7 +24,7 @@ const LongCard: React.FC<LongCardProps> = ({
     <div
       className={`relative flex flex-col ${
         reverse ? 'md:flex-row-reverse' : 'md:flex-row'
-      } w-full my-6 bg-slate-800 shadow-sm border border-slate-600 rounded-lg overflow-hidden transition-transform duration-300 hover:scale-[1.02]`}
+  } w-full my-6 bg-primary-dark shadow-sm border border-on-surface rounded-lg overflow-hidden transition-transform duration-300 hover:scale-[1.02]`}
     >
       {/* Image section */}
       <div className="relative p-2.5 md:w-2/5 shrink-0 overflow-hidden">
@@ -39,17 +39,17 @@ const LongCard: React.FC<LongCardProps> = ({
       {/* Text section */}
       <div className="p-6 flex flex-col justify-center flex-1">
         {tag && (
-          <div className="mb-4 rounded-full bg-blue-500 py-0.5 px-2.5 border border-transparent text-xs text-white transition-all shadow-sm w-fit text-center uppercase">
+          <div className="mb-4 rounded-full bg-accent py-0.5 px-2.5 border border-transparent text-xs text-on-primary transition-all shadow-sm w-fit text-center uppercase">
             {tag}
           </div>
         )}
-        <h4 className="mb-3 text-slate-100 text-xl font-semibold">{title}</h4>
-        <p className="mb-6 text-slate-300 leading-relaxed font-light">{content}</p>
+        <h4 className="mb-3 text-on-primary text-xl font-semibold">{title}</h4>
+        <p className="mb-6 text-muted leading-relaxed font-light">{content}</p>
 
         {link && (
-          <Link
+            <Link
             href={link}
-            className="text-slate-200 font-semibold text-sm hover:underline flex items-center gap-2 w-fit"
+            className="text-on-primary font-semibold text-sm hover:underline flex items-center gap-2 w-fit"
           >
             Learn More
             <svg

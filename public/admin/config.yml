@@ -20,6 +20,17 @@ collections:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Description", name: "description", widget: "string", required: false }
       - { label: "Banner Image", name: "bannerImage", widget: "image", required: false }
+      - label: "Cards"
+        name: "cards"
+        widget: "list"
+        required: false
+        hint: "Add, remove or reorder cards shown on the page."
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Image", name: "image", widget: "image", required: false }
+          - { label: "Description", name: "description", widget: "text" }
+          - { label: "Link", name: "link", widget: "string", required: false }
+          - { label: "Button Text", name: "buttonText", widget: "string", required: false }
       - { label: "Body", name: "body", widget: "markdown" }
 
 # Optional: add a separate collection for gallery items

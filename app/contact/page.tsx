@@ -6,7 +6,7 @@ export default function ContactPage() {
   return (
     <div className="container mx-auto px-4 py-12">
       <h2 className="text-2xl font-semibold">{data.meta.title}</h2>
-      <div className="mt-2 text-slate-600"><MarkdownRenderer html={data.contentHtml} /></div>
+  <div className="mt-2 text-muted"><MarkdownRenderer html={data.contentHtml} /></div>
 
       <div className="mt-6 grid grid-cols-1 md:grid-cols-2 gap-6">
         <form className="space-y-4" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
@@ -23,14 +23,14 @@ export default function ContactPage() {
             <textarea name="message" required className="mt-1 block w-full border rounded px-3 py-2" rows={5} placeholder="How can we help?"></textarea>
           </div>
           <div>
-            <button type="submit" className="px-4 py-2 bg-sky-600 text-white rounded">Send Message</button>
+            <button type="submit" className="px-4 py-2 btn-primary rounded">Send Message</button>
           </div>
         </form>
 
         <div>
           <h4 className="font-semibold">Office</h4>
-          <p className="text-slate-600 mt-2">Kerala, India</p>
-          <p className="text-slate-600 mt-2">Email: info@primeaudit.example</p>
+          <p className="text-muted mt-2">Kerala, India</p>
+          <p className="text-muted mt-2">Email: info@primeaudit.example</p>
         </div>
       </div>
     </div>

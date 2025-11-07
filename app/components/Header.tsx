@@ -5,13 +5,13 @@ import { useState } from 'react'
 export default function Header() {
   const [open, setOpen] = useState(false)
   return (
-    <header className="bg-slate-800 shadow-sm sticky top-0 z-50">
+  <header className="bg-primary-dark shadow-sm sticky top-0 z-50">
       <div className="container mx-auto px-4 py-4 flex items-center justify-between">
         <Link href="/" className="flex items-center gap-3">
-          <div className="w-10 h-10 bg-sky-600 text-white rounded flex items-center justify-center font-bold">PA</div>
+          <div className="w-10 h-10 bg-accent text-on-primary rounded flex items-center justify-center font-bold">PA</div>
           <div>
             <div className="text-lg font-semibold">Prime Audit Solutions</div>
-            <div className="text-xs text-gray-500">Accounting • Bookkeeping • Software</div>
+            <div className="text-xs text-muted">Accounting • Bookkeeping • Software</div>
           </div>
         </Link>
 

@@ -43,7 +43,7 @@ export default function AboutPage() {
 
             <div className="container mx-auto px-4 py-12">
                 <h2 className="text-2xl font-semibold">{data.meta.mainTitle}</h2>
-                <div className="mt-4 text-slate-200"><MarkdownRenderer html={data.contentHtml} /></div>
+                <div className="mt-4 text-on-primary"><MarkdownRenderer html={data.contentHtml} /></div>
 
                 <LongCard
                     title={data.meta.cardTitle1}

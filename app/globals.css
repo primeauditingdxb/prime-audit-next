@@ -3,6 +3,22 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+
+  /* Elegant Navy + Gold palette (design tokens) */
+  --color-primary: #0B2545; /* elegant navy */
+  --color-primary-600: #09203b; /* darker navy */
+  --color-secondary: #254E70; /* slate blue */
+  --color-accent: #D4AF37; /* gold accent */
+  --color-bg: #FBFAF8; /* very light ivory */
+  --color-surface: #FFFFFF;
+  --color-text: #071425; /* deep navy text */
+  --color-muted: #6B7280; /* neutral muted */
+  --color-success: #15803D;
+  --color-warning: #F59E0B;
+  --color-danger: #DC2626;
+
+  --color-on-primary: #ffffff;
+  --color-on-surface: #071425;
 }
 
 @theme inline {
@@ -24,6 +40,29 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* Semantic helper classes using tokens */
+.bg-primary { background-color: var(--color-primary) !important; }
+.bg-primary-dark { background-color: var(--color-primary-600) !important; }
+.bg-accent { background-color: var(--color-accent) !important; }
+.bg-surface { background-color: var(--color-surface) !important; }
+.text-on-primary { color: var(--color-on-primary) !important; }
+.text-on-surface { color: var(--color-on-surface) !important; }
+.text-text { color: var(--color-text) !important; }
+.text-muted { color: var(--color-muted) !important; }
+.border-on-surface { border-color: rgba(0,0,0,0.06) !important; }
+
+/* Primary button (used in hero and cards). Keeps sizing via utility classes. */
+.btn-primary {
+  background-color: var(--color-primary);
+  color: var(--color-on-primary);
+}
+.btn-primary:hover { background-color: var(--color-primary-600); }
+.btn-primary:active { background-color: var(--color-primary-600); }
+
+/* Small variant for inline links */
+.btn-primary-inline { display: inline-block; background-color: var(--color-primary); color: var(--color-on-primary); padding: 0.35rem 0.75rem; border-radius: 0.375rem; }
+
 
 @tailwind utilities;
 
