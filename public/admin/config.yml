@@ -1,9 +1,14 @@
 backend:
-  name: git-gateway
-  branch: main
+  name: github
+  repo: "kmvishnu/prime-audit-next" # owner/repo
+  branch: "main"
+  # Optional: Use an external proxy if you have one:
+  # auth_endpoint: "https://api.netlify.com/auth/done"  # Netlify relay path (default behavior)
 
-media_folder: "public/uploads"
-public_folder: "/uploads"
+media_folder: "public/uploads"   # where uploaded files will live in the repo
+public_folder: "/uploads"        # how they are served on the site
+
+publish_mode: editorial_workflow # optional: enable editorial workflow (Drafts / Review / Publish)
 
 collections:
   - name: "pages"
@@ -16,3 +21,13 @@ collections:
       - { label: "Description", name: "description", widget: "string", required: false }
       - { label: "Banner Image", name: "bannerImage", widget: "image", required: false }
       - { label: "Body", name: "body", widget: "markdown" }
+
+# Optional: add a separate collection for gallery items
+#  - name: "gallery"
+#    label: "Gallery"
+#    folder: "content/gallery"
+#    create: true
+#    slug: "{{slug}}"
+#    fields:
+#      - { label: "Image", name: "image", widget: "image" }
+#      - { label: "Caption", name: "caption", widget: "string" }
