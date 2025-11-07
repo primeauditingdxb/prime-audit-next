@@ -34,6 +34,14 @@ body {
   height: 56vh;            /* default mobile-ish */
 }
 
+.about-bg {
+  @apply bg-center bg-cover bg-no-repeat flex items-center;
+  /* Mobile height smaller, larger on md and above */
+  height: 40vh;            /* default mobile-ish */
+}
+
+
+
 @media (min-width: 768px) {
   .hero-bg { height: 72vh; } /* md+ */
 }

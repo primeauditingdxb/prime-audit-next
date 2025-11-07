@@ -1,7 +1,18 @@
 ---
-title: About Us Test1
+bannerTitle: About Us
 description: "About Prime Audit Solutions: expertise in bookkeeping, auditing
   and software customization. Test1"
 bannerImage: /uploads/accounting-1.jpg
+mainTitle: About Prime Audit Solutions 
+cardTitle1: Who we are
+cardImage1: /uploads/gallery-1.jpg
+cardContent1: "Lorem ipsum test1 Our team helps businesses ensure compliance and efficient systems. Lorem ipsum test1 Our team helps businesses ensure compliance and efficient systems. Lorem ipsum test1 Our team helps businesses ensure compliance and efficient systems. Lorem ipsum test1 Our team helps businesses ensure compliance and efficient systems. Lorem ipsum test1 Our team helps businesses ensure compliance and efficient systems. Lorem ipsum test1 Our team helps businesses ensureLorem ipsum test1 Our team helps businesses ensure "
+cardTitle2: What we do
+cardImage2: /uploads/gallery-2.jpg
+cardContent2: "Lorem ipsum test1 Our team helps businesses ensure compliance and efficient systems. Lorem ipsum test1 Our team helps businesses ensure compliance and efficient systems. Lorem ipsum test1 Our team helps businesses ensure compliance and efficient systems. Lorem ipsum test1 Our team helps businesses ensure compliance and efficient systems. Lorem ipsum test1 Our team helps businesses ensure compliance and efficient systems. Lorem ipsum test1 Our team helps businesses ensureLorem ipsum test1 Our team helps businesses ensure"
+cardTitle3: How Do We Help?
+cardImage3: /uploads/accounting-1.jpg
+cardContent3: "Lorem ipsum test1 Our team helps businesses ensure compliance and efficient systems. Lorem ipsum test1 Our team helps businesses ensure compliance and efficient systems. Lorem ipsum test1 Our team helps businesses ensure compliance and efficient systems. Lorem ipsum test1 Our team helps businesses ensure compliance and efficient systems. Lorem ipsum test1 Our team helps businesses ensure compliance and efficient systems. Lorem ipsum test1 Our team helps businesses ensureLorem ipsum test1 Our team helps businesses ensure"
+
 ---
-Prime Audit Solutions provides professional bookkeeping, auditing, and software customization services. Our team helps businesses ensure compliance and efficient systems. Lorem ipsum test1
+Prime Audit Solutions provides professional bookkeeping, auditing, and software customization services. Our team helps businesses ensure compliance and efficient systems. Lorem ipsum test1. Our team helps businesses ensure compliance and efficient systems. Lorem ipsum test1 Our team helps businesses ensure compliance and efficient systems. Lorem ipsum test1 Our team helps businesses ensure compliance and efficient systems. Lorem ipsum test1 Our team helps businesses ensure compliance and efficient systems. Lorem ipsum test1 Our team helps businesses ensure compliance and efficient systems. Lorem ipsum test1 Our team helps businesses ensure compliance and efficient systems. Lorem ipsum test1 Our team helps businesses ensure compliance and efficient systems. Lorem ipsum test1 Our team helps businesses ensure compliance and efficient systems. Lorem ipsum test1 Our team helps businesses ensure compliance and efficient systems. Lorem ipsum test1 Our team helps businesses ensure compliance and efficient systems. Lorem ipsum test1 Our team helps businesses ensure compliance and efficient systems. Lorem ipsum test1
