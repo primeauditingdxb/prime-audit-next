@@ -19,7 +19,7 @@ export default function FeatureCard({ title, description, index = 0 }: FeatureCa
   return (
     <div className="p-6 bg-surface rounded-lg shadow-sm border border-on-surface">
       <div className="flex items-center gap-4">
-        <div className="w-12 h-12 rounded-full flex items-center justify-center bg-accent text-on-primary">{icon}</div>
+        <div className="w-12 h-12 rounded-full flex items-center justify-center bg-primary text-on-primary">{icon}</div>
         <div>
           <h4 className="font-semibold text-text">{title}</h4>
           <p className="text-muted text-sm">{description}</p>

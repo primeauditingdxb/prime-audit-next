@@ -1,27 +1,44 @@
 "use client";
 import Link from 'next/link'
 import { useState } from 'react'
+import { usePathname } from 'next/navigation'
 
 export default function Header() {
   const [open, setOpen] = useState(false)
+  const pathname = usePathname()
+  const navItems = [
+    { href: '/', label: 'Home' },
+    { href: '/about', label: 'About' },
+    { href: '/services', label: 'Services' },
+    { href: '/associates', label: 'Associates' },
+    { href: '/gallery', label: 'Gallery' },
+    { href: '/contact', label: 'Contact' },
+  ]
   return (
-  <header className="bg-primary-dark shadow-sm sticky top-0 z-50">
+  <header className="bg-surface shadow-sm sticky top-0 z-50">
       <div className="container mx-auto px-4 py-4 flex items-center justify-between">
         <Link href="/" className="flex items-center gap-3">
-          <div className="w-10 h-10 bg-accent text-on-primary rounded flex items-center justify-center font-bold">PA</div>
+          <div className="w-10 h-10 bg-accent text-text rounded flex items-center justify-center font-bold">PA</div>
           <div>
-            <div className="text-lg font-semibold">Prime Audit Solutions</div>
+            <div className="text-lg font-semibold text-text">Prime Audit Solutions</div>
             <div className="text-xs text-muted">Accounting • Bookkeeping • Software</div>
           </div>
         </Link>
 
         <nav className="hidden md:flex items-center gap-4">
-          <Link href="/">Home</Link>
-          <Link href="/about">About</Link>
-          <Link href="/services">Services</Link>
-          <Link href="/associates">Associates</Link>
-          <Link href="/gallery">Gallery</Link>
-          <Link href="/contact">Contact</Link>
+          {navItems.map((item) => {
+            const isActive = pathname === item.href || (item.href !== '/' && pathname?.startsWith(item.href))
+            return (
+              <Link
+                key={item.href}
+                href={item.href}
+                className={`px-2 py-1 rounded ${isActive ? 'text-primary1 font-semibold' : 'text-text hover:text-primary1'} transition-colors`}
+                aria-current={isActive ? 'page' : undefined}
+              >
+                {item.label}
+              </Link>
+            )
+          })}
         </nav>
 
         <div className="md:hidden">
@@ -30,12 +47,20 @@ export default function Header() {
           </button>
           {open && (
             <div className="absolute right-4 mt-2 w-48 bg-white shadow-lg rounded">
-              <Link href="/" className="block px-4 py-2">Home</Link>
-              <Link href="/about" className="block px-4 py-2">About</Link>
-              <Link href="/services" className="block px-4 py-2">Services</Link>
-              <Link href="/associates" className="block px-4 py-2">Associates</Link>
-              <Link href="/gallery" className="block px-4 py-2">Gallery</Link>
-              <Link href="/contact" className="block px-4 py-2">Contact</Link>
+              {navItems.map((item) => {
+                const isActive = pathname === item.href || (item.href !== '/' && pathname?.startsWith(item.href))
+                return (
+                  <Link
+                    key={item.href}
+                    href={item.href}
+                    className={`block px-4 py-2 ${isActive ? 'text-primary font-semibold' : 'text-text hover:text-primary'}`}
+                    aria-current={isActive ? 'page' : undefined}
+                    onClick={() => setOpen(false)}
+                  >
+                    {item.label}
+                  </Link>
+                )
+              })}
             </div>
           )}
         </div>

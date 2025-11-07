@@ -4,21 +4,22 @@
   --background: #ffffff;
   --foreground: #171717;
 
-  /* Elegant Navy + Gold palette (design tokens) */
-  --color-primary: #0B2545; /* elegant navy */
-  --color-primary-600: #09203b; /* darker navy */
-  --color-secondary: #254E70; /* slate blue */
-  --color-accent: #D4AF37; /* gold accent */
-  --color-bg: #FBFAF8; /* very light ivory */
-  --color-surface: #FFFFFF;
-  --color-text: #071425; /* deep navy text */
-  --color-muted: #6B7280; /* neutral muted */
+  /* Minimal white/shades palette (surfaces and subtle accents) */
+  --color-primary: #47b377; /* dark for CTAs and emphasis */
+  --color-primary-600: #217044;
+  --color-secondary: #94a3b8; /* subtle cool gray for tiny accents */
+  --color-accent: #f1f5f9; /* very pale accent */
+  --color-bg: #ffffff; /* page background */
+  --color-surface: #f8fafc; /* slightly off-white surface */
+  --color-text: #0b1220; /* primary text (dark) */
+  --color-muted: #6b7280; /* muted gray */
   --color-success: #15803D;
-  --color-warning: #F59E0B;
-  --color-danger: #DC2626;
+  --color-warning: #D97706;
+  --color-danger: #B91C1C;
 
-  --color-on-primary: #ffffff;
-  --color-on-surface: #071425;
+  --color-on-primary: #ffffff; /* text color used on primary CTA */
+  --color-on-surface: #0b1220; /* text color used on surfaces */
+  --color-border-rgba: 11,18,32; /* rgb for border rgba usage */
 }
 
 @theme inline {
@@ -30,7 +31,7 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: #ffffff;
     --foreground: #ededed;
   }
 }
@@ -49,8 +50,10 @@ body {
 .text-on-primary { color: var(--color-on-primary) !important; }
 .text-on-surface { color: var(--color-on-surface) !important; }
 .text-text { color: var(--color-text) !important; }
+.text-primary1 { color: var(--color-primary) !important; }
 .text-muted { color: var(--color-muted) !important; }
-.border-on-surface { border-color: rgba(0,0,0,0.06) !important; }
+
+.border-on-surface { border-color: rgba(var(--color-border-rgba), 0.06) !important; }
 
 /* Primary button (used in hero and cards). Keeps sizing via utility classes. */
 .btn-primary {
