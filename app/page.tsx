@@ -67,14 +67,22 @@ export default function HomePage() {
         </div>
       </section>
 
+      <section className="container mx-auto px-4 pt-12 md:pt-16">
+        <h2 className="text-2xl font-semibold text-primary-dark">ABOUT OUR COMPANY
+        </h2>
+        <p className="text-muted mt-2">
+          {data.meta.description}
+        </p>
+      </section>
+
       {/* === Services section (unchanged, but spacing adapted) === */}
-      <section className="container mx-auto px-4 py-12 md:py-16">
-        <h2 className="text-2xl font-semibold text-text">Core Services</h2>
+      <section className="container mx-auto px-4 py-8 md:py-16">
+        <h2 className="text-2xl font-semibold text-primary-dark">Core Services</h2>
         <p className="text-muted mt-2">
           We cover a range of services for small and medium businesses.
         </p>
 
-        <div className="mt-8 grid gap-6 grid-cols-1 md:grid-cols-3">
+        <div className="mt-5 grid gap-6 grid-cols-1 md:grid-cols-3">
           {(data.meta.cards || []).map((c: any, i: number) => (
             <div key={i} className="flex justify-center">
               <Card
@@ -91,9 +99,9 @@ export default function HomePage() {
       </section>
 
       {/* === Why choose us / features === */}
-      <section className="container mx-auto px-4 py-12">
+      <section className="container mx-auto px-4 py-10">
         <div className="max-w-4xl mx-auto text-center">
-          <h3 className="text-xl font-semibold text-text">{data.meta.featuresTitle || 'Why businesses choose Prime Audit'}</h3>
+          <h3 className="text-2xl font-semibold text-primary-dark">{data.meta.featuresTitle || 'Why businesses choose Prime Audit'}</h3>
           <p className="text-muted mt-2">{data.meta.featuresSubtitle || 'Practical, compliant and technology-enabled accounting and audit services tailored for growing organisations.'}</p>
         </div>
 
@@ -105,8 +113,8 @@ export default function HomePage() {
       </section>
 
       {/* === About / Long Cards (optional content from markdown) === */}
-      <section className="container mx-auto px-4 py-12">
-        <h3 className="text-2xl font-semibold text-text">About Prime Audit</h3>
+      <section className="container mx-auto px-4 py-10">
+        <h3 className="text-2xl font-semibold text-primary-dark">About Prime Audit</h3>
         <p className="text-muted mt-2">We combine accounting expertise with practical software workflows to help small and medium businesses thrive.</p>
 
         <div className="mt-8">
@@ -125,9 +133,9 @@ export default function HomePage() {
       </section>
 
       {/* === Testimonials === */}
-      <section className="container mx-auto px-4 py-12 bg-bg">
+      <section className="container mx-auto px-4 py-10 bg-bg">
         <div className="max-w-4xl mx-auto text-center">
-          <h3 className="text-xl font-semibold text-text">What clients say</h3>
+          <h3 className="text-2xl font-semibold text-primary-dark">What clients say</h3>
           <p className="text-muted mt-2">Trusted by businesses for reliable accounting and audit services.</p>
         </div>
 
@@ -139,8 +147,8 @@ export default function HomePage() {
       </section>
 
       {/* === Partners / logos (placeholders) === */}
-      <section className="container mx-auto px-4 py-12">
-        <h4 className="text-lg font-semibold text-text text-center">Trusted by</h4>
+      <section className="container mx-auto px-4 py-10">
+        <h4 className="text-xl font-semibold text-primary-dark text-center">Trusted by</h4>
         <div className="mt-6 flex items-center justify-center gap-8 flex-wrap">
           {(data.meta.partners || []).map((p: any, i: number) => (
             <PartnerLogo key={i} image={p.image} alt={p.alt} />
@@ -149,7 +157,7 @@ export default function HomePage() {
       </section>
 
       {/* === Final CTA === */}
-      <section className="py-12">
+      <section className="py-10">
         <div className="container mx-auto px-4">
           <div className="rounded-lg bg-primary p-8 flex flex-col md:flex-row items-center justify-between gap-4">
             <div>

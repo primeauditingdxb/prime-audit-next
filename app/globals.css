@@ -6,7 +6,7 @@
 
   /* Minimal white/shades palette (surfaces and subtle accents) */
   --color-primary: #47b377; /* dark for CTAs and emphasis */
-  --color-primary-600: #217044;
+  --color-primary-600: #1e643e;
   --color-secondary: #94a3b8; /* subtle cool gray for tiny accents */
   --color-accent: #f1f5f9; /* very pale accent */
   --color-bg: #ffffff; /* page background */
@@ -51,6 +51,7 @@ body {
 .text-on-surface { color: var(--color-on-surface) !important; }
 .text-text { color: var(--color-text) !important; }
 .text-primary1 { color: var(--color-primary) !important; }
+.text-primary-dark { color: var(--color-primary-600) !important; }
 .text-muted { color: var(--color-muted) !important; }
 
 .border-on-surface { border-color: rgba(var(--color-border-rgba), 0.06) !important; }

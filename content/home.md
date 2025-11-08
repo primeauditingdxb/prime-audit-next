@@ -1,6 +1,6 @@
 ---
 title: Prime Audit Solutions Test1
-description: Trusted bookkeeping, auditing and software customization services. Test 1
+description: "Lorem ipsum test1 Our team helps businesses ensure compliance and efficient systems. Lorem ipsum test1 Our team helps businesses ensure compliance and efficient systems. Lorem ipsum test1 Our team helps businesses ensure compliance and efficient systems. Lorem ipsum test1 Our team helps businesses ensure compliance and efficient systems. Lorem ipsum test1 Our team helps businesses ensure compliance and efficient systems. Lorem ipsum test1 Our team helps businesses ensureLorem ipsum test1 Our team helps businesses ensure "
 bannerImage: /uploads/business1.jpg
 cards:
   - title: "Bookkeeping"

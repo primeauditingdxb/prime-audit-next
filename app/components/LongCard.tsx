@@ -10,6 +10,7 @@ export interface LongCardProps {
   tag?: string
   link?: string
   reverse?: boolean // flip layout (image on right)
+  transition?: boolean // controls hover/transform behavior
 }
 
 const LongCard: React.FC<LongCardProps> = ({
@@ -19,12 +20,14 @@ const LongCard: React.FC<LongCardProps> = ({
   tag = 'ABOUT',
   link = null,
   reverse = false,
+  transition = true,
 }) => {
   return (
     <div
       className={`relative flex flex-col ${
         reverse ? 'md:flex-row-reverse' : 'md:flex-row'
-  } w-full my-6 bg-surface shadow-sm border border-on-surface rounded-lg overflow-hidden transition-transform duration-300 hover:scale-[1.02]`}
+      } w-full my-6 bg-surface shadow-sm border border-on-surface rounded-lg overflow-hidden 
+      ${transition ? 'transition-transform duration-300 hover:scale-[1.02]' : ''}`}
     >
       {/* Image section */}
       <div className="relative p-2.5 md:w-2/5 shrink-0 overflow-hidden">
@@ -43,13 +46,13 @@ const LongCard: React.FC<LongCardProps> = ({
             {tag}
           </div>
         )}
-        <h4 className="mb-3 text-text text-xl font-semibold">{title}</h4>
+        <h4 className="mb-3 text-primary-dark text-xl font-semibold">{title}</h4>
         <p className="mb-6 text-muted leading-relaxed font-light">{content}</p>
 
         {link && (
-            <Link
+          <Link
             href={link}
-            className="text-text font-semibold text-sm hover:underline flex items-center gap-2 w-fit"
+            className="text-primary1 font-semibold text-sm hover:underline flex items-center gap-2 w-fit"
           >
             Learn More
             <svg

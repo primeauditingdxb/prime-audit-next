@@ -21,7 +21,7 @@ export default function FeatureCard({ title, description, index = 0 }: FeatureCa
       <div className="flex items-center gap-4">
         <div className="w-12 h-12 rounded-full flex items-center justify-center bg-primary text-on-primary">{icon}</div>
         <div>
-          <h4 className="font-semibold text-text">{title}</h4>
+          <h4 className="font-semibold text-primary-dark">{title}</h4>
           <p className="text-muted text-sm">{description}</p>
         </div>
       </div>

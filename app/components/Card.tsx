@@ -23,7 +23,7 @@ const Card: React.FC<CardProps> = ({
   link
 }) => {
   return (
-    <div className="relative flex flex-col my-6 bg-slate-50 shadow-sm border border-slate-200 rounded-lg w-96 h-[500px]">
+    <div className="relative flex flex-col my-6 bg-slate-50 bg-surface shadow-sm border border-on-surface rounded-lg w-96 h-[500px]">
       <div className="relative h-56 m-2.5 overflow-hidden text-white rounded-md flex-shrink-0">
         <img 
           src={imageUrl} 
@@ -32,7 +32,7 @@ const Card: React.FC<CardProps> = ({
         />
       </div>
       <div className="p-4 flex-grow overflow-hidden">
-        <h6 className="mb-2 text-text text-xl font-semibold line-clamp-2">
+        <h6 className="mb-2 text-primary-dark text-xl font-semibold line-clamp-2">
           {title}
         </h6>
         <p className="text-muted leading-normal font-light line-clamp-4">

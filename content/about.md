@@ -14,5 +14,13 @@ cardTitle3: How Do We Help?
 cardImage3: /uploads/accounting-1.jpg
 cardContent3: "Lorem ipsum test1 Our team helps businesses ensure compliance and efficient systems. Lorem ipsum test1 Our team helps businesses ensure compliance and efficient systems. Lorem ipsum test1 Our team helps businesses ensure compliance and efficient systems. Lorem ipsum test1 Our team helps businesses ensure compliance and efficient systems. Lorem ipsum test1 Our team helps businesses ensure compliance and efficient systems. Lorem ipsum test1 Our team helps businesses ensureLorem ipsum test1 Our team helps businesses ensure"
 
+faqs:
+  - q: "What services do you offer?"
+    a: "We offer bookkeeping, auditing, and software customization to help businesses maintain accurate records and streamline workflows."
+  - q: "How do you onboard new clients?"
+    a: "We begin with a discovery call to understand needs, then propose a tailored plan including timelines and deliverables."
+  - q: "Can you integrate with existing accounting software?"
+    a: "Yes — we integrate and customize common accounting and ERP systems to fit your processes."
+
 ---
 Prime Audit Solutions provides professional bookkeeping, auditing, and software customization services. Our team helps businesses ensure compliance and efficient systems. Lorem ipsum test1. Our team helps businesses ensure compliance and efficient systems. Lorem ipsum test1 Our team helps businesses ensure compliance and efficient systems. Lorem ipsum test1 Our team helps businesses ensure compliance and efficient systems. Lorem ipsum test1 Our team helps businesses ensure compliance and efficient systems. Lorem ipsum test1 Our team helps businesses ensure compliance and efficient systems. Lorem ipsum test1 Our team helps businesses ensure compliance and efficient systems. Lorem ipsum test1 Our team helps businesses ensure compliance and efficient systems. Lorem ipsum test1 Our team helps businesses ensure compliance and efficient systems. Lorem ipsum test1 Our team helps businesses ensure compliance and efficient systems. Lorem ipsum test1 Our team helps businesses ensure compliance and efficient systems. Lorem ipsum test1 Our team helps businesses ensure compliance and efficient systems. Lorem ipsum test1
