@@ -32,7 +32,7 @@ export default function ServicesPage() {
 
             <main className="container mx-auto px-4 py-10">
                 <h2 className="text-2xl font-semibold text-primary-dark">{data.meta.mainTitle}</h2>
-                <div className="mt-4 text-muted"><MarkdownRenderer html={data.contentHtml} /></div>
+                {/* <div className="mt-4 text-muted"><MarkdownRenderer html={data.contentHtml} /></div> */}
 
 
                 {/* Services grid */}
@@ -43,9 +43,25 @@ export default function ServicesPage() {
                 </div>
 
                 {/* Detailed sections */}
-                <div className="mt-16">
+                {/* Detailed sections */}
+                <div className="mt-12">
                     {services.map((s: any, idx: number) => (
-                        <ServiceDetail key={s.id || s.slug} service={{ id: s.slug || s.id, title: s.title, content: s.content || s.short, image: s.image, features: s.features }} reverse={idx % 2 === 1} />
+                        <section
+                            key={s.id || s.slug}
+                            id={s.slug || s.id}  
+                            className="scroll-mt-20" 
+                        >
+                            <ServiceDetail
+                                service={{
+                                    id: s.slug || s.id,
+                                    title: s.title,
+                                    content: s.content || s.short,
+                                    image: s.image,
+                                    features: s.features
+                                }}
+                                reverse={idx % 2 === 1}
+                            />
+                        </section>
                     ))}
                 </div>
             </main>

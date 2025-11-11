@@ -1,20 +1,20 @@
 ---
-title: Prime Audit Solutions Test1
+title: Prime Audit Solutions
 description: "Lorem ipsum test1 Our team helps businesses ensure compliance and efficient systems. Lorem ipsum test1 Our team helps businesses ensure compliance and efficient systems. Lorem ipsum test1 Our team helps businesses ensure compliance and efficient systems. Lorem ipsum test1 Our team helps businesses ensure compliance and efficient systems. Lorem ipsum test1 Our team helps businesses ensure compliance and efficient systems. Lorem ipsum test1 Our team helps businesses ensureLorem ipsum test1 Our team helps businesses ensure "
 bannerImage: /uploads/business1.jpg
 cards:
-  - title: "Bookkeeping"
+  - title: "Tax Advisory Services"
     image: "/uploads/business1.jpg"
-    description: "Accurate record keeping, bookkeeping and timely financial statements tailored for small businesses."
-    link: "/services"
-  - title: "Auditing"
+    description: "Corporate & VAT registration, filing, deregistration and compliance services."
+    link: "/services#tax-advisory"
+  - title: "Reporting"
     image: "/uploads/business1.jpg"
-    description: "Independent assurance and compliance services to keep your business trusted and audit-ready."
-    link: "/services"
-  - title: "Software Customization"
+    description: "Financial, management and BI reporting including IFRS, budgeting and cash-flow."
+    link: "/services#reporting"
+  - title: "Audit Services"
     image: "/uploads/business1.jpg"
-    description: "Customizing and integrating software solutions to fit your business processes and workflows."
-    link: "/services"
+    description: "Internal, management and operational audits including due-diligence"
+    link: "/services#audit-services"
   
 features:
   - title: "Accurate Financials"

@@ -5,46 +5,70 @@ description: "About Prime Audit Solutions: expertise in bookkeeping, auditing
 bannerImage: /uploads/accounting-1.jpg
 mainTitle: Services we offer
 services:
-  - id: bookkeeping
-    title: Bookkeeping
-    slug: bookkeeping
-    short: "Accurate record keeping and timely financial statements for small and medium businesses."
-    image: /uploads/gallery-2.jpg
-    features:
-      - "Bank reconciliations"
-      - "Accounts payable/receivable"
-      - "Monthly financial statements"
-    content: "Our bookkeeping service ensures your financial records are accurate, organized, and ready for reporting and strategic decisions.Our bookkeeping service ensures your financial records are accurate, organized, and ready for reporting and strategic decisions.Our bookkeeping service ensures your financial records are accurate, organized, and ready for reporting and strategic decisions."
-  - id: auditing
-    title: Auditing & Assurance
-    slug: auditing
-    short: "Independent audits, compliance reviews, and assurance tailored to your sector."
+  - id: tax-advisory
+    title: Tax Advisory Services
+    slug: tax-advisory
+    short: "Corporate & VAT registration, filing, deregistration and compliance services."
     image: /uploads/gallery-1.jpg
     features:
-      - "Statutory audits"
-      - "Internal controls review"
-      - "Regulatory compliance"
-    content: "We provide thorough audits and assurance services to give stakeholders confidence in financial statements and operations.We provide thorough audits and assurance services to give stakeholders confidence in financial statements and operations.We provide thorough audits and assurance services to give stakeholders confidence in financial statements and operations."
-  - id: software-customization
-    title: Software Customization
-    slug: software-customization
-    short: "Custom integrations and automation to streamline accounting and audit workflows."
+      - "Corporate Tax Registration and Filing"
+      - "Corporate Tax Deregistration"
+      - "VAT Registration and Filing"
+      - "VAT Deregistration"
+      - "Implementation – Accounts and Systems"
+    content: "Corporate Tax Registration and Filing; Corporate Tax Deregistration; VAT Registration and Filing; VAT Deregistration; Implementation – Accounts and Systems; Accounting & Consultancy; Compliances / Return; Audit & Review."
+  - id: reporting
+    title: Reporting
+    slug: reporting
+    short: "Financial, management and BI reporting including IFRS, budgeting and cash-flow."
     image: /uploads/gallery-2.jpg
     features:
-      - "ERP integration"
-      - "Custom reports & dashboards"
-      - "Workflow automation"
-    content: "We tailor accounting and audit software to match your processes and reduce manual effort.We tailor accounting and audit software to match your processes and reduce manual effort.We tailor accounting and audit software to match your processes and reduce manual effort."
-  - id: advisory
-    title: Financial Advisory
-    slug: advisory
-    short: "Strategic financial advice to improve profitability and operational efficiency."
+      - "Financial Reports as per IFRS"
+      - "Management Reports"
+      - "Business Intelligent Reports"
+      - "Budgeting"
+      - "Cash Flow Reports"
+    content: "Financial Reports as per IFRS; Management Reports; Business Intelligent Reports; Budgeting; Cash Flow Reports; Analytical and Performance Reports; Costing; Inventory Valuation; Strategic Management Accounting; Feasibility Studies and Market Research."
+  - id: audit-services
+    title: Audit Services
+    slug: audit-services
+    short: "Internal, management and operational audits including due-diligence."
     image: /uploads/gallery-1.jpg
     features:
-      - "Budgeting & forecasting"
-      - "Cash flow optimization"
-      - "Performance analysis"
-    content: "Our advisors work with leadership to craft plans that improve financial health and growth.Our advisors work with leadership to craft plans that improve financial health and growth.Our advisors work with leadership to craft plans that improve financial health and growth."
+      - "Internal Audit"
+      - "Management Audit"
+      - "Operational Audit / Due Diligence"
+    content: "Internal Audit; Management Audit; Operational Audit / Due Diligence."
+  - id: accounting-services
+    title: Accounting Services
+    slug: accounting-services
+    short: "Part-time accounting, backlog update, monthly reviews and finalisation."
+    image: /uploads/gallery-2.jpg
+    features:
+      - "Part-time Accounting on Daily, Weekly & Monthly Basis"
+      - "Management Reporting using Business Intelligence Tools"
+      - "Monthly Review of Accounting"
+      - "Pending and Backlog Accounts Updated Immediately"
+    content: "Part-time Accounting; Management Reporting using BI tools; Monthly Review; Update Backlog Accounts and Maintain Online Accounting; Finalisation of Accounts, Trial Balance, Profit & Loss Account & Balance Sheet; Set up Documentation Model and Accounting Procedure."
+  - id: core-services
+    title: Core Services
+    slug: core-services
+    short: "Full back-office accounting solutions — pick individual services or the complete suite."
+    image: /uploads/gallery-1.jpg
+    features:
+      - "Full back-office functions"
+      - "Customisable service bundles"
+    content: "Their suite of accounting services can handle full back-office functions for businesses. You can select services individually or in combination to build a complete solution."
+  - id: services-through-associates
+    title: Services Through Associates
+    slug: services-through-associates
+    short: "Partner services: statutory audit, taxation, entity formation and software support."
+    image: /uploads/gallery-2.jpg
+    features:
+      - "External / Statutory Audit"
+      - "Taxation and Zakat"
+      - "Entity Formation, Merging & Liquidation"
+    content: "External / Statutory Audit; Taxation and Zakat; Entity Formation, Merging & Liquidation; Limited Company Registration; Accounting Software Support."
 ---
 
 - Bookkeeping: Accurate record keeping and financial statements.

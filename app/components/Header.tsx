@@ -55,7 +55,7 @@ export default function Header() {
         <div className="md:hidden">
           <button
             onClick={() => setOpen(!open)}
-            className="p-2 rounded-md border text-primary1"
+            className="p-2 rounded-md border text-muted"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"

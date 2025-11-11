@@ -1,6 +1,7 @@
 "use client"
 
 import React from 'react'
+import { FiCheck } from 'react-icons/fi'
 
 export interface ServiceDetailProps {
   id: string
@@ -26,7 +27,9 @@ const ServiceDetail: React.FC<{service: ServiceDetailProps, reverse?: boolean}> 
             <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2">
               {service.features.map((f, i) => (
                 <li key={i} className="flex items-start gap-3">
-                  <span className="inline-flex items-center justify-center h-6 w-6 rounded-full bg-primary/10 text-primary1 text-xs font-semibold">✓</span>
+                  <span className="inline-flex items-center justify-center h-6 w-6 rounded-full bg-primary/10 text-primary1 text-sm font-semibold">
+                    <FiCheck className="h-4 w-4" />
+                  </span>
                   <span className="text-muted text-sm">{f}</span>
                 </li>
               ))}

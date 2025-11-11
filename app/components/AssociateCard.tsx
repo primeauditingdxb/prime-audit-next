@@ -2,6 +2,7 @@
 
 import React from 'react'
 import Link from 'next/link'
+import { FiExternalLink, FiMail } from 'react-icons/fi'
 
 export interface AssociateSummary {
   id: string
@@ -30,12 +31,14 @@ const AssociateCard: React.FC<{associate: AssociateSummary}> = ({ associate }) =
           </Link>
           <div className="flex items-center gap-2">
             {associate.website && (
-              <a href={associate.website} target="_blank" rel="noreferrer" className="text-muted text-sm hover:text-primary1">
-                Website
+              <a href={associate.website} target="_blank" rel="noreferrer" className="text-muted text-sm hover:text-primary1 flex items-center gap-1">
+                <FiExternalLink className="h-4 w-4" />
+                <span className="sr-only">Website</span>
               </a>
             )}
             {associate.contact && (
-              <a href={`mailto:${associate.contact}`} className="btn-primary py-1 px-3 rounded text-on-primary text-sm">
+              <a href={`mailto:${associate.contact}`} className="btn-primary py-1 px-3 rounded text-on-primary text-sm flex items-center gap-2">
+                <FiMail className="h-4 w-4" />
                 Contact
               </a>
             )}
