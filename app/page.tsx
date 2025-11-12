@@ -7,8 +7,11 @@ import LongCard from './components/LongCard'
 import FeatureCard from './components/FeatureCard'
 import TestimonialCard from './components/TestimonialCard'
 import PartnerLogo from './components/PartnerLogo'
+import ContactModal from './components/ContactModal'
+import { getMarkdownSync as getContactContent } from '@/lib/content'
 
 const data = getMarkdownSync('home')
+const contactData = getContactContent('contact')
 
 export const metadata = {
   title: data.meta.title || 'Prime Audit Solutions',
@@ -17,6 +20,8 @@ export const metadata = {
 
 export default function HomePage() {
   const banner = data.meta.bannerImage || '/images/office-hero.jpg'
+  const contactMeta = contactData?.meta || {}
+  const whatsappLink = contactMeta?.whatsapp || ''
 
   return (
     <>
@@ -171,6 +176,8 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+      {/* Contact modal shown on first visit */}
+      <ContactModal title={'Contact Us'} contentHtml={contactData.contentHtml || ''} whatsapp={whatsappLink} email={""} phone={''} />
     </>
   )
 }
