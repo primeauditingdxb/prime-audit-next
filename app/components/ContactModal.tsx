@@ -13,32 +13,49 @@ interface ContactModalProps {
 
 export default function ContactModal({ title = 'Contact Us', contentHtml = '', email, phone, whatsapp }: ContactModalProps) {
   const [show, setShow] = useState(false)
+  const [dontShow, setDontShow] = useState(false)
+  const [animate, setAnimate] = useState(false)
 
   useEffect(() => {
+    // Check if the user previously asked not to show the modal.
     try {
-      const seen = localStorage.getItem('contact_modal_shown')
-      if (!seen) {
-        setTimeout(() => {
-          setShow(true)
-          localStorage.setItem('contact_modal_shown', '1')
-        }, 600)
-      }
+      const hidden = localStorage.getItem('contact_modal_hide')
+      if (hidden) return
     } catch (e) {
-      // ignore
-      setShow(true)
+      // ignore localStorage errors
     }
+
+    // Show the modal after a short delay.
+    const t = setTimeout(() => {
+      setShow(true)
+      // start enter animation on next tick
+      setTimeout(() => setAnimate(true), 10)
+    }, 600)
+    return () => clearTimeout(t)
   }, [])
 
   if (!show) return null
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center">
-      <div className="absolute inset-0 bg-black/50" onClick={() => setShow(false)} />
+      {/* overlay with fade animation */}
+      <div
+        className={`absolute inset-0 transition-opacity duration-200 ${animate ? 'bg-black/50 opacity-100' : 'bg-black/0 opacity-0'}`}
+        onClick={() => {
+          try { if (dontShow) localStorage.setItem('contact_modal_hide', '1') } catch (e) {}
+          setAnimate(false)
+          setTimeout(() => setShow(false), 220)
+        }}
+      />
 
-      <div className="relative bg-surface w-full max-w-2xl mx-4 rounded shadow-xl p-6 z-10">
+      <div className={`relative bg-surface w-full max-w-2xl mx-4 rounded shadow-xl p-6 z-10 transform transition-all duration-200 ${animate ? 'opacity-100 translate-y-0 scale-100' : 'opacity-0 translate-y-4 scale-95'}`}>
         <div className="flex items-start justify-between gap-4">
           <h3 className="text-xl font-semibold text-primary-dark">{title}</h3>
-          <button onClick={() => setShow(false)} aria-label="Close" className="text-muted">✕</button>
+          <button onClick={() => {
+            try { if (dontShow) localStorage.setItem('contact_modal_hide', '1') } catch (e) {}
+            setAnimate(false)
+            setTimeout(() => setShow(false), 220)
+          }} aria-label="Close" className="text-primary-dark cursor-pointer transition-all duration-300 ease-in-out hover:scale-108 hover:text-primary hover:drop-shadow-md">✕</button>
         </div>
 
         {contentHtml && (
@@ -47,6 +64,16 @@ export default function ContactModal({ title = 'Contact Us', contentHtml = '', e
 
         <div className="mt-4">
           <ContactForm action="https://formspree.io/f/YOUR_FORM_ID" email={email} phone={phone} whatsapp={whatsapp} />
+
+          <label className="mt-4 inline-flex items-center gap-2 text-sm text-muted">
+            <input
+              type="checkbox"
+              className="form-checkbox h-4 w-4"
+              checked={dontShow}
+              onChange={(e) => setDontShow(e.target.checked)}
+            />
+            <span>Don't show again</span>
+          </label>
         </div>
       </div>
     </div>
