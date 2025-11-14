@@ -16,7 +16,7 @@ export interface AssociateSummary {
 
 const AssociateCard: React.FC<{associate: AssociateSummary}> = ({ associate }) => {
   return (
-    <article className="bg-surface border border-on-surface rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+    <article className="bg-surface border border-on-surface rounded-lg overflow-hidden shadow-sm hover:shadow-xl transition-shadow">
       <div className="h-36 w-full overflow-hidden bg-muted/5">
         <img src={associate.image || '/uploads/accounting-1.jpg'} alt={associate.name} className="w-full h-full object-cover" />
       </div>

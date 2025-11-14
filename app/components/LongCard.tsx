@@ -26,7 +26,7 @@ const LongCard: React.FC<LongCardProps> = ({
     <div
       className={`relative flex flex-col ${
         reverse ? 'md:flex-row-reverse' : 'md:flex-row'
-      } w-full my-6 bg-surface shadow-sm border border-on-surface rounded-lg overflow-hidden 
+      } w-full my-6 bg-surface shadow-xl border border-on-surface rounded-lg overflow-hidden 
       ${transition ? 'transition-transform duration-300 hover:scale-[1.02]' : ''}`}
     >
       {/* Image section */}

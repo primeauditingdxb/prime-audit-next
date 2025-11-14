@@ -104,7 +104,7 @@ export default function HomePage() {
       </section>
 
       {/* === Why choose us / features === */}
-      <section className="container mx-auto px-4 py-10">
+      <section className="container mx-auto px-4 py-12">
         <div className="max-w-4xl mx-auto text-center">
           <h3 className="text-2xl font-semibold text-primary-dark">{data.meta.featuresTitle || 'Why businesses choose Prime Audit'}</h3>
           <p className="text-muted mt-2">{data.meta.featuresSubtitle || 'Practical, compliant and technology-enabled accounting and audit services tailored for growing organisations.'}</p>
@@ -118,7 +118,7 @@ export default function HomePage() {
       </section>
 
       {/* === About / Long Cards (optional content from markdown) === */}
-      <section className="container mx-auto px-4 py-10">
+      <section className="container mx-auto px-4 py-12">
         <h3 className="text-2xl font-semibold text-primary-dark">About Prime Audit</h3>
         <p className="text-muted mt-2">We combine accounting expertise with practical software workflows to help small and medium businesses thrive.</p>
 
@@ -138,18 +138,39 @@ export default function HomePage() {
       </section>
 
       {/* === Testimonials === */}
-      <section className="container mx-auto px-4 py-10 bg-bg">
+      <section className="container mx-auto px-4 py-12 bg-bg overflow-hidden">
         <div className="max-w-4xl mx-auto text-center">
           <h3 className="text-2xl font-semibold text-primary-dark">What clients say</h3>
-          <p className="text-muted mt-2">Trusted by businesses for reliable accounting and audit services.</p>
+          <p className="text-muted mt-2">
+            Trusted by businesses for reliable accounting and audit services.
+          </p>
         </div>
 
-        <div className="mt-8 grid gap-6 grid-cols-1 md:grid-cols-3">
-          {(data.meta.testimonials || []).map((t: any, i: number) => (
-            <TestimonialCard key={i} quote={t.quote} author={t.author} org={t.org} />
-          ))}
+        <div className="mt-10 relative">
+          <div className="flex gap-6 w-max animate-marquee">
+            {(data.meta.testimonials || []).map((t: any, i: number) => (
+              <TestimonialCard
+                key={i}
+                quote={t.quote}
+                author={t.author}
+                org={t.org}
+              />
+            ))}
+
+            {/* Duplicate the list for seamless looping */}
+            {(data.meta.testimonials || []).map((t: any, i: number) => (
+              <TestimonialCard
+                key={`dup-${i}`}
+                quote={t.quote}
+                author={t.author}
+                org={t.org}
+              />
+            ))}
+          </div>
         </div>
       </section>
+
+
 
       {/* === Partners / logos (placeholders) === */}
       <section className="container mx-auto px-4 py-10">

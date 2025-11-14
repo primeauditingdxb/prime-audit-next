@@ -23,7 +23,7 @@ const Card: React.FC<CardProps> = ({
   link
 }) => {
   return (
-    <div className="relative flex flex-col my-6 bg-slate-50 bg-surface shadow-sm border border-on-surface rounded-lg w-96 h-[500px]">
+    <div className="relative flex flex-col my-6 bg-slate-50 bg-surface shadow-sm border border-on-surface rounded-lg w-96 h-[500px] transform transition-all duration-300 ease-out hover:shadow-2xl hover:-translate-y-1.5">
       <div className="relative h-56 m-2.5 overflow-hidden text-white rounded-md flex-shrink-0">
         <img 
           src={imageUrl} 

@@ -17,7 +17,7 @@ const icons = [
 export default function FeatureCard({ title, description, index = 0 }: FeatureCardProps) {
   const icon = icons[index % icons.length]
   return (
-    <div className="p-6 bg-surface rounded-lg shadow-sm border border-on-surface">
+    <div className="p-6 bg-surface rounded-lg shadow-sm border border-on-surface transition-all duration-300 ease-out hover:shadow-2xl">
       <div className="flex items-center gap-4">
         <div className="w-12 h-12 rounded-full flex items-center justify-center bg-primary text-on-primary">{icon}</div>
         <div>

@@ -1,6 +1,6 @@
 ---
 title: Prime Audit Solutions
-description: "Lorem ipsum test1 Our team helps businesses ensure compliance and efficient systems. Lorem ipsum test1 Our team helps businesses ensure compliance and efficient systems. Lorem ipsum test1 Our team helps businesses ensure compliance and efficient systems. Lorem ipsum test1 Our team helps businesses ensure compliance and efficient systems. Lorem ipsum test1 Our team helps businesses ensure compliance and efficient systems. Lorem ipsum test1 Our team helps businesses ensureLorem ipsum test1 Our team helps businesses ensure "
+description: "Prime Audit Solutions LLC is a trusted accounting and auditing firm offering comprehensive financial and business advisory in UAE. We also provide customized accounting software for small and medium businesses. With a team of qualified professionals, we provide tailored solutions in Accounting, Taxation, and Auditing. We believe that strong financial systems are the foundation of every successful business. Our focus on integrity, accuracy, and client satisfaction makes us a trusted partner. "
 bannerImage: /uploads/business1.jpg
 cards:
   - title: "Tax Advisory Services"
@@ -43,6 +43,9 @@ testimonials:
   - quote: "Responsive, practical and professional — a pleasure to work with."
     author: "Founder"
     org: "Tech Startup"
+  - quote: "They integrated our billing system and reduced manual steps significantly."
+    author: "Operations Lead"
+    org: "Services Firm"
   - quote: "They integrated our billing system and reduced manual steps significantly."
     author: "Operations Lead"
     org: "Services Firm"

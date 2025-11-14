@@ -17,13 +17,19 @@ export default function ContactModal({ title = 'Contact Us', contentHtml = '', e
   const [animate, setAnimate] = useState(false)
 
   useEffect(() => {
-    // Check if the user previously asked not to show the modal.
+    // If the user chose permanent hide, don't show at all.
     try {
       const hidden = localStorage.getItem('contact_modal_hide')
       if (hidden) return
     } catch (e) {
       // ignore localStorage errors
     }
+
+    // If modal was closed during this browsing session (window flag), do not re-open
+    // This flag lives only in-memory and will be cleared on full page reload —
+    // so the modal will show again on refresh as requested.
+    // @ts-ignore
+    if ((typeof window !== 'undefined') && (window.__contactModalClosed)) return
 
     // Show the modal after a short delay.
     const t = setTimeout(() => {
@@ -63,7 +69,7 @@ export default function ContactModal({ title = 'Contact Us', contentHtml = '', e
         )}
 
         <div className="mt-4">
-          <ContactForm action="https://formspree.io/f/YOUR_FORM_ID" email={email} phone={phone} whatsapp={whatsapp} />
+          <ContactForm action="https://formspree.io/f/mrbreabk" email={email} phone={phone} whatsapp={whatsapp} />
 
           <label className="mt-4 inline-flex items-center gap-2 text-sm text-muted">
             <input
