@@ -75,15 +75,15 @@ export default function HomePage() {
       <section className="container mx-auto px-4 pt-12 md:pt-16">
         <h2 className="text-2xl font-semibold text-primary-dark">ABOUT OUR COMPANY
         </h2>
-        <p className="text-muted mt-2">
+        <p className="text-muted mt-2 pt-4">
           {data.meta.description}
         </p>
       </section>
 
       {/* === Services section (unchanged, but spacing adapted) === */}
-      <section className="container mx-auto px-4 py-8 md:py-16">
+      <section className="container mx-auto px-4 py-8 md:py-12">
         <h2 className="text-2xl font-semibold text-primary-dark">Core Services</h2>
-        <p className="text-muted mt-2">
+        <p className="text-muted mt-2 pt-4">
           We cover a range of services for small and medium businesses.
         </p>
 
@@ -107,7 +107,7 @@ export default function HomePage() {
       <section className="container mx-auto px-4 py-12">
         <div className="max-w-4xl mx-auto text-center">
           <h3 className="text-2xl font-semibold text-primary-dark">{data.meta.featuresTitle || 'Why businesses choose Prime Audit'}</h3>
-          <p className="text-muted mt-2">{data.meta.featuresSubtitle || 'Practical, compliant and technology-enabled accounting and audit services tailored for growing organisations.'}</p>
+          <p className="text-muted mt-2 pt-4">{data.meta.featuresSubtitle || 'Practical, compliant and technology-enabled accounting and audit services tailored for growing organisations.'}</p>
         </div>
 
         <div className="mt-8 grid gap-6 grid-cols-1 md:grid-cols-3">
@@ -120,7 +120,7 @@ export default function HomePage() {
       {/* === About / Long Cards (optional content from markdown) === */}
       <section className="container mx-auto px-4 py-12">
         <h3 className="text-2xl font-semibold text-primary-dark">About Prime Audit</h3>
-        <p className="text-muted mt-2">We combine accounting expertise with practical software workflows to help small and medium businesses thrive.</p>
+        <p className="text-muted mt-2 pt-4">We combine accounting expertise with practical software workflows to help small and medium businesses thrive.</p>
 
         <div className="mt-8">
           {(data.meta.aboutCards || []).map((a: any, i: number) => (
@@ -141,7 +141,7 @@ export default function HomePage() {
       <section className="container mx-auto px-4 py-12 bg-bg overflow-hidden">
         <div className="max-w-4xl mx-auto text-center">
           <h3 className="text-2xl font-semibold text-primary-dark">What clients say</h3>
-          <p className="text-muted mt-2">
+          <p className="text-muted mt-2 pt-4">
             Trusted by businesses for reliable accounting and audit services.
           </p>
         </div>

@@ -44,7 +44,7 @@ export default function AboutPage() {
 
             <div className="container mx-auto px-4 py-10">
                 <h2 className="text-2xl font-semibold text-primary-dark">{data.meta.mainTitle}</h2>
-                <div className="mt-4 text-muted"><MarkdownRenderer html={data.contentHtml} /></div>
+                <div className="mt-4 text-muted pt-4 pb-8"><MarkdownRenderer html={data.contentHtml} /></div>
 
                 <LongCard
                     title={data.meta.cardTitle1}
@@ -80,7 +80,7 @@ export default function AboutPage() {
                 {data.meta.faqs && data.meta.faqs.length > 0 && (
                     <section className="container mx-auto px-4 py-10">
                         <h3 className="text-2xl font-semibold text-primary-dark">Frequently asked questions</h3>
-                        <p className="text-muted mt-2">Answers to common questions about our services and process.</p>
+                        <p className="text-muted mt-2 pt-4">Answers to common questions about our services and process.</p>
                         <div className="mt-6">
                             <FaqAccordion items={data.meta.faqs} />
                         </div>
