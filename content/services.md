@@ -2,14 +2,14 @@
 bannerTitle: Services
 description: "About Prime Audit Solutions: expertise in bookkeeping, auditing
   and software customization. Test1"
-bannerImage: /uploads/accounting-1.jpg
+bannerImage: /images/banner-new.png
 mainTitle: Services we offer
 services:
   - id: tax-advisory
     title: Tax Advisory Services
     slug: tax-advisory
     short: "Corporate & VAT registration, filing, deregistration and compliance services."
-    image: /uploads/gallery-1.jpg
+    image: "/images/tax_advisory_card.png"
     features:
       - "Corporate Tax Registration and Filing"
       - "Corporate Tax Deregistration"
@@ -21,7 +21,7 @@ services:
     title: Reporting
     slug: reporting
     short: "Financial, management and BI reporting including IFRS, budgeting and cash-flow."
-    image: /uploads/gallery-2.jpg
+    image: "/images/reporting_card.png"
     features:
       - "Financial Reports as per IFRS"
       - "Management Reports"
@@ -33,7 +33,7 @@ services:
     title: Audit Services
     slug: audit-services
     short: "Internal, management and operational audits including due-diligence."
-    image: /uploads/gallery-1.jpg
+    image: "/images/audit_services_card.png"
     features:
       - "Internal Audit"
       - "Management Audit"
@@ -43,7 +43,7 @@ services:
     title: Accounting Services
     slug: accounting-services
     short: "Part-time accounting, backlog update, monthly reviews and finalisation."
-    image: /uploads/gallery-2.jpg
+    image: /images/accounting_services_card.png
     features:
       - "Part-time Accounting on Daily, Weekly & Monthly Basis"
       - "Management Reporting using Business Intelligence Tools"
@@ -54,7 +54,7 @@ services:
     title: Core Services
     slug: core-services
     short: "Full back-office accounting solutions — pick individual services or the complete suite."
-    image: /uploads/gallery-1.jpg
+    image: /images/core_services_card.png
     features:
       - "Full back-office functions"
       - "Customisable service bundles"
@@ -63,7 +63,7 @@ services:
     title: Services Through Associates
     slug: services-through-associates
     short: "Partner services: statutory audit, taxation, entity formation and software support."
-    image: /uploads/gallery-2.jpg
+    image: /images/services_through_associates_card.png
     features:
       - "External / Statutory Audit"
       - "Taxation and Zakat"

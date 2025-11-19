@@ -2,7 +2,7 @@
 bannerTitle: Associates
 description: "About Prime Audit Solutions: expertise in bookkeeping, auditing
   and software customization. Test1"
-bannerImage: /uploads/accounting-1.jpg
+bannerImage: /images/banner-new.png
 mainTitle: Through Our Associates
 associates:
   - id: business-formation

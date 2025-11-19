@@ -21,10 +21,17 @@ export default function Header() {
     <header className="bg-surface shadow-sm sticky top-0 z-50">
       <div className="container mx-auto px-4 py-4 flex items-center justify-between">
         <Link href="/" className="flex items-center gap-3">
-          <div className="w-10 h-10 bg-primary text-white rounded flex items-center justify-center font-bold">PA</div>
+          {/* Visible large PA logo block (responsive). If you later replace with an image, adjust classes accordingly. */}
+          {/* Replace the placeholder with the actual logo image. Use object-contain so the PNG scales nicely. */}
+          <img
+            src="/images/prim_audit_logo_transparent.png"
+            alt="Prime Audit Solutions logo"
+            className="w-12 h-12 md:w-14 md:h-14 object-contain"
+          />
+
           <div>
-            <div className="text-lg font-semibold text-primary-dark">Prime Audit Solutions</div>
-            <div className="text-xs text-muted">Accounting • Bookkeeping • Software</div>
+            <div className="text-lg font-semibold text-primary-dark">Prime Audit Solutions LLC</div>
+            <div className="text-xs text-muted">Accounting • Auditing • Bookkeeping • Software</div>
           </div>
         </Link>
 

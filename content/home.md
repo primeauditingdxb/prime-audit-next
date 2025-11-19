@@ -1,18 +1,18 @@
 ---
-title: Prime Audit Solutions
+title: Prime Audit Solutions LLC
 description: "Prime Audit Solutions LLC is a trusted accounting and auditing firm offering comprehensive financial and business advisory in UAE. We also provide customized accounting software for small and medium businesses. With a team of qualified professionals, we provide tailored solutions in Accounting, Taxation, and Auditing. We believe that strong financial systems are the foundation of every successful business. Our focus on integrity, accuracy, and client satisfaction makes us a trusted partner. "
-bannerImage: /uploads/business1.jpg
+bannerImage: /images/banner-new.png
 cards:
   - title: "Tax Advisory Services"
-    image: "/uploads/business1.jpg"
+    image: "/images/tax_advisory_card.png"
     description: "Corporate & VAT registration, filing, deregistration and compliance services."
     link: "/services#tax-advisory"
   - title: "Reporting"
-    image: "/uploads/business1.jpg"
+    image: "/images/reporting_card.png"
     description: "Financial, management and BI reporting including IFRS, budgeting and cash-flow."
     link: "/services#reporting"
   - title: "Audit Services"
-    image: "/uploads/business1.jpg"
+    image: "/images/audit_services_card.png"
     description: "Internal, management and operational audits including due-diligence"
     link: "/services#audit-services"
   
@@ -27,12 +27,12 @@ features:
 aboutCards:
   - title: "Dedicated Experts"
     content: "Our team brings years of experience across bookkeeping, auditing and software projects."
-    image: "/uploads/business1.jpg"
+    image: "/images/dedicated_expterts_card.png"
     tag: "WHO WE ARE"
     link: "/about"
   - title: "Tailored Processes"
     content: "We tailor processes and tools to suit your business size and industry."
-    image: "/uploads/business1.jpg"
+    image: "/images/tailored_processes_card.png"
     tag: "HOW WE WORK"
     link: "/services"
 

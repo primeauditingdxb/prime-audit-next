@@ -14,7 +14,7 @@ const data = getMarkdownSync('home')
 const contactData = getContactContent('contact')
 
 export const metadata = {
-  title: data.meta.title || 'Prime Audit Solutions',
+  title:'Prime Audit Solutions LLC',
   description: data.meta.description || 'Trusted bookkeeping, auditing and software customization services.',
 }
 

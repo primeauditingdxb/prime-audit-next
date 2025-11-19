@@ -20,6 +20,11 @@
   --color-on-primary: #ffffff; /* text color used on primary CTA */
   --color-on-surface: #0b1220; /* text color used on surfaces */
   --color-border-rgba: 11,18,32; /* rgb for border rgba usage */
+
+  --spacing: 0.25rem;
+    --container-xl: 39rem;
+    --container-2xl: 42rem;
+    --container-3xl: 48rem;
 }
 
 @theme inline {
