@@ -138,3 +138,8 @@ body {
   animation-play-state: paused;
 }
 
+@keyframes fadeIn {
+  to { opacity: 1; }
+}
+
+

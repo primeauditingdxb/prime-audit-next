@@ -37,26 +37,28 @@ aboutCards:
     link: "/services"
 
 testimonials:
-  - quote: "Prime Audit helped us streamline our month-end close and improved reporting accuracy."
+  - quote: "The team maintains our books, payroll, and tax filings with precision It feels like having an internal finance team."
     author: "Finance Head"
-    org: "Retail Co."
-  - quote: "Responsive, practical and professional — a pleasure to work with."
+    org: "NOVA DIGITAL STUDIO"
+  - quote: "I really appreciate their teamwork and attention to detail. They respond quickly and always provide clear answers to our questions."
     author: "Founder"
-    org: "Tech Startup"
-  - quote: "They integrated our billing system and reduced manual steps significantly."
+    org: "VELVETLANE BOTIQUE"
+  - quote: "A very dependable firm. They manage our monthly accounts and filings perfectly every time."
     author: "Operations Lead"
-    org: "Services Firm"
-  - quote: "They integrated our billing system and reduced manual steps significantly."
+    org: "URBAN HIVE CAFÉ"
+  - quote: "We trust them for all our tax and compliance matters. Professional service and timely delivery."
     author: "Operations Lead"
-    org: "Services Firm"
+    org: "CRAFT INTERIORS"
 
 partners:
-  - image: "/uploads/business1.jpg"
+  - image: "/images/trustedby/craft_interior.png"
     alt: "Partner 1"
-  - image: "/uploads/business1.jpg"
+  - image: "/images/trustedby/nova_studio.png"
     alt: "Partner 2"
-  - image: "/uploads/business1.jpg"
+  - image: "/images/trustedby/urban_hive.png"
     alt: "Partner 3"
+  - image: "/images/trustedby/velvateline_botique.png"
+    alt: "Partner 4"
 
 cta:
   title: "Ready to get started?"
@@ -68,4 +70,4 @@ cta:
 
 ---
 
-Welcome to Prime Audit Solutions. We provide bookkeeping, auditing and custom software solutions to fit your business.
+Welcome to Prime Audit Solutions. We provide Auditing, Accounting, Bookkeeping, and custom software solutions to fit your business.
