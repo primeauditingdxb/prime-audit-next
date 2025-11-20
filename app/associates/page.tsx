@@ -20,7 +20,7 @@ export default function AssociatesPage() {
                 <div className="absolute inset-0 bg-black/50" />
                 <div className="relative z-10 container mx-auto px-4 py-16 md:py-28">
                     <div className="max-w-3xl">
-                        <h1 className="text-white text-3xl md:text-4xl lg:text-5xl font-extrabold leading-tight text-center drop-shadow-lg">
+                        <h1 className="text-white text-3xl md:text-4xl lg:text-5xl font-extrabold leading-tight text-center md:text-left drop-shadow-lg">
                             {data.meta.bannerTitle}
                         </h1>
                         {/* {data.meta.description && (
