@@ -70,4 +70,4 @@ cta:
 
 ---
 
-Welcome to Prime Audit Solutions. We provide Auditing, Accounting, Bookkeeping, and custom software solutions to fit your business.
+Welcome to Prime Audit Solutions. We provide Auditing, Accounting, Bookkeeping, and software solutions to fit your business.

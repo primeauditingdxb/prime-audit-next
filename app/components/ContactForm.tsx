@@ -118,7 +118,7 @@ export default function ContactForm({ endpoint = 'https://formspree.io/f/mrbreab
             (() => {
               const hasErrors = Object.keys(computeErrors()).length > 0
               const isDisabled = submitting || hasErrors
-              const classes = `w-full px-4 py-2 btn-primary rounded ${isDisabled ? 'opacity-50' : ''}`
+              const classes = `w-full px-4 py-2 btn-primary rounded hover:shadow-lg ${isDisabled ? 'opacity-50' : ''}`
               return (
                 <button type="submit"  className={classes}>
                   {submitting ? 'Sending...' : 'Send Message'}
@@ -139,7 +139,7 @@ export default function ContactForm({ endpoint = 'https://formspree.io/f/mrbreab
           </div>
 
           <div>
-            <a href={whatsapp} target="_blank" rel="noreferrer" className="w-full flex text-center justify-center items-center gap-2 text-white bg-green-600 hover:bg-green-700 px-3 py-2 rounded">
+            <a href={whatsapp} target="_blank" rel="noreferrer" className="w-full flex text-center justify-center items-center gap-2 text-white bg-green-600 hover:bg-green-700 px-3 py-2 rounded hover:shadow-lg">
               <FaWhatsapp className="h-5 w-5" />
               <span className="text-sm font-medium">Contact us on WhatsApp</span>
             </a>

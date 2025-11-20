@@ -29,7 +29,7 @@ const AssociateCard: React.FC<{associate: AssociateSummary}> = ({ associate }) =
           <Link href={`#${associate.slug}`} className="text-primary1 font-medium text-sm hover:underline">
             View
           </Link>
-          <div className="flex items-center gap-2">
+          {/* <div className="flex items-center gap-2">
             {associate.website && (
               <a href={associate.website} target="_blank" rel="noreferrer" className="text-muted text-sm hover:text-primary1 flex items-center gap-1">
                 <FiExternalLink className="h-4 w-4" />
@@ -42,7 +42,7 @@ const AssociateCard: React.FC<{associate: AssociateSummary}> = ({ associate }) =
                 Contact
               </a>
             )}
-          </div>
+          </div> */}
         </div>
       </div>
     </article>

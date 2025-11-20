@@ -7,6 +7,7 @@ export default function ContactPage() {
     const meta = data.meta || {}
     const email: string = meta.email || 'info@primeaudit.example'
     const phone: string = meta.phone || '+91 1122334455'
+    const landline: string = meta.landline || '+91 1122334455'
     const address: string = meta.address || 'Kerala, India'
     const mapLink: string = meta.map_link || ''
     const whatsapp = meta.whatsapp || ''
@@ -62,6 +63,36 @@ export default function ContactPage() {
                         </div>
                     </div>
                     <p className="text-muted mt-2">Email: <a href={`mailto:${email}`} className="text-primary1">{email || 'info@primeaudit.example'}</a></p>
+                    
+                    <div className="flex text-muted mt-2">
+                        <span className="text-muted mr-2">Landline:</span>
+                        <div>
+                            {Array.isArray(landline)
+                                ? landline.map((num, index) => (
+                                    <div key={index} className="hover:underline">
+                                        <a
+                                            className="text-primary1"
+                                            href={`tel:${num.replace(/\s+/g, '')}`}
+                                            aria-label={`Call ${num}`}
+                                        >
+                                            {num}
+                                        </a>
+                                    </div>
+                                ))
+                                : (
+                                    <div className="hover:underline">
+                                        <a
+                                            className="text-primary1"
+                                            href={`tel:${landline.replace(/\s+/g, '')}`}
+                                            aria-label={`Call ${landline}`}
+                                        >
+                                            {landline}
+                                        </a>
+                                    </div>
+                                )}
+                        </div>
+                    </div>
+
                     <div className="flex text-muted mt-2">
                         <span className="text-muted mr-2">Phone:</span>
                         <div>
@@ -90,6 +121,7 @@ export default function ContactPage() {
                                 )}
                         </div>
                     </div>
+                    
                 </div>
             </div>
         </div>

@@ -6,7 +6,7 @@ export default function Head() {
 
       {/* Basic recommended head tags */}
       <meta name="viewport" content="width=device-width, initial-scale=1" />
-      <link rel="icon" href="/favicon.ico" />
+      <link rel="icon" href="/favicon.png" />
       {/* You can add default Open Graph tags here, or set them per-page using Next.js metadata API */}
     </>
   )

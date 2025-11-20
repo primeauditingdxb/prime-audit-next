@@ -23,7 +23,7 @@ const AssociateDetail: React.FC<{associate: AssociateDetailProps, reverse?: bool
           <h3 className="text-2xl font-semibold text-primary-dark mb-3">{associate.name}</h3>
           <p className="text-muted mb-4">{associate.content}</p>
 
-          <div className="flex items-center gap-3">
+          {/* <div className="flex items-center gap-3">
             {associate.website && (
               <a href={associate.website} target="_blank" rel="noreferrer" className="text-primary1 font-semibold hover:underline">
                 Visit website
@@ -34,7 +34,7 @@ const AssociateDetail: React.FC<{associate: AssociateDetailProps, reverse?: bool
                 Contact
               </a>
             )}
-          </div>
+          </div> */}
         </div>
       </div>
     </section>
