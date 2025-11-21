@@ -27,12 +27,16 @@ export default function HomePage() {
     <>
       {/* === Responsive Hero with overlay === */}
       <section
-        className="hero-bg relative min-h-screen"
-        style={{
-          backgroundImage: `url(${banner})`,
-        }}
-        aria-label={data.meta.title || 'Hero banner'}
-      >
+  className="hero-bg relative min-h-screen"
+  style={{
+    backgroundImage: `url(${banner})`,
+    backgroundSize: 'cover',
+    backgroundPosition: 'center top', // or just 'center'
+    backgroundRepeat: 'no-repeat',
+    imageRendering: 'auto', // prevent pixelation hint (limited effect)
+  }}
+  aria-label={data.meta.title || 'Hero banner'}
+>
         {/* Decorative overlay for contrast */}
         <div className="absolute inset-0 bg-black/50" />
 
@@ -42,7 +46,7 @@ export default function HomePage() {
         {/* Content container: centered on mobile, left-aligned on md+ */}
         <div className="relative z-10 container mx-auto px-4 py-12 md:py-20">
           <div className="max-w-3xl md:max-w-2xl lg:max-w-xl">
-            <h1 className="text-white text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold leading-tight md:leading-snug drop-shadow-lg text-center md:text-left">
+            <h1 className="text-white text-3xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold leading-tight md:leading-snug drop-shadow-lg text-center md:text-left">
               {data.meta.title}
             </h1>
 
