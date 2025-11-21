@@ -54,8 +54,8 @@ export default function ContactModal({ title = 'Contact Us', contentHtml = '', e
         }}
       />
 
-      <div className={`relative bg-surface w-full max-w-2xl mx-4 rounded shadow-xl p-10 z-10 transform transition-all duration-200 ${animate ? 'opacity-100 translate-y-0 scale-100' : 'opacity-0 translate-y-4 scale-95'}`}>
-        <div className="flex items-start justify-between gap-4">
+      <div className={`relative bg-surface w-full max-w-2xl mx-4 rounded shadow-xl p-8 z-10 transform transition-all duration-200 ${animate ? 'opacity-100 translate-y-0 scale-100' : 'opacity-0 translate-y-4 scale-95'}`}>
+        <div className="flex items-start justify-between gap-3">
           <h3 className="text-xl font-semibold text-primary-dark">{title}</h3>
           <button onClick={() => {
             try { if (dontShow) localStorage.setItem('contact_modal_hide', '1') } catch (e) {}
@@ -68,7 +68,7 @@ export default function ContactModal({ title = 'Contact Us', contentHtml = '', e
           <div className="mt-3 text-muted text-sm" dangerouslySetInnerHTML={{ __html: contentHtml }} />
         )}
 
-        <div className="mt-4">
+        <div className="mt-2">
           <ContactForm action="https://formspree.io/f/mrbreabk" email={email} phone={phone} whatsapp={whatsapp} />
 
           <label className="mt-4 inline-flex items-center gap-2 text-sm text-muted">

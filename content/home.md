@@ -21,7 +21,7 @@ features:
     description: "Timely bookkeeping and clear financial reports you can rely on."
   - title: "Compliance & Assurance"
     description: "Audit and advisory services that keep you compliant and confident."
-  - title: "Software Customization"
+  - title: "software implementation"
     description: "Integrations and customizations to make your tools work for you."
 
 aboutCards:

@@ -15,7 +15,7 @@ const contactData = getContactContent('contact')
 
 export const metadata = {
   title:'Prime Audit Solutions LLC',
-  description: data.meta.description || 'Trusted bookkeeping, auditing and software customization services.',
+  description: data.meta.description || 'Trusted bookkeeping, auditing and software implementation services.',
 }
 
 export default function HomePage() {
@@ -27,7 +27,7 @@ export default function HomePage() {
     <>
       {/* === Responsive Hero with overlay === */}
       <section
-        className="hero-bg relative"
+        className="hero-bg relative min-h-screen"
         style={{
           backgroundImage: `url(${banner})`,
         }}

@@ -17,7 +17,7 @@ export default function ContactPage() {
             <h2 className="text-2xl font-semibold text-primary-dark">{data.meta.title}</h2>
             <div className="mt-2 text-muted"><MarkdownRenderer html={data.contentHtml} /></div>
 
-            <div className="mt-6 grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="mt-6 grid grid-cols-1 md:grid-cols-2 gap-10">
                 <ContactForm action="https://formspree.io/f/YOUR_FORM_ID" email={''} phone={''} whatsapp={whatsapp} />
 
                 <div>

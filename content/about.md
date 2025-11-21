@@ -1,7 +1,7 @@
 ---
 bannerTitle: About Us   
 description: "About Prime Audit Solutions: expertise in bookkeeping, auditing
-  and software customization. Test1"
+  and software implementation. Test1"
 bannerImage: /images/banner-new.png
 mainTitle: About Prime Audit Solutions 
 cardTitle1: Who we are
@@ -16,7 +16,7 @@ cardContent3: "At Prime Audit Solutions LLC, we help businesses strengthen their
 
 faqs:
   - q: "What services do you offer?"
-    a: "We offer bookkeeping, auditing, and software customization to help businesses maintain accurate records and streamline workflows."
+    a: "We offer bookkeeping, auditing, and software implementation to help businesses maintain accurate records and streamline workflows."
   - q: "How do you onboard new clients?"
     a: "We begin with a discovery call to understand needs, then propose a tailored plan including timelines and deliverables."
   - q: "Can you integrate with existing accounting software?"

@@ -1,7 +1,7 @@
 ---
 bannerTitle: Services
 description: "About Prime Audit Solutions: expertise in bookkeeping, auditing
-  and software customization. Test1"
+  and software implementation. Test1"
 bannerImage: /images/banner-new.png
 mainTitle: Services we offer
 services:
@@ -73,4 +73,4 @@ services:
 
 - Bookkeeping: Accurate record keeping and financial statements.
 - Auditing: Compliance and assurance services.
-- Software Customization: Modifying existing apps to fit your environment.
+- software implementation: Modifying existing apps to fit your environment.

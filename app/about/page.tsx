@@ -7,7 +7,7 @@ import FaqAccordion from '../components/FaqAccordion'
 
 export const metadata = {
     title: 'About — Prime Audit Solutions',
-    description: 'About Prime Audit Solutions: bookkeeping, auditing and software customization.',
+    description: 'About Prime Audit Solutions: bookkeeping, auditing and software implementation.',
 }
 
 export default function AboutPage() {

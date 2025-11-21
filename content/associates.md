@@ -1,7 +1,7 @@
 ---
 bannerTitle: Associates
 description: "About Prime Audit Solutions: expertise in bookkeeping, auditing
-  and software customization. Test1"
+  and software implementation. Test1"
 bannerImage: /images/banner-new.png
 mainTitle: Through Our Associates
 associates:
@@ -15,7 +15,7 @@ associates:
     content: "We help entrepreneurs and businesses register entities, prepare statutory documents and ensure compliance with local regulations."
   
   - id: visa-services
-    name: Visa & Immigration Support
+    name: Visa Support
     slug: visa-services
     short: "Assistance with visa applications, supporting documents and submissions."
     image: /images/visa_and_immigration_support.png

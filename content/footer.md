@@ -6,7 +6,7 @@ phone:
   - "+971 547986690"
   - "+971 567331679"
 landline:
-  - "+971 45647807"
+  - "045647807"
 
 address: "Hamsa building,
  Unique world business center,

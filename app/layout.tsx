@@ -5,7 +5,7 @@ import Footer from './components/Footer'
 
 export const metadata = {
   title: 'Prime Audit Solutions',
-  description: 'Bookkeeping, auditing and software customization services.'
+  description: 'Bookkeeping, auditing and software implementation services.'
 }
 
 export default function RootLayout({ children }: { children: ReactNode }) {
