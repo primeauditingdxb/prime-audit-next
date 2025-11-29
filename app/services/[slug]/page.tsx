@@ -26,11 +26,11 @@ function pickSlugFrom(obj:any) {
   return ''
 }
 
-// import at top of the file
 
-export async function generateMetadata({ params }:any) {
-  // resolve same as in the page
-  const rawSlug = (params?.slug && (Array.isArray(params.slug) ? params.slug[0] : params.slug)) || ''
+export async function generateMetadata({ params }: any) {
+  // unwrap promise-like params (required)
+  const resolvedParams = await params
+  const rawSlug = (resolvedParams?.slug && (Array.isArray(resolvedParams.slug) ? resolvedParams.slug[0] : resolvedParams.slug)) || ''
   const normSlug = (() => {
     try { return decodeURIComponent(String(rawSlug)).trim().toLowerCase() } catch { return String(rawSlug).trim().toLowerCase() }
   })()
@@ -39,37 +39,29 @@ export async function generateMetadata({ params }:any) {
   const services = Array.isArray(data?.meta?.services) ? data.meta.services : []
   const service = services.find(s => (String(s.slug || s.id)).trim().toLowerCase() === normSlug)
 
+  const siteUrl = 'https://primeauditsolutions.com'
   if (!service) {
     return {
       title: 'Service — Prime Audit Solutions',
-      description: data?.meta?.description || 'Prime Audit Solutions services'
+      description: data?.meta?.description || 'Prime Audit Solutions services',
+      metadataBase: new URL(siteUrl)
     }
   }
 
-  const siteUrl = 'https://primeauditsolutions.com/' 
   const pageUrl = `${siteUrl}/services/${service.slug || service.id}`
   const imageUrl = (service.image && (service.image.startsWith('http') ? service.image : `${siteUrl}${service.image}`)) || `${siteUrl}/images/og-default.png`
 
   return {
     title: `${service.title} — Prime Audit Solutions`,
-    description: service.short || service.content?.slice(0, 150) || data?.meta?.description,
+    description: service.short || (service.content || '').slice(0, 160),
     metadataBase: new URL(siteUrl),
-    alternates: {
-      canonical: pageUrl
-    },
+    alternates: { canonical: pageUrl },
     openGraph: {
       title: `${service.title} — Prime Audit Solutions`,
-      description: service.short || undefined,
+      description: service.short,
       url: pageUrl,
       siteName: 'Prime Audit Solutions',
-      images: [
-        {
-          url: imageUrl,
-          width: 1200,
-          height: 630,
-          alt: service.title
-        }
-      ],
+      images: [{ url: imageUrl, width: 1200, height: 630, alt: service.title }],
       type: 'website'
     },
     twitter: {
@@ -78,15 +70,10 @@ export async function generateMetadata({ params }:any) {
       description: service.short,
       images: [imageUrl]
     },
-    robots: {
-      index: true,
-      follow: true,
-      nocache: false
-    },
-    // optional keywords (small benefit)
-    keywords: (service.keywords || [service.title, 'audit', 'bookkeeping', 'accounting']).slice(0, 10)
+    robots: { index: true, follow: true }
   }
 }
+
 
 
 /* IMPORTANT: make component async so we can `await params` */
