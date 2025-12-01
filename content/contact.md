@@ -15,6 +15,13 @@ address:
   - "Near Al ansar gallery," 
   - "Al karama"
 map_link: "https://maps.app.goo.gl/jVLswEUkRzxLobrG8"
+
+address2:
+  - "23/949 Arumbasherry Building,"
+  - "near Private Bus stand,"
+  - "Aluva,"
+  - "Kerala, India"
+map_link2: ""
 ---
 
 Reach out for a consultation or a quote.

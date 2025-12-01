@@ -2,8 +2,8 @@
 export default function Testimonials({ serviceId }) {
   // in production fetch real testimonials keyed by serviceId
   const sample = [
-    { name: 'A. Khader', role: 'CFO', quote: 'Excellent delivery and fast turnaround.' },
-    { name: 'M. Rahman', role: 'Founder', quote: 'Great attention to detail and domain knowledge.' }
+    { name: 'craft Interiors', role: 'CFO', quote: 'Their team was very professional, efficient and easy to work with' },
+    { name: 'Urban Hive cafe', role: 'Founder', quote: 'We received valuable insights that immediately improved our process' }
   ]
 
   return (

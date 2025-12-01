@@ -11,6 +11,9 @@ export default function ContactPage() {
     const address: string = meta.address || 'Kerala, India'
     const mapLink: string = meta.map_link || ''
     const whatsapp = meta.whatsapp || ''
+    const address2: string[] = meta.address2 || []
+    const mapLink2: string = meta.map_link2 || ''
+
 
     return (
         <div className="container mx-auto px-4 py-10">
@@ -23,47 +26,65 @@ export default function ContactPage() {
                 <div>
                     {/* <h4 className="font-semibold text-primary-dark">Office</h4> */}
                     <div className="flex text-muted mt-2">
-                        <span className="text-muted mr-2">Office:</span>
-                        <div>
-                            {Array.isArray(address)
-                                ? address.map((addr, index) => (
-                                    mapLink ? (
-                                        <div key={index} className="hover:underline">
-                                            <a
-                                                href={mapLink}
-                                                target="_blank"
-                                                rel="noreferrer"
-                                                className="text-primary1"
-                                                aria-label={`View ${addr} on map`}
-                                            >
-                                                {addr}
-                                            </a>
-                                        </div>
-                                    ) : (
-                                        <div key={index} className="text-primary1">
-                                            {addr}
-                                        </div>
-                                    )
-                                ))
-                                : mapLink ? (
-                                    <div className="hover:underline">
-                                        <a
-                                            href={mapLink}
-                                            target="_blank"
-                                            rel="noreferrer"
-                                            className="text-primary1"
-                                            aria-label={`View ${address} on map`}
-                                        >
-                                            {address}
-                                        </a>
+                        <span className="text-muted mr-2">Offices:</span>
+
+                        <div className="space-y-3">
+
+                            {/* UAE Address */}
+                            <div>
+                                <span className="font-medium text-primary-dark">UAE:</span>
+                                <div className="ml-2">
+                                    {Array.isArray(address)
+                                        ? address.map((addr, index) => (
+                                            <div key={index} className="hover:underline">
+                                                {mapLink ? (
+                                                    <a
+                                                        href={mapLink}
+                                                        target="_blank"
+                                                        rel="noreferrer"
+                                                        className="text-primary1"
+                                                    >
+                                                        {addr}
+                                                    </a>
+                                                ) : (
+                                                    <span className="text-primary1">{addr}</span>
+                                                )}
+                                            </div>
+                                        ))
+                                        : null}
+                                </div>
+                            </div>
+
+                            {/* India Address */}
+                            {address2?.length > 0 && (
+                                <div>
+                                    <span className="font-medium text-primary-dark">India:</span>
+                                    <div className="ml-2">
+                                        {address2.map((addr, index) => (
+                                            <div key={index} className="hover:underline">
+                                                {mapLink2 ? (
+                                                    <a
+                                                        href={mapLink2}
+                                                        target="_blank"
+                                                        rel="noreferrer"
+                                                        className="text-primary1"
+                                                    >
+                                                        {addr}
+                                                    </a>
+                                                ) : (
+                                                    <span className="text-primary1">{addr}</span>
+                                                )}
+                                            </div>
+                                        ))}
                                     </div>
-                                ) : (
-                                    <div className="text-primary1">{address}</div>
-                                )}
+                                </div>
+                            )}
+
                         </div>
                     </div>
+
                     <p className="text-muted mt-2">Email: <a href={`mailto:${email}`} className="text-primary1">{email || 'info@primeaudit.example'}</a></p>
-                    
+
                     <div className="flex text-muted mt-2">
                         <span className="text-muted mr-2">Landline:</span>
                         <div>
@@ -121,7 +142,7 @@ export default function ContactPage() {
                                 )}
                         </div>
                     </div>
-                    
+
                 </div>
             </div>
         </div>

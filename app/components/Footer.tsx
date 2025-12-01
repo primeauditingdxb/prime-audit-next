@@ -9,6 +9,9 @@ export default function Footer() {
     const landline: string = meta.landline || '+91 1122334455'
     const address: string = meta.address || 'Kerala, India'
     const mapLink: string = meta.map_link || ''
+
+    const address2: string = meta.address2 || 'Kerala, India'
+    const mapLink2: string = meta.map_link2 || ''
     const social = meta.social || {}
     const developer = (meta.developer || {}) as { name?: string; url?: string }
 
@@ -87,36 +90,84 @@ export default function Footer() {
                     </div>
 
                     <div>
-                        <h4 className="font-semibold text-primary-dark">Address</h4>
-                        <p className="text-sm text-muted mt-2">
-                            {mapLink ? (
-                                <a href={mapLink} target="_blank" rel="noreferrer" className="text-primary1 hover:underline" aria-label={`Open ${address} in maps`}>{address}</a>
-                            ) : (
-                                <span>{address}</span>
-                            )}
-                        </p>
+  <h4 className="font-semibold text-primary-dark">Addresses</h4>
 
-                        {/* Social icons */}
-                        <div className="mt-4 flex items-center gap-3">
-                            {social.facebook && (
-                                <a href={social.facebook} target="_blank" rel="noreferrer" aria-label="Facebook" className="text-muted hover:text-primary1">
-                                    <FaFacebookF className="h-5 w-5" />
-                                </a>
-                            )}
+  {/* UAE Address */}
+  <p className="text-sm text-muted mt-2">
+    <span className="font-medium text-primary-dark">UAE: </span>
+    {mapLink ? (
+      <a
+        href={mapLink}
+        target="_blank"
+        rel="noreferrer"
+        className="text-primary1 hover:underline"
+        aria-label={`Open ${address} in maps`}
+      >
+        {address}
+      </a>
+    ) : (
+      <span>{address}</span>
+    )}
+  </p>
 
-                            {social.whatsapp && (
-                                <a href={social.whatsapp} target="_blank" rel="noreferrer" aria-label="WhatsApp" className="text-muted hover:text-primary1">
-                                    <FaWhatsapp className="h-5 w-5" />
-                                </a>
-                            )}
+  {/* India Address */}
+  <p className="text-sm text-muted mt-3">
+    <span className="font-medium text-primary-dark">India: </span>
+    {mapLink2 ? (
+      <a
+        href={mapLink2}
+        target="_blank"
+        rel="noreferrer"
+        className="text-primary1 hover:underline"
+        aria-label={`Open ${address2} in maps`}
+      >
+        {address2}
+      </a>
+    ) : (
+      <span>{address2}</span>
+    )}
+  </p>
 
-                            {social.instagram && (
-                                <a href={social.instagram} target="_blank" rel="noreferrer" aria-label="Instagram" className="text-muted hover:text-primary1">
-                                    <FaInstagram className="h-5 w-5" />
-                                </a>
-                            )}
-                        </div>
-                    </div>
+  {/* Social icons */}
+  <div className="mt-4 flex items-center gap-3">
+    {social.facebook && (
+      <a
+        href={social.facebook}
+        target="_blank"
+        rel="noreferrer"
+        aria-label="Facebook"
+        className="text-muted hover:text-primary1"
+      >
+        <FaFacebookF className="h-5 w-5" />
+      </a>
+    )}
+
+    {social.whatsapp && (
+      <a
+        href={social.whatsapp}
+        target="_blank"
+        rel="noreferrer"
+        aria-label="WhatsApp"
+        className="text-muted hover:text-primary1"
+      >
+        <FaWhatsapp className="h-5 w-5" />
+      </a>
+    )}
+
+    {social.instagram && (
+      <a
+        href={social.instagram}
+        target="_blank"
+        rel="noreferrer"
+        aria-label="Instagram"
+        className="text-muted hover:text-primary1"
+      >
+        <FaInstagram className="h-5 w-5" />
+      </a>
+    )}
+  </div>
+</div>
+
                 </div>
             </div>
 

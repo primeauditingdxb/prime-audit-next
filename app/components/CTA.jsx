@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 // app/components/CTA.jsx
 export default function CTA() {
   return (
@@ -7,8 +9,8 @@ export default function CTA() {
         <p className="text-muted mt-2">Book a free 30-minute consultation to discuss scope, timeline and pricing.</p>
       </div>
       <div className="flex gap-3">
-        <a href="/contact" className="px-5 py-3 rounded-full bg-primary-dark text-white font-medium">Book a call</a>
-        <a href="/contact#brief" className="px-5 py-3 rounded-full border text-primary1">Share brief</a>
+        <Link href="/contact" className="px-5 py-3 rounded-full bg-primary-dark text-white font-medium">Book a call</Link>
+        <Link href="/contact#brief" className="px-5 py-3 rounded-full border text-primary1">Share brief</Link>
       </div>
     </section>
   )
