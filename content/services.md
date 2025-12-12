@@ -9,6 +9,8 @@ services:
   - id: tax-advisory
     title: Tax Advisory Services
     slug: tax-advisory
+    metaTitle: "Tax Advisory Services in UAE | Prime Audit Solutions"
+    metaDescription: "Get expert tax advisory services in the UAE with Prime Audit Solutions. We help businesses ensure compliance, reduce risks, and optimize tax efficiency."
     short: "Corporate tax, VAT registration, compliance & advisory services."
     image: "/images/tax_advisory_card.png"
     features:
@@ -26,6 +28,8 @@ services:
   - id: reporting
     title: Reporting
     slug: reporting
+    metaTitle: "Budgeting and Forecasting Services | Prime Audit Solutions"
+    metaDescription: "Enhance your business performance with budgeting and forecasting services from Prime Audit Solutions. Accurate financial planning, insights, and reporting support."
     short: "Financial, management, and BI reporting to support strategic decisions."
     image: "/images/reporting_card.png"
     features:
@@ -43,6 +47,8 @@ services:
   - id: audit-services
     title: Audit Services
     slug: audit-services
+    metaTitle: "Top Audit Firms in Dubai | Prime Audit Solutions"
+    metaDescription: "Prime Audit Solutions is one of the leading audit firms in Dubai, offering reliable financial audits, compliance checks, and transparent reporting for businesses."
     short: "Internal, management & operational audits including due diligence."
     image: "/images/audit_services_card.png"
     features:
@@ -59,6 +65,8 @@ services:
   - id: accounting-services
     title: Accounting Services
     slug: accounting-services
+    metaTitle: "Accounting Services in Dubai | Prime Audit Solutions"
+    metaDescription: "Get professional accounting services in Dubai with Prime Audit Solutions. We offer accurate bookkeeping, financial reporting, and complete compliance support."
     short: "Part-time accounting, backlog clearance & monthly reviews."
     image: "/images/accounting_services_card.png"
     features:
@@ -75,6 +83,8 @@ services:
   - id: core-services
     title: Core Services
     slug: core-services
+    metaTitle: "Financial Accounting Solutions | Prime Audit Solutions"
+    metaDescription: "Reliable financial accounting solutions to streamline your business operations. Prime Audit Solutions offers accurate reporting, bookkeeping, and compliance support."
     short: "Complete back-office finance & accounting solutions."
     image: "/images/core_services_card.png"
     features:
@@ -88,6 +98,8 @@ services:
   - id: services-through-associates
     title: Services Through Associates
     slug: services-through-associates
+    metaTitle: "Bookkeeping & Accounting Services in Sharjah | Prime Audit"
+    metaDescription: "Get professional bookkeeping and accounting services in Sharjah with Prime Audit Solutions. Accurate financial records, compliance support, and reliable reporting."
     short: "Statutory audit, taxation, entity formation & software support."
     image: "/images/services_through_associates_card.png"
     features:

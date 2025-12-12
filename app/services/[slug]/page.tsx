@@ -50,15 +50,17 @@ export async function generateMetadata({ params }: any) {
 
     const pageUrl = `${siteUrl}/services/${service.slug || service.id}`
     const imageUrl = (service.image && (service.image.startsWith('http') ? service.image : `${siteUrl}${service.image}`)) || `${siteUrl}/images/og-default.png`
+    const metaTitle = service.metaTitle || `${service.title} — Prime Audit Solutions`
+    const metaDescription = service.metaDescription || service.short || (service.content || '').slice(0, 160)
 
     return {
-        title: `${service.title} — Prime Audit Solutions`,
-        description: service.short || (service.content || '').slice(0, 160),
+        title: metaTitle,
+        description: metaDescription,
         metadataBase: new URL(siteUrl),
         alternates: { canonical: pageUrl },
         openGraph: {
-            title: `${service.title} — Prime Audit Solutions`,
-            description: service.short,
+            title: metaTitle,
+            description: metaDescription,
             url: pageUrl,
             siteName: 'Prime Audit Solutions',
             images: [{ url: imageUrl, width: 1200, height: 630, alt: service.title }],
@@ -66,8 +68,8 @@ export async function generateMetadata({ params }: any) {
         },
         twitter: {
             card: 'summary_large_image',
-            title: `${service.title} — Prime Audit Solutions`,
-            description: service.short,
+            title: metaTitle,
+            description: metaDescription,
             images: [imageUrl]
         },
         robots: { index: true, follow: true }

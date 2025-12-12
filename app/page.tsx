@@ -14,8 +14,8 @@ const data = getMarkdownSync('home')
 const contactData = getContactContent('contact')
 
 export const metadata = {
-  title:'Prime Audit Solutions LLC',
-  description: data.meta.description || 'Trusted bookkeeping, auditing and software implementation services.',
+  title:'Corporate Tax Advisory Services in UAE | Prime Audit Solutions',
+  description:'Get expert corporate tax advisory services from Prime Audit Solutions. Reliable guidance to optimize tax strategy and ensure full compliance.',
 }
 
 export default function HomePage() {

@@ -3,8 +3,20 @@ import MarkdownRenderer from '../components/MarkdownRenderer'
 import ServiceCard from '../components/ServiceCard'
 import ServiceDetail from '../components/ServiceDetail'
 
+const servicesData = getMarkdownSync('services')
+const metaTitle = servicesData.meta.metaTitle || `${servicesData.meta.bannerTitle || 'Services'} — Prime Audit Solutions`
+const metaDescription =
+    servicesData.meta.metaDescription ||
+    servicesData.meta.description ||
+    'Explore our full range of services from Prime Audit Solutions.'
+
+export const metadata = {
+    title: metaTitle,
+    description: metaDescription
+}
+
 export default function ServicesPage() {
-    const data = getMarkdownSync('services')
+    const data = servicesData
     const banner = data.meta.bannerImage
     const services = Array.isArray(data.meta.services) ? data.meta.services : []
 
