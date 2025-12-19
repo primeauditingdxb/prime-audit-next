@@ -14,3 +14,4 @@ export default function FeatureList({ items = [] }: FeatureListProps) {
     </ul>
   )
 }
+
