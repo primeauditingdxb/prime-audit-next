@@ -121,7 +121,7 @@ export default function AuditServicesPage() {
             <header
                 className="relative h-[420px] md:h-[520px] flex items-center"
                 style={{
-                    backgroundImage: `linear-gradient(to bottom, rgba(2,6,23,0.7), rgba(2,6,23,0.8)), url('/images/audit-services-bg.jpg')`,
+                    backgroundImage: `linear-gradient(to bottom, rgba(2,6,23,0.7), rgba(2,6,23,0.8)), url('/images/audit_services_card.png')`,
                     backgroundSize: 'cover',
                     backgroundPosition: 'center',
                     backgroundColor: '#1e293b' // Fallback color
