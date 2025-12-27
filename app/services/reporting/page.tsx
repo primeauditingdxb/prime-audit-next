@@ -1,9 +1,7 @@
 import Breadcrumbs from '@/app/components/Breadcrumbs'
-import FeatureList from '@/app/components/FeatureListNew'
 import CTA from '@/app/components/CTA'
-import FAQ from '@/app/components/FAQNew'
 import Link from 'next/link'
-import { FaWhatsapp, FaCheckCircle, FaChartLine, FaDollarSign, FaCalculator } from 'react-icons/fa'
+import { FaWhatsapp } from 'react-icons/fa'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
@@ -15,106 +13,6 @@ export const metadata: Metadata = {
 }
 
 export default function ReportingPage() {
-    // 1. Budgeting vs Forecasting
-    const budgetingVsForecasting = [
-        "Budgeting is the process of creating a detailed financial plan for a specific period, outlining expected income, expenses, and resource allocation.",
-        "Forecasting involves projecting future financial outcomes based on historical data, current trends, and expected business changes."
-    ];
-
-    // 2. Problems Without Budgeting and Forecasting
-    const problemsWithoutPlanning = [
-        "Cash flow shortages",
-        "Overspending and poor cost control",
-        "Unrealistic growth expectations",
-        "Difficulty planning tax obligations",
-        "Limited visibility into financial risks"
-    ];
-
-    // 3. Key Benefits
-    const keyBenefits = [
-        "Predict cash flow requirements accurately",
-        "Plan operational and capital expenses",
-        "Set realistic revenue and profit targets",
-        "Monitor financial performance against plans",
-        "Prepare for tax liabilities and regulatory commitments"
-    ];
-
-    // 4. Strategic Decision-Making Uses
-    const strategicUses = [
-        "Business expansion or downsizing",
-        "Hiring and resource planning",
-        "Pricing strategies",
-        "Investment planning",
-        "Risk management"
-    ];
-
-    // 5. Cash Flow Planning Benefits
-    const cashFlowBenefits = [
-        "Anticipate cash shortages in advance",
-        "Schedule payments more effectively",
-        "Plan for seasonal fluctuations",
-        "Maintain sufficient working capital"
-    ];
-
-    // 6. Cost Control Benefits
-    const costControlBenefits = [
-        "Set spending limits",
-        "Monitor actual expenses against budget",
-        "Identify cost overruns early",
-        "Improve financial discipline across departments"
-    ];
-
-    // 7. Growth Support Benefits
-    const growthSupportBenefits = [
-        "Assess funding requirements",
-        "Plan capital investments",
-        "Manage increased operating costs",
-        "Evaluate profitability of new initiatives"
-    ];
-
-    // 8. Common Challenges
-    const commonChallenges = [
-        "Manual spreadsheets with errors",
-        "Lack of financial expertise",
-        "Unrealistic assumptions",
-        "Infrequent updates",
-        "Poor integration with accounting systems"
-    ];
-
-    // 9. Ongoing Forecasting Benefits
-    const ongoingForecastingBenefits = [
-        "Adjust plans based on actual performance",
-        "Respond to market or regulatory changes",
-        "Improve forecasting accuracy over time",
-        "Maintain alignment with business objectives"
-    ];
-
-    // 10. Compliance and Planning Support
-    const complianceSupport = [
-        "Tax planning and cash allocation",
-        "Audit preparedness",
-        "Stakeholder reporting",
-        "Regulatory transparency"
-    ];
-
-    // 11. Why Choose Prime Audit Solutions
-    const whyChooseUs = [
-        "Deep understanding of UAE business environment",
-        "Practical, business-focused financial planning",
-        "Customized budgeting and forecasting models",
-        "Clear and easy-to-understand financial outputs",
-        "Confidential and reliable service delivery"
-    ];
-
-    // 12. FAQ
-    const faqItems = [
-        { q: "How often should budgets be prepared?", a: "Budgets are typically prepared annually, with periodic reviews during the year." },
-        { q: "How often should forecasts be updated?", a: "Forecasts should be updated quarterly or whenever business conditions change." },
-        { q: "Is budgeting and forecasting only for large companies?", a: "No, SMEs benefit significantly from structured financial planning." },
-        { q: "Can budgeting and forecasting help manage tax liabilities?", a: "Yes, forecasting helps businesses plan for future tax obligations and cash needs." },
-        { q: "Are budgeting and forecasting services customized?", a: "Yes, all budgets and forecasts are tailored to the specific business model." }
-    ];
-
     return (
         <>
             {/* HERO / BANNER */}
@@ -170,11 +68,12 @@ export default function ReportingPage() {
                                 Although often grouped together, budgeting and forecasting serve different but complementary purposes:
                             </p>
                             <div className="space-y-3">
-                                {budgetingVsForecasting.map((item, idx) => (
-                                    <div key={idx} className="bg-surface p-4 rounded-lg border border-gray-100">
-                                        <p className="text-muted text-sm">{item}</p>
-                                    </div>
-                                ))}
+                                <div className="bg-surface p-4 rounded-lg border border-gray-100">
+                                    <p className="text-muted text-sm">Budgeting is the process of creating a detailed financial plan for a specific period, outlining expected income, expenses, and resource allocation.</p>
+                                </div>
+                                <div className="bg-surface p-4 rounded-lg border border-gray-100">
+                                    <p className="text-muted text-sm">Forecasting involves projecting future financial outcomes based on historical data, current trends, and expected business changes.</p>
+                                </div>
                             </div>
                             <p className="text-muted mt-4">
                                 Together, budgeting and forecasting help businesses translate strategy into numbers and monitor whether they are on track.
@@ -187,7 +86,28 @@ export default function ReportingPage() {
                             <p className="text-muted mb-4">
                                 Many UAE businesses operate in fast-moving markets with fluctuating costs, regulatory requirements, and competitive pressures. Without proper budgeting and forecasting, companies often face:
                             </p>
-                            <FeatureList items={problemsWithoutPlanning} />
+                            <ul className="space-y-2 mb-4">
+                                <li className="flex items-start gap-2">
+                                    <span className="text-primary mt-1">✓</span>
+                                    <span className="text-muted">Cash flow shortages</span>
+                                </li>
+                                <li className="flex items-start gap-2">
+                                    <span className="text-primary mt-1">✓</span>
+                                    <span className="text-muted">Overspending and poor cost control</span>
+                                </li>
+                                <li className="flex items-start gap-2">
+                                    <span className="text-primary mt-1">✓</span>
+                                    <span className="text-muted">Unrealistic growth expectations</span>
+                                </li>
+                                <li className="flex items-start gap-2">
+                                    <span className="text-primary mt-1">✓</span>
+                                    <span className="text-muted">Difficulty planning tax obligations</span>
+                                </li>
+                                <li className="flex items-start gap-2">
+                                    <span className="text-primary mt-1">✓</span>
+                                    <span className="text-muted">Limited visibility into financial risks</span>
+                                </li>
+                            </ul>
                             <p className="text-muted mt-4">
                                 Professional budgeting and forecasting services help businesses avoid these issues by providing structure, clarity, and forward-looking insight.
                             </p>
@@ -197,7 +117,28 @@ export default function ReportingPage() {
                         <section>
                             <h2 className="text-2xl font-bold text-primary-dark mb-4">Key Benefits of Budgeting and Forecasting</h2>
                             <p className="text-muted mb-4">Effective budgeting and forecasting allow businesses to:</p>
-                            <FeatureList items={keyBenefits} />
+                            <ul className="space-y-2 mb-4">
+                                <li className="flex items-start gap-2">
+                                    <span className="text-primary mt-1">✓</span>
+                                    <span className="text-muted">Predict cash flow requirements accurately</span>
+                                </li>
+                                <li className="flex items-start gap-2">
+                                    <span className="text-primary mt-1">✓</span>
+                                    <span className="text-muted">Plan operational and capital expenses</span>
+                                </li>
+                                <li className="flex items-start gap-2">
+                                    <span className="text-primary mt-1">✓</span>
+                                    <span className="text-muted">Set realistic revenue and profit targets</span>
+                                </li>
+                                <li className="flex items-start gap-2">
+                                    <span className="text-primary mt-1">✓</span>
+                                    <span className="text-muted">Monitor financial performance against plans</span>
+                                </li>
+                                <li className="flex items-start gap-2">
+                                    <span className="text-primary mt-1">✓</span>
+                                    <span className="text-muted">Prepare for tax liabilities and regulatory commitments</span>
+                                </li>
+                            </ul>
                             <p className="text-muted mt-4">
                                 Businesses that consistently apply budgeting and forecasting are better equipped to manage uncertainty and sustain long-term growth.
                             </p>
@@ -209,7 +150,28 @@ export default function ReportingPage() {
                             <p className="text-muted mb-4">
                                 Financial decisions should never be made in isolation. Budgeting and forecasting provide management with a financial roadmap that supports decisions such as:
                             </p>
-                            <FeatureList items={strategicUses} />
+                            <ul className="space-y-2 mb-4">
+                                <li className="flex items-start gap-2">
+                                    <span className="text-primary mt-1">✓</span>
+                                    <span className="text-muted">Business expansion or downsizing</span>
+                                </li>
+                                <li className="flex items-start gap-2">
+                                    <span className="text-primary mt-1">✓</span>
+                                    <span className="text-muted">Hiring and resource planning</span>
+                                </li>
+                                <li className="flex items-start gap-2">
+                                    <span className="text-primary mt-1">✓</span>
+                                    <span className="text-muted">Pricing strategies</span>
+                                </li>
+                                <li className="flex items-start gap-2">
+                                    <span className="text-primary mt-1">✓</span>
+                                    <span className="text-muted">Investment planning</span>
+                                </li>
+                                <li className="flex items-start gap-2">
+                                    <span className="text-primary mt-1">✓</span>
+                                    <span className="text-muted">Risk management</span>
+                                </li>
+                            </ul>
                             <p className="text-muted mt-4">
                                 Rather than relying on assumptions, decision-makers can use financial projections grounded in real data.
                             </p>
@@ -222,7 +184,24 @@ export default function ReportingPage() {
                                 Cash flow is one of the most critical aspects of business survival. Even profitable companies can struggle if cash inflows and outflows are not properly planned.
                             </p>
                             <p className="font-semibold text-gray-800 mb-2">Budgeting and forecasting help businesses:</p>
-                            <FeatureList items={cashFlowBenefits} />
+                            <ul className="space-y-2 mb-4">
+                                <li className="flex items-start gap-2">
+                                    <span className="text-primary mt-1">✓</span>
+                                    <span className="text-muted">Anticipate cash shortages in advance</span>
+                                </li>
+                                <li className="flex items-start gap-2">
+                                    <span className="text-primary mt-1">✓</span>
+                                    <span className="text-muted">Schedule payments more effectively</span>
+                                </li>
+                                <li className="flex items-start gap-2">
+                                    <span className="text-primary mt-1">✓</span>
+                                    <span className="text-muted">Plan for seasonal fluctuations</span>
+                                </li>
+                                <li className="flex items-start gap-2">
+                                    <span className="text-primary mt-1">✓</span>
+                                    <span className="text-muted">Maintain sufficient working capital</span>
+                                </li>
+                            </ul>
                             <p className="text-muted mt-4">
                                 Clear cash flow forecasts reduce financial stress and improve operational stability.
                             </p>
@@ -234,7 +213,24 @@ export default function ReportingPage() {
                             <p className="text-muted mb-4">
                                 Uncontrolled expenses are one of the most common reasons for reduced profitability. A structured budgeting process helps businesses:
                             </p>
-                            <FeatureList items={costControlBenefits} />
+                            <ul className="space-y-2 mb-4">
+                                <li className="flex items-start gap-2">
+                                    <span className="text-primary mt-1">✓</span>
+                                    <span className="text-muted">Set spending limits</span>
+                                </li>
+                                <li className="flex items-start gap-2">
+                                    <span className="text-primary mt-1">✓</span>
+                                    <span className="text-muted">Monitor actual expenses against budget</span>
+                                </li>
+                                <li className="flex items-start gap-2">
+                                    <span className="text-primary mt-1">✓</span>
+                                    <span className="text-muted">Identify cost overruns early</span>
+                                </li>
+                                <li className="flex items-start gap-2">
+                                    <span className="text-primary mt-1">✓</span>
+                                    <span className="text-muted">Improve financial discipline across departments</span>
+                                </li>
+                            </ul>
                             <p className="text-muted mt-4">
                                 Forecasting further enhances cost control by highlighting future expense trends and potential pressure points.
                             </p>
@@ -247,7 +243,24 @@ export default function ReportingPage() {
                                 Growth without planning often leads to financial strain. Budgeting and forecasting ensure that growth is sustainable by aligning expansion plans with financial capacity.
                             </p>
                             <p className="font-semibold text-gray-800 mb-2">For growing businesses, these services help:</p>
-                            <FeatureList items={growthSupportBenefits} />
+                            <ul className="space-y-2 mb-4">
+                                <li className="flex items-start gap-2">
+                                    <span className="text-primary mt-1">✓</span>
+                                    <span className="text-muted">Assess funding requirements</span>
+                                </li>
+                                <li className="flex items-start gap-2">
+                                    <span className="text-primary mt-1">✓</span>
+                                    <span className="text-muted">Plan capital investments</span>
+                                </li>
+                                <li className="flex items-start gap-2">
+                                    <span className="text-primary mt-1">✓</span>
+                                    <span className="text-muted">Manage increased operating costs</span>
+                                </li>
+                                <li className="flex items-start gap-2">
+                                    <span className="text-primary mt-1">✓</span>
+                                    <span className="text-muted">Evaluate profitability of new initiatives</span>
+                                </li>
+                            </ul>
                             <p className="text-muted mt-4">
                                 Growth decisions supported by accurate forecasts are far more likely to succeed.
                             </p>
@@ -260,7 +273,7 @@ export default function ReportingPage() {
                                 The quality of budgeting and forecasting depends entirely on the accuracy of underlying financial data. Inconsistent or incomplete data leads to unreliable projections and poor decisions.
                             </p>
                             <p className="text-muted mt-4">
-                                Businesses with structured financial systems and integrated Financial Accounting Solutions are better positioned to generate accurate budgets and forecasts because their financial data is consistent, validated, and well-organized.
+                                Businesses with structured financial systems and integrated <a href="/services/core-services" className='underline'>Financial Accounting Solutions</a> are better positioned to generate accurate budgets and forecasts because their financial data is consistent, validated, and well-organized.
                             </p>
                         </section>
 
@@ -271,9 +284,11 @@ export default function ReportingPage() {
                                 There is no one-size-fits-all approach. Budgeting and forecasting requirements vary based on:
                             </p>
                             <div className="flex flex-wrap gap-2 mb-4">
-                                {["Business size", "Industry", "Revenue model", "Cost structure", "Growth stage"].map((item, i) => (
-                                    <span key={i} className="px-3 py-1 bg-primary/10 text-primary-dark rounded-full text-sm font-medium">{item}</span>
-                                ))}
+                                <span className="px-3 py-1 bg-primary/10 text-primary-dark rounded-full text-sm font-medium">Business size</span>
+                                <span className="px-3 py-1 bg-primary/10 text-primary-dark rounded-full text-sm font-medium">Industry</span>
+                                <span className="px-3 py-1 bg-primary/10 text-primary-dark rounded-full text-sm font-medium">Revenue model</span>
+                                <span className="px-3 py-1 bg-primary/10 text-primary-dark rounded-full text-sm font-medium">Cost structure</span>
+                                <span className="px-3 py-1 bg-primary/10 text-primary-dark rounded-full text-sm font-medium">Growth stage</span>
                             </div>
                             <p className="text-muted">
                                 A trading company may focus on inventory and margin forecasting, while a service-based business may prioritize manpower costs and recurring revenue projections. Customization ensures that budgets and forecasts remain relevant and actionable.
@@ -284,7 +299,28 @@ export default function ReportingPage() {
                         <section>
                             <h2 className="text-2xl font-bold text-primary-dark mb-4">Common Budgeting and Forecasting Challenges</h2>
                             <p className="text-muted mb-4">Many businesses struggle with budgeting and forecasting due to:</p>
-                            <FeatureList items={commonChallenges} />
+                            <ul className="space-y-2 mb-4">
+                                <li className="flex items-start gap-2">
+                                    <span className="text-primary mt-1">✓</span>
+                                    <span className="text-muted">Manual spreadsheets with errors</span>
+                                </li>
+                                <li className="flex items-start gap-2">
+                                    <span className="text-primary mt-1">✓</span>
+                                    <span className="text-muted">Lack of financial expertise</span>
+                                </li>
+                                <li className="flex items-start gap-2">
+                                    <span className="text-primary mt-1">✓</span>
+                                    <span className="text-muted">Unrealistic assumptions</span>
+                                </li>
+                                <li className="flex items-start gap-2">
+                                    <span className="text-primary mt-1">✓</span>
+                                    <span className="text-muted">Infrequent updates</span>
+                                </li>
+                                <li className="flex items-start gap-2">
+                                    <span className="text-primary mt-1">✓</span>
+                                    <span className="text-muted">Poor integration with accounting systems</span>
+                                </li>
+                            </ul>
                             <p className="text-muted mt-4">
                                 Professional support addresses these challenges by introducing structured models, realistic assumptions, and consistent review processes.
                             </p>
@@ -296,7 +332,24 @@ export default function ReportingPage() {
                             <p className="text-muted mb-4">
                                 Budgeting and forecasting should not be treated as one-time exercises. Regular updates help businesses:
                             </p>
-                            <FeatureList items={ongoingForecastingBenefits} />
+                            <ul className="space-y-2 mb-4">
+                                <li className="flex items-start gap-2">
+                                    <span className="text-primary mt-1">✓</span>
+                                    <span className="text-muted">Adjust plans based on actual performance</span>
+                                </li>
+                                <li className="flex items-start gap-2">
+                                    <span className="text-primary mt-1">✓</span>
+                                    <span className="text-muted">Respond to market or regulatory changes</span>
+                                </li>
+                                <li className="flex items-start gap-2">
+                                    <span className="text-primary mt-1">✓</span>
+                                    <span className="text-muted">Improve forecasting accuracy over time</span>
+                                </li>
+                                <li className="flex items-start gap-2">
+                                    <span className="text-primary mt-1">✓</span>
+                                    <span className="text-muted">Maintain alignment with business objectives</span>
+                                </li>
+                            </ul>
                             <p className="text-muted mt-4">
                                 This continuous approach strengthens financial resilience.
                             </p>
@@ -308,19 +361,57 @@ export default function ReportingPage() {
                             <p className="text-muted mb-4">
                                 Beyond internal decision-making, budgeting and forecasting also support:
                             </p>
-                            <FeatureList items={complianceSupport} />
+                            <ul className="space-y-2 mb-4">
+                                <li className="flex items-start gap-2">
+                                    <span className="text-primary mt-1">✓</span>
+                                    <span className="text-muted">Tax planning and cash allocation</span>
+                                </li>
+                                <li className="flex items-start gap-2">
+                                    <span className="text-primary mt-1">✓</span>
+                                    <span className="text-muted">Audit preparedness</span>
+                                </li>
+                                <li className="flex items-start gap-2">
+                                    <span className="text-primary mt-1">✓</span>
+                                    <span className="text-muted">Stakeholder reporting</span>
+                                </li>
+                                <li className="flex items-start gap-2">
+                                    <span className="text-primary mt-1">✓</span>
+                                    <span className="text-muted">Regulatory transparency</span>
+                                </li>
+                            </ul>
                             <p className="text-muted mt-4">
                                 Businesses with disciplined forecasting processes are better prepared for financial reviews and compliance assessments.
                             </p>
                             <p className="text-muted mt-4">
-                                Reliable projections are significantly easier to produce when supported by well-designed Financial Accounting Solutions, which ensure data integrity across reporting cycles.
+                                Reliable projections are significantly easier to produce when supported by well-designed <a href="/services/core-services" className='underline'>Financial Accounting Solutions</a>, which ensure data integrity across reporting cycles.
                             </p>
                         </section>
 
                         {/* Why Choose Us */}
                         <section className="bg-primary/5 rounded-2xl p-6 md:p-8 border border-primary/10">
                             <h2 className="text-2xl md:text-3xl font-bold text-primary-dark mb-6">Why Choose Prime Audit Solutions for Budgeting and Forecasting?</h2>
-                            <FeatureList items={whyChooseUs} />
+                            <ul className="space-y-2 mb-4">
+                                <li className="flex items-start gap-2">
+                                    <span className="text-primary mt-1">✓</span>
+                                    <span className="text-muted">Deep understanding of UAE business environment</span>
+                                </li>
+                                <li className="flex items-start gap-2">
+                                    <span className="text-primary mt-1">✓</span>
+                                    <span className="text-muted">Practical, business-focused financial planning</span>
+                                </li>
+                                <li className="flex items-start gap-2">
+                                    <span className="text-primary mt-1">✓</span>
+                                    <span className="text-muted">Customized budgeting and forecasting models</span>
+                                </li>
+                                <li className="flex items-start gap-2">
+                                    <span className="text-primary mt-1">✓</span>
+                                    <span className="text-muted">Clear and easy-to-understand financial outputs</span>
+                                </li>
+                                <li className="flex items-start gap-2">
+                                    <span className="text-primary mt-1">✓</span>
+                                    <span className="text-muted">Confidential and reliable service delivery</span>
+                                </li>
+                            </ul>
                             <p className="text-muted mt-6 font-medium">
                                 Our goal is to help businesses plan with confidence, not complexity.
                             </p>
@@ -329,7 +420,28 @@ export default function ReportingPage() {
                         {/* FAQ */}
                         <div className="mt-8">
                             <h2 className="text-2xl font-bold text-primary-dark mb-4">Budgeting and Forecasting – FAQs (UAE)</h2>
-                            <FAQ items={faqItems} />
+                            <div className="space-y-4">
+                                <div className="bg-white p-5 rounded-lg border border-gray-100">
+                                    <h3 className="font-semibold text-gray-800 mb-2">How often should budgets be prepared?</h3>
+                                    <p className="text-sm text-muted">Budgets are typically prepared annually, with periodic reviews during the year.</p>
+                                </div>
+                                <div className="bg-white p-5 rounded-lg border border-gray-100">
+                                    <h3 className="font-semibold text-gray-800 mb-2">How often should forecasts be updated?</h3>
+                                    <p className="text-sm text-muted">Forecasts should be updated quarterly or whenever business conditions change.</p>
+                                </div>
+                                <div className="bg-white p-5 rounded-lg border border-gray-100">
+                                    <h3 className="font-semibold text-gray-800 mb-2">Is budgeting and forecasting only for large companies?</h3>
+                                    <p className="text-sm text-muted">No, SMEs benefit significantly from structured financial planning.</p>
+                                </div>
+                                <div className="bg-white p-5 rounded-lg border border-gray-100">
+                                    <h3 className="font-semibold text-gray-800 mb-2">Can budgeting and forecasting help manage tax liabilities?</h3>
+                                    <p className="text-sm text-muted">Yes, forecasting helps businesses plan for future tax obligations and cash needs.</p>
+                                </div>
+                                <div className="bg-white p-5 rounded-lg border border-gray-100">
+                                    <h3 className="font-semibold text-gray-800 mb-2">Are budgeting and forecasting services customized?</h3>
+                                    <p className="text-sm text-muted">Yes, all budgets and forecasts are tailored to the specific business model.</p>
+                                </div>
+                            </div>
                         </div>
                         
                         {/* Conclusion */}

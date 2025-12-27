@@ -1,9 +1,7 @@
 import Breadcrumbs from '@/app/components/Breadcrumbs'
-import FeatureList from '@/app/components/FeatureListNew'
 import CTA from '@/app/components/CTA'
-import FAQ from '@/app/components/FAQNew'
 import Link from 'next/link'
-import { FaWhatsapp, FaCheckCircle, FaCalculator, FaFileInvoice, FaCloud, FaShieldAlt, FaChartLine } from 'react-icons/fa'
+import { FaWhatsapp } from 'react-icons/fa'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
@@ -15,120 +13,6 @@ export const metadata: Metadata = {
 }
 
 export default function AccountingServicesPage() {
-    // 1. Why Professional Accounting Services Are Essential
-    const essentialBenefits = [
-        "Comply with UAE Commercial Companies Law",
-        "Meet VAT and corporate tax requirements",
-        "Maintain accurate books of accounts",
-        "Improve cash flow management",
-        "Avoid penalties and regulatory issues",
-        "Support audits and financial reviews"
-    ];
-
-    // 2. Core Accounting Services
-    const coreServices = [
-        "Daily and monthly bookkeeping",
-        "General ledger maintenance",
-        "Accounts payable and receivable",
-        "Bank and credit card reconciliation",
-        "VAT accounting and reporting",
-        "Monthly, quarterly, and annual financial statements"
-    ];
-
-    // 3. Poor Bookkeeping Consequences
-    const poorBookkeepingIssues = [
-        "Incorrect VAT returns",
-        "Cash flow mismatches",
-        "Audit qualifications",
-        "Tax compliance issues"
-    ];
-
-    // 4. Benefits of Professional Accounting Software
-    const softwareBenefits = [
-        "Real-time financial visibility",
-        "Reduced manual errors",
-        "Secure cloud-based data access",
-        "Automated VAT calculations",
-        "Scalable systems for business growth"
-    ];
-
-    // 5. Sharjah Services
-    const sharjahServices = [
-        "Trading companies",
-        "Manufacturing units",
-        "Service providers",
-        "Family-owned businesses"
-    ];
-
-    // 6. VAT Accounting Services
-    const vatServices = [
-        "VAT transaction recording",
-        "VAT reconciliation",
-        "VAT return preparation",
-        "Support during VAT audits"
-    ];
-
-    // 7. Benefits of Outsourced Accounting
-    const outsourcedBenefits = [
-        "Lower operational costs",
-        "Access to experienced professionals",
-        "Reduced compliance risk",
-        "Scalable service models",
-        "No dependency on individual staff members"
-    ];
-
-    // 8. Corporate Tax Compliance Benefits
-    const taxComplianceBenefits = [
-        "Accurate taxable income calculations",
-        "Proper expense classification",
-        "Clear audit trails",
-        "Compliance-ready financial statements"
-    ];
-
-    // 9. Our Accounting Process
-    const accountingProcess = [
-        { title: "Business assessment and understanding", desc: "We analyze your business model, industry requirements, and compliance needs." },
-        { title: "Accounting system setup or review", desc: "We establish or optimize your accounting systems for efficiency and compliance." },
-        { title: "Data collection and transaction recording", desc: "We ensure all transactions are accurately recorded and properly documented." },
-        { title: "Monthly reconciliation and reporting", desc: "We provide regular financial reports and reconciliations for better visibility." },
-        { title: "Ongoing compliance and advisory support", desc: "We offer continuous support to maintain compliance and optimize financial performance." }
-    ];
-
-    // 10. Why Choose Prime Audit Solutions
-    const whyChooseUs = [
-        "Experienced and qualified accountants",
-        "Strong knowledge of UAE regulations",
-        "Use of the best bookkeeping software",
-        "Transparent pricing with no hidden costs",
-        "Dedicated client support"
-    ];
-
-    // 11. Who Can Benefit
-    const whoCanBenefit = [
-        "Startups setting up financial systems",
-        "SMEs needing compliance support",
-        "Growing businesses preparing for audits",
-        "Companies planning tax optimization",
-        "Businesses seeking financial clarity"
-    ];
-
-    // 12. Long-Term Business Strategy Benefits
-    const longTermBenefits = [
-        "Financial clarity",
-        "Regulatory confidence",
-        "Improved profitability",
-        "Long-term stability"
-    ];
-
-    // 13. FAQ
-    const faqItems = [
-        { q: "Are accounting services mandatory in Dubai?", a: "Yes, UAE law requires businesses to maintain proper accounting records." },
-        { q: "Do small businesses need professional accounting services?", a: "Yes, SMEs benefit from compliance, accuracy, and better cash flow management." },
-        { q: "Which bookkeeping software is best for UAE businesses?", a: "Cloud-based, VAT-compliant bookkeeping and accounting software is ideal." },
-        { q: "Can accounting services help during audits?", a: "Absolutely. Clean accounts significantly reduce audit risks and delays." },
-        { q: "Do you provide accounting services in Sharjah?", a: "Yes, we offer full accounting and bookkeeping services in Sharjah." }
-    ];
-
     return (
         <>
             {/* HERO / BANNER */}
@@ -187,7 +71,32 @@ export default function AccountingServicesPage() {
                                 UAE businesses operate under a structured legal and financial framework that requires proper maintenance of accounting records. Regulatory authorities, banks, investors, and auditors all rely on accurate financial data.
                             </p>
                             <p className="font-semibold text-gray-800 mb-2">Professional accounting services help businesses:</p>
-                            <FeatureList items={essentialBenefits} />
+                            <ul className="space-y-2 mb-4">
+                                <li className="flex items-start gap-2">
+                                    <span className="text-primary mt-1">✓</span>
+                                    <span className="text-muted">Comply with UAE Commercial Companies Law</span>
+                                </li>
+                                <li className="flex items-start gap-2">
+                                    <span className="text-primary mt-1">✓</span>
+                                    <span className="text-muted">Meet VAT and corporate tax requirements</span>
+                                </li>
+                                <li className="flex items-start gap-2">
+                                    <span className="text-primary mt-1">✓</span>
+                                    <span className="text-muted">Maintain accurate books of accounts</span>
+                                </li>
+                                <li className="flex items-start gap-2">
+                                    <span className="text-primary mt-1">✓</span>
+                                    <span className="text-muted">Improve cash flow management</span>
+                                </li>
+                                <li className="flex items-start gap-2">
+                                    <span className="text-primary mt-1">✓</span>
+                                    <span className="text-muted">Avoid penalties and regulatory issues</span>
+                                </li>
+                                <li className="flex items-start gap-2">
+                                    <span className="text-primary mt-1">✓</span>
+                                    <span className="text-muted">Support audits and financial reviews</span>
+                                </li>
+                            </ul>
                             <p className="text-muted text-sm mt-4 italic">
                                 Businesses that attempt to manage accounting internally without expertise often face issues during Audit Services, tax filing, or bank financing.
                             </p>
@@ -201,13 +110,38 @@ export default function AccountingServicesPage() {
                             </p>
                             
                             <h3 className="text-xl font-bold text-gray-800 mb-4">Core Accounting Services We Provide</h3>
-                            <FeatureList items={coreServices} />
+                            <ul className="space-y-2 mb-4">
+                                <li className="flex items-start gap-2">
+                                    <span className="text-primary mt-1">✓</span>
+                                    <span className="text-muted">Daily and monthly bookkeeping</span>
+                                </li>
+                                <li className="flex items-start gap-2">
+                                    <span className="text-primary mt-1">✓</span>
+                                    <span className="text-muted">General ledger maintenance</span>
+                                </li>
+                                <li className="flex items-start gap-2">
+                                    <span className="text-primary mt-1">✓</span>
+                                    <span className="text-muted">Accounts payable and receivable</span>
+                                </li>
+                                <li className="flex items-start gap-2">
+                                    <span className="text-primary mt-1">✓</span>
+                                    <span className="text-muted">Bank and credit card reconciliation</span>
+                                </li>
+                                <li className="flex items-start gap-2">
+                                    <span className="text-primary mt-1">✓</span>
+                                    <span className="text-muted">VAT accounting and reporting</span>
+                                </li>
+                                <li className="flex items-start gap-2">
+                                    <span className="text-primary mt-1">✓</span>
+                                    <span className="text-muted">Monthly, quarterly, and annual financial statements</span>
+                                </li>
+                            </ul>
                             
                             <p className="text-muted mt-6">
                                 Each service is delivered by experienced accountants who understand UAE regulations and industry-specific requirements.
                             </p>
                             <p className="text-muted mt-4">
-                                Clean accounting records also form the foundation for accurate Corporate Tax Advisory Services, as tax calculations depend on reliable financial data.
+                                Clean accounting records also form the foundation for accurate <a href="/services/tax-advisory" className='underline'>Corporate Tax Advisory Services</a>, as tax calculations depend on reliable financial data.
                             </p>
                         </section>
 
@@ -218,7 +152,24 @@ export default function AccountingServicesPage() {
                                 Accurate bookkeeping is the backbone of effective financial management. Our professional Bookkeeping Services Dubai ensure that every transaction is recorded correctly and supported by proper documentation.
                             </p>
                             <p className="font-semibold text-gray-800 mb-2">Poor bookkeeping often leads to:</p>
-                            <FeatureList items={poorBookkeepingIssues} />
+                            <ul className="space-y-2 mb-4">
+                                <li className="flex items-start gap-2">
+                                    <span className="text-primary mt-1">✓</span>
+                                    <span className="text-muted">Incorrect VAT returns</span>
+                                </li>
+                                <li className="flex items-start gap-2">
+                                    <span className="text-primary mt-1">✓</span>
+                                    <span className="text-muted">Cash flow mismatches</span>
+                                </li>
+                                <li className="flex items-start gap-2">
+                                    <span className="text-primary mt-1">✓</span>
+                                    <span className="text-muted">Audit qualifications</span>
+                                </li>
+                                <li className="flex items-start gap-2">
+                                    <span className="text-primary mt-1">✓</span>
+                                    <span className="text-muted">Tax compliance issues</span>
+                                </li>
+                            </ul>
                             <p className="text-muted mt-4">
                                 Our bookkeeping services help businesses maintain transparency and financial discipline throughout the year.
                             </p>
@@ -228,10 +179,31 @@ export default function AccountingServicesPage() {
                         <section className="bg-white rounded-2xl shadow-sm p-6 md:p-8 border border-gray-100">
                             <h2 className="text-2xl font-bold text-primary-dark mb-4">Using the Best Bookkeeping Software for UAE Compliance</h2>
                             <p className="text-muted mb-4">
-                                Modern accounting requires modern tools. We use the Best Bookkeeping Software and advanced cloud-based Bookkeeping and Accounting Software that comply with UAE regulatory requirements.
+                                Modern accounting requires modern tools. We use the Best Bookkeeping Software and advanced cloud-based <a href="https://primeauditsolutions.com/services/accounting-services" className='underline'>Bookkeeping and Accounting Software</a> that comply with UAE regulatory requirements.
                             </p>
                             <p className="font-semibold text-gray-800 mb-2">Benefits of Professional Accounting Software</p>
-                            <FeatureList items={softwareBenefits} />
+                            <ul className="space-y-2 mb-4">
+                                <li className="flex items-start gap-2">
+                                    <span className="text-primary mt-1">✓</span>
+                                    <span className="text-muted">Real-time financial visibility</span>
+                                </li>
+                                <li className="flex items-start gap-2">
+                                    <span className="text-primary mt-1">✓</span>
+                                    <span className="text-muted">Reduced manual errors</span>
+                                </li>
+                                <li className="flex items-start gap-2">
+                                    <span className="text-primary mt-1">✓</span>
+                                    <span className="text-muted">Secure cloud-based data access</span>
+                                </li>
+                                <li className="flex items-start gap-2">
+                                    <span className="text-primary mt-1">✓</span>
+                                    <span className="text-muted">Automated VAT calculations</span>
+                                </li>
+                                <li className="flex items-start gap-2">
+                                    <span className="text-primary mt-1">✓</span>
+                                    <span className="text-muted">Scalable systems for business growth</span>
+                                </li>
+                            </ul>
                             <p className="text-muted mt-4">
                                 We also assist businesses in selecting, implementing, and optimizing accounting software based on their operational needs.
                             </p>
@@ -244,7 +216,24 @@ export default function AccountingServicesPage() {
                                 Sharjah businesses operate under distinct mainland and free zone regulations. Our Accounting Services in Sharjah are customized to meet these requirements while maintaining compliance with federal laws.
                             </p>
                             <p className="font-semibold text-gray-800 mb-2">We also provide specialized Bookkeeping and Accounting Services in Sharjah for:</p>
-                            <FeatureList items={sharjahServices} />
+                            <ul className="space-y-2 mb-4">
+                                <li className="flex items-start gap-2">
+                                    <span className="text-primary mt-1">✓</span>
+                                    <span className="text-muted">Trading companies</span>
+                                </li>
+                                <li className="flex items-start gap-2">
+                                    <span className="text-primary mt-1">✓</span>
+                                    <span className="text-muted">Manufacturing units</span>
+                                </li>
+                                <li className="flex items-start gap-2">
+                                    <span className="text-primary mt-1">✓</span>
+                                    <span className="text-muted">Service providers</span>
+                                </li>
+                                <li className="flex items-start gap-2">
+                                    <span className="text-primary mt-1">✓</span>
+                                    <span className="text-muted">Family-owned businesses</span>
+                                </li>
+                            </ul>
                             <p className="text-muted mt-4">
                                 Our Sharjah-focused accounting services help businesses maintain financial clarity while meeting regulatory expectations.
                             </p>
@@ -257,9 +246,26 @@ export default function AccountingServicesPage() {
                                 VAT compliance is a critical component of accounting in the UAE. Errors in VAT accounting can result in penalties and audits.
                             </p>
                             <p className="font-semibold text-gray-800 mb-2">Our VAT-related accounting services include:</p>
-                            <FeatureList items={vatServices} />
+                            <ul className="space-y-2 mb-4">
+                                <li className="flex items-start gap-2">
+                                    <span className="text-primary mt-1">✓</span>
+                                    <span className="text-muted">VAT transaction recording</span>
+                                </li>
+                                <li className="flex items-start gap-2">
+                                    <span className="text-primary mt-1">✓</span>
+                                    <span className="text-muted">VAT reconciliation</span>
+                                </li>
+                                <li className="flex items-start gap-2">
+                                    <span className="text-primary mt-1">✓</span>
+                                    <span className="text-muted">VAT return preparation</span>
+                                </li>
+                                <li className="flex items-start gap-2">
+                                    <span className="text-primary mt-1">✓</span>
+                                    <span className="text-muted">Support during VAT audits</span>
+                                </li>
+                            </ul>
                             <p className="text-muted mt-4">
-                                Accurate VAT accounting also supports smoother Tax Advisory Services, as VAT data often impacts corporate tax calculations.
+                                Accurate VAT accounting also supports smoother <a href="/services/tax-advisory" className='underline'>Tax Advisory Services</a>, as VAT data often impacts corporate tax calculations.
                             </p>
                         </section>
 
@@ -270,7 +276,28 @@ export default function AccountingServicesPage() {
                                 Many UAE businesses choose to outsource accounting rather than maintain an in-house team.
                             </p>
                             <p className="font-semibold text-gray-800 mb-2">Benefits of Outsourced Accounting Services</p>
-                            <FeatureList items={outsourcedBenefits} />
+                            <ul className="space-y-2 mb-4">
+                                <li className="flex items-start gap-2">
+                                    <span className="text-primary mt-1">✓</span>
+                                    <span className="text-muted">Lower operational costs</span>
+                                </li>
+                                <li className="flex items-start gap-2">
+                                    <span className="text-primary mt-1">✓</span>
+                                    <span className="text-muted">Access to experienced professionals</span>
+                                </li>
+                                <li className="flex items-start gap-2">
+                                    <span className="text-primary mt-1">✓</span>
+                                    <span className="text-muted">Reduced compliance risk</span>
+                                </li>
+                                <li className="flex items-start gap-2">
+                                    <span className="text-primary mt-1">✓</span>
+                                    <span className="text-muted">Scalable service models</span>
+                                </li>
+                                <li className="flex items-start gap-2">
+                                    <span className="text-primary mt-1">✓</span>
+                                    <span className="text-muted">No dependency on individual staff members</span>
+                                </li>
+                            </ul>
                             <p className="text-muted mt-4">
                                 Outsourced accounting allows business owners to focus on growth while professionals handle financial accuracy.
                             </p>
@@ -294,7 +321,24 @@ export default function AccountingServicesPage() {
                                 Corporate tax compliance relies heavily on accurate accounting data. Misclassified expenses, missing records, or incorrect income recognition can lead to incorrect tax filings.
                             </p>
                             <p className="font-semibold text-gray-800 mb-2">Our accounting services ensure:</p>
-                            <FeatureList items={taxComplianceBenefits} />
+                            <ul className="space-y-2 mb-4">
+                                <li className="flex items-start gap-2">
+                                    <span className="text-primary mt-1">✓</span>
+                                    <span className="text-muted">Accurate taxable income calculations</span>
+                                </li>
+                                <li className="flex items-start gap-2">
+                                    <span className="text-primary mt-1">✓</span>
+                                    <span className="text-muted">Proper expense classification</span>
+                                </li>
+                                <li className="flex items-start gap-2">
+                                    <span className="text-primary mt-1">✓</span>
+                                    <span className="text-muted">Clear audit trails</span>
+                                </li>
+                                <li className="flex items-start gap-2">
+                                    <span className="text-primary mt-1">✓</span>
+                                    <span className="text-muted">Compliance-ready financial statements</span>
+                                </li>
+                            </ul>
                             <p className="text-muted mt-4">
                                 This directly supports effective Corporate Tax Filing in Dubai and ongoing tax compliance.
                             </p>
@@ -304,10 +348,10 @@ export default function AccountingServicesPage() {
                         <section className="bg-primary/5 rounded-2xl p-6 md:p-8 border border-primary/10">
                             <h2 className="text-2xl font-bold text-primary-dark mb-4">Integration with Corporate Tax Compliance and Advisory</h2>
                             <p className="text-muted mb-4">
-                                Accounting data is not maintained only for statutory record-keeping it plays a central role in corporate tax compliance and planning. Accurate financial records form the foundation of effective Corporate Tax Advisory Services, allowing businesses to calculate taxable income correctly, identify allowable deductions, and avoid compliance gaps. Well-maintained accounts also support reliable Tax Advisory Services, especially when businesses require ongoing guidance on regulatory changes or tax optimization strategies.
+                                Accounting data is not maintained only for statutory record-keeping it plays a central role in corporate tax compliance and planning. Accurate financial records form the foundation of effective <a href="/services/tax-advisory" className='underline'>Corporate Tax Advisory Services</a>, allowing businesses to calculate taxable income correctly, identify allowable deductions, and avoid compliance gaps. Well-maintained accounts also support reliable <a href="/services/tax-advisory" className='underline'>Tax Advisory Services</a>, especially when businesses require ongoing guidance on regulatory changes or tax optimization strategies.
                             </p>
                             <p className="text-muted mb-4">
-                                For companies operating outside Dubai, structured accounting is essential for compliant Tax Advisory Services in Sharjah, where local regulatory requirements must align with federal tax laws. Additionally, error-free accounting records ensure smooth and accurate Corporate Tax Filing Dubai, reducing the risk of penalties, late submissions, or audit queries. Without accurate accounting, corporate tax compliance becomes unreliable and financially risky.
+                                For companies operating outside Dubai, structured accounting is essential for compliant <a href="/services/tax-advisory" className='underline'>Tax Advisory Services in Sharjah</a> and Sharjah, where local regulatory requirements must align with federal tax laws. Additionally, error-free accounting records ensure smooth and accurate <a href="/services/tax-advisory" className='underline'>Corporate Tax Filing Dubai</a>, reducing the risk of penalties, late submissions, or audit queries. Without accurate accounting, corporate tax compliance becomes unreliable and financially risky.
                             </p>
                         </section>
 
@@ -317,17 +361,51 @@ export default function AccountingServicesPage() {
                             <p className="text-muted mb-6">We follow a structured, transparent approach:</p>
                             
                             <div className="space-y-4">
-                                {accountingProcess.map((step, idx) => (
-                                    <div key={idx} className="flex gap-4">
-                                        <div className="shrink-0 w-10 h-10 rounded-full bg-primary text-white flex items-center justify-center font-bold">
-                                            {idx + 1}
-                                        </div>
-                                        <div>
-                                            <h4 className="font-bold text-gray-800">{step.title}</h4>
-                                            <p className="text-sm text-muted">{step.desc}</p>
-                                        </div>
+                                <div className="flex gap-4">
+                                    <div className="shrink-0 w-10 h-10 rounded-full bg-primary text-white flex items-center justify-center font-bold">
+                                        1
                                     </div>
-                                ))}
+                                    <div>
+                                        <h4 className="font-bold text-gray-800">Business assessment and understanding</h4>
+                                        <p className="text-sm text-muted">We analyze your business model, industry requirements, and compliance needs.</p>
+                                    </div>
+                                </div>
+                                <div className="flex gap-4">
+                                    <div className="shrink-0 w-10 h-10 rounded-full bg-primary text-white flex items-center justify-center font-bold">
+                                        2
+                                    </div>
+                                    <div>
+                                        <h4 className="font-bold text-gray-800">Accounting system setup or review</h4>
+                                        <p className="text-sm text-muted">We establish or optimize your accounting systems for efficiency and compliance.</p>
+                                    </div>
+                                </div>
+                                <div className="flex gap-4">
+                                    <div className="shrink-0 w-10 h-10 rounded-full bg-primary text-white flex items-center justify-center font-bold">
+                                        3
+                                    </div>
+                                    <div>
+                                        <h4 className="font-bold text-gray-800">Data collection and transaction recording</h4>
+                                        <p className="text-sm text-muted">We ensure all transactions are accurately recorded and properly documented.</p>
+                                    </div>
+                                </div>
+                                <div className="flex gap-4">
+                                    <div className="shrink-0 w-10 h-10 rounded-full bg-primary text-white flex items-center justify-center font-bold">
+                                        4
+                                    </div>
+                                    <div>
+                                        <h4 className="font-bold text-gray-800">Monthly reconciliation and reporting</h4>
+                                        <p className="text-sm text-muted">We provide regular financial reports and reconciliations for better visibility.</p>
+                                    </div>
+                                </div>
+                                <div className="flex gap-4">
+                                    <div className="shrink-0 w-10 h-10 rounded-full bg-primary text-white flex items-center justify-center font-bold">
+                                        5
+                                    </div>
+                                    <div>
+                                        <h4 className="font-bold text-gray-800">Ongoing compliance and advisory support</h4>
+                                        <p className="text-sm text-muted">We offer continuous support to maintain compliance and optimize financial performance.</p>
+                                    </div>
+                                </div>
                             </div>
                             <p className="text-muted text-sm mt-6 italic">Each client receives personalized attention based on business size and complexity.</p>
                         </section>
@@ -335,7 +413,28 @@ export default function AccountingServicesPage() {
                         {/* Why Choose Us */}
                         <section className="bg-white rounded-2xl shadow-sm p-6 md:p-8 border border-gray-100">
                             <h2 className="text-2xl md:text-3xl font-bold text-primary-dark mb-6">Why Choose Prime Audit Solutions for Accounting Services?</h2>
-                            <FeatureList items={whyChooseUs} />
+                            <ul className="space-y-2 mb-4">
+                                <li className="flex items-start gap-2">
+                                    <span className="text-primary mt-1">✓</span>
+                                    <span className="text-muted">Experienced and qualified accountants</span>
+                                </li>
+                                <li className="flex items-start gap-2">
+                                    <span className="text-primary mt-1">✓</span>
+                                    <span className="text-muted">Strong knowledge of UAE regulations</span>
+                                </li>
+                                <li className="flex items-start gap-2">
+                                    <span className="text-primary mt-1">✓</span>
+                                    <span className="text-muted">Use of the best bookkeeping software</span>
+                                </li>
+                                <li className="flex items-start gap-2">
+                                    <span className="text-primary mt-1">✓</span>
+                                    <span className="text-muted">Transparent pricing with no hidden costs</span>
+                                </li>
+                                <li className="flex items-start gap-2">
+                                    <span className="text-primary mt-1">✓</span>
+                                    <span className="text-muted">Dedicated client support</span>
+                                </li>
+                            </ul>
                             <p className="text-muted mt-6 font-medium">
                                 We don't just maintain accounts — we help businesses understand their financial position clearly.
                             </p>
@@ -344,7 +443,28 @@ export default function AccountingServicesPage() {
                         {/* Who Can Benefit */}
                         <section>
                             <h2 className="text-2xl font-bold text-primary-dark mb-4">Who Can Benefit from Our Accounting Services?</h2>
-                            <FeatureList items={whoCanBenefit} />
+                            <ul className="space-y-2 mb-4">
+                                <li className="flex items-start gap-2">
+                                    <span className="text-primary mt-1">✓</span>
+                                    <span className="text-muted">Startups setting up financial systems</span>
+                                </li>
+                                <li className="flex items-start gap-2">
+                                    <span className="text-primary mt-1">✓</span>
+                                    <span className="text-muted">SMEs needing compliance support</span>
+                                </li>
+                                <li className="flex items-start gap-2">
+                                    <span className="text-primary mt-1">✓</span>
+                                    <span className="text-muted">Growing businesses preparing for audits</span>
+                                </li>
+                                <li className="flex items-start gap-2">
+                                    <span className="text-primary mt-1">✓</span>
+                                    <span className="text-muted">Companies planning tax optimization</span>
+                                </li>
+                                <li className="flex items-start gap-2">
+                                    <span className="text-primary mt-1">✓</span>
+                                    <span className="text-muted">Businesses seeking financial clarity</span>
+                                </li>
+                            </ul>
                             <p className="text-muted mt-4 italic font-medium">
                                 Accounting is not an expense, it's an investment in business stability.
                             </p>
@@ -353,7 +473,28 @@ export default function AccountingServicesPage() {
                         {/* FAQ */}
                         <div className="mt-8">
                             <h2 className="text-2xl font-bold text-primary-dark mb-4">Accounting Services – Frequently Asked Questions</h2>
-                            <FAQ items={faqItems} />
+                            <div className="space-y-4">
+                                <div className="bg-white p-5 rounded-lg border border-gray-100">
+                                    <h3 className="font-semibold text-gray-800 mb-2">Are accounting services mandatory in Dubai?</h3>
+                                    <p className="text-sm text-muted">Yes, UAE law requires businesses to maintain proper accounting records.</p>
+                                </div>
+                                <div className="bg-white p-5 rounded-lg border border-gray-100">
+                                    <h3 className="font-semibold text-gray-800 mb-2">Do small businesses need professional accounting services?</h3>
+                                    <p className="text-sm text-muted">Yes, SMEs benefit from compliance, accuracy, and better cash flow management.</p>
+                                </div>
+                                <div className="bg-white p-5 rounded-lg border border-gray-100">
+                                    <h3 className="font-semibold text-gray-800 mb-2">Which bookkeeping software is best for UAE businesses?</h3>
+                                    <p className="text-sm text-muted">Cloud-based, VAT-compliant bookkeeping and accounting software is ideal.</p>
+                                </div>
+                                <div className="bg-white p-5 rounded-lg border border-gray-100">
+                                    <h3 className="font-semibold text-gray-800 mb-2">Can accounting services help during audits?</h3>
+                                    <p className="text-sm text-muted">Absolutely. Clean accounts significantly reduce audit risks and delays.</p>
+                                </div>
+                                <div className="bg-white p-5 rounded-lg border border-gray-100">
+                                    <h3 className="font-semibold text-gray-800 mb-2">Do you provide accounting services in Sharjah?</h3>
+                                    <p className="text-sm text-muted">Yes, we offer full accounting and bookkeeping services in Sharjah.</p>
+                                </div>
+                            </div>
                         </div>
                         
                         {/* Conclusion */}
@@ -363,7 +504,24 @@ export default function AccountingServicesPage() {
                                 Accounting should not be treated as a yearly task or compliance burden. When managed correctly, it becomes a strategic tool that supports decision-making, tax planning, and growth.
                             </p>
                             <p className="font-semibold text-gray-800 mb-2">Businesses that invest in professional accounting services gain:</p>
-                            <FeatureList items={longTermBenefits} />
+                            <ul className="space-y-2 mb-4">
+                                <li className="flex items-start gap-2">
+                                    <span className="text-primary mt-1">✓</span>
+                                    <span className="text-muted">Financial clarity</span>
+                                </li>
+                                <li className="flex items-start gap-2">
+                                    <span className="text-primary mt-1">✓</span>
+                                    <span className="text-muted">Regulatory confidence</span>
+                                </li>
+                                <li className="flex items-start gap-2">
+                                    <span className="text-primary mt-1">✓</span>
+                                    <span className="text-muted">Improved profitability</span>
+                                </li>
+                                <li className="flex items-start gap-2">
+                                    <span className="text-primary mt-1">✓</span>
+                                    <span className="text-muted">Long-term stability</span>
+                                </li>
+                            </ul>
                             <p className="text-muted mt-4">
                                 At Prime Audit Solutions, we help businesses build accounting systems that support today's compliance needs and tomorrow's growth.
                             </p>

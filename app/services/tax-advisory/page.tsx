@@ -1,9 +1,7 @@
 import Breadcrumbs from '@/app/components/Breadcrumbs'
-import FeatureList from '@/app/components/FeatureListNew'
 import CTA from '@/app/components/CTA'
-import FAQ from '@/app/components/FAQNew'
 import Link from 'next/link'
-import { FaWhatsapp, FaCheckCircle, FaCalculator, FaFileInvoice, FaShieldAlt, FaChartLine, FaBalanceScale } from 'react-icons/fa'
+import { FaWhatsapp } from 'react-icons/fa'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
@@ -15,95 +13,6 @@ export const metadata: Metadata = {
 }
 
 export default function TaxAdvisoryPage() {
-    // 1. Understanding Corporate Tax Components
-    const corporateTaxComponents = [
-        "Corporate tax registration",
-        "Assessment of taxable income",
-        "Accurate financial reporting",
-        "Timely corporate tax filing",
-        "Ongoing compliance and documentation"
-    ];
-
-    // 2. Corporate Tax Advisory Services
-    const taxAdvisoryServices = [
-        "Corporate tax impact assessment",
-        "Tax registration with the Federal Tax Authority",
-        "Review of financial statements for tax readiness",
-        "Tax planning and optimization strategies",
-        "Free zone tax compliance advisory",
-        "Transfer pricing guidance",
-        "Ongoing tax compliance monitoring"
-    ];
-
-    // 3. Corporate Tax Filing Process
-    const taxFilingProcess = [
-        "Taxable income computation",
-        "Review of allowable deductions",
-        "Verification of financial records",
-        "Preparation of tax returns",
-        "Submission via the FTA portal",
-        "Post-filing clarification support"
-    ];
-
-    // 4. Sharjah Services
-    const sharjahServices = [
-        "Mainland companies",
-        "Free zone entities",
-        "Manufacturing and trading businesses",
-        "Professional service firms",
-        "SMEs and family-owned businesses"
-    ];
-
-    // 5. Tax Planning Benefits
-    const taxPlanningBenefits = [
-        "Optimize tax positions legally",
-        "Improve cash flow management",
-        "Avoid compliance surprises",
-        "Align financial strategies with long-term goals"
-    ];
-
-    // 6. Free Zone Tax Advisory Services
-    const freeZoneServices = [
-        "Determine qualifying income status",
-        "Understand exemption criteria",
-        "Maintain required documentation",
-        "Ensure ongoing compliance"
-    ];
-
-    // 7. Tax Risk Assessment Services
-    const riskAssessmentServices = [
-        "Review of financial and tax records",
-        "Identification of compliance gaps",
-        "Risk mitigation strategies",
-        "Recommendations for corrective actions"
-    ];
-
-    // 8. Ongoing Tax Advisory Support
-    const ongoingSupport = [
-        "Continuous advisory support",
-        "Updates on regulatory changes",
-        "Assistance during audits or inspections",
-        "Clarification on complex tax matters"
-    ];
-
-    // 9. Why Choose Prime Audit Solutions
-    const whyChooseUs = [
-        "Deep understanding of UAE corporate tax laws",
-        "Practical, business-focused advice",
-        "Experienced tax professionals",
-        "Transparent pricing",
-        "Confidential and ethical approach"
-    ];
-
-    // 10. FAQ
-    const faqItems = [
-        { q: "Is corporate tax applicable to all businesses in Dubai?", a: "Most businesses are subject to corporate tax, subject to exemptions and thresholds." },
-        { q: "Do free zone companies need tax advisory services?", a: "Yes, free zone companies must meet specific conditions to qualify for exemptions." },
-        { q: "What happens if corporate tax filing is delayed?", a: "Late filing can result in penalties and increased scrutiny from the FTA." },
-        { q: "Can tax advisory services reduce tax legally?", a: "Yes, proper planning helps optimize tax while remaining compliant." },
-        { q: "How often should businesses review their tax position?", a: "Ideally on an ongoing basis, especially when operations or regulations change." }
-    ];
-
     return (
         <>
             {/* HERO / BANNER */}
@@ -161,7 +70,28 @@ export default function TaxAdvisoryPage() {
                             <p className="text-muted mb-4">
                                 The UAE corporate tax framework applies to most businesses operating in the country, including mainland companies and certain free zone entities. Corporate tax compliance involves multiple components:
                             </p>
-                            <FeatureList items={corporateTaxComponents} />
+                            <ul className="space-y-2 mb-4">
+                                <li className="flex items-start gap-2">
+                                    <span className="text-primary mt-1">✓</span>
+                                    <span className="text-muted">Corporate tax registration</span>
+                                </li>
+                                <li className="flex items-start gap-2">
+                                    <span className="text-primary mt-1">✓</span>
+                                    <span className="text-muted">Assessment of taxable income</span>
+                                </li>
+                                <li className="flex items-start gap-2">
+                                    <span className="text-primary mt-1">✓</span>
+                                    <span className="text-muted">Accurate financial reporting</span>
+                                </li>
+                                <li className="flex items-start gap-2">
+                                    <span className="text-primary mt-1">✓</span>
+                                    <span className="text-muted">Timely corporate tax filing</span>
+                                </li>
+                                <li className="flex items-start gap-2">
+                                    <span className="text-primary mt-1">✓</span>
+                                    <span className="text-muted">Ongoing compliance and documentation</span>
+                                </li>
+                            </ul>
                             <p className="text-muted mt-4 italic">
                                 Without professional guidance, businesses often misinterpret exemptions, thresholds, and filing requirements leading to penalties and audits.
                             </p>
@@ -178,7 +108,36 @@ export default function TaxAdvisoryPage() {
                             </p>
                             
                             <h3 className="text-xl font-bold text-gray-800 mb-4">Our Corporate Tax Advisory Services Include:</h3>
-                            <FeatureList items={taxAdvisoryServices} />
+                            <ul className="space-y-2 mb-4">
+                                <li className="flex items-start gap-2">
+                                    <span className="text-primary mt-1">✓</span>
+                                    <span className="text-muted">Corporate tax impact assessment</span>
+                                </li>
+                                <li className="flex items-start gap-2">
+                                    <span className="text-primary mt-1">✓</span>
+                                    <span className="text-muted">Tax registration with the Federal Tax Authority</span>
+                                </li>
+                                <li className="flex items-start gap-2">
+                                    <span className="text-primary mt-1">✓</span>
+                                    <span className="text-muted">Review of financial statements for tax readiness</span>
+                                </li>
+                                <li className="flex items-start gap-2">
+                                    <span className="text-primary mt-1">✓</span>
+                                    <span className="text-muted">Tax planning and optimization strategies</span>
+                                </li>
+                                <li className="flex items-start gap-2">
+                                    <span className="text-primary mt-1">✓</span>
+                                    <span className="text-muted">Free zone tax compliance advisory</span>
+                                </li>
+                                <li className="flex items-start gap-2">
+                                    <span className="text-primary mt-1">✓</span>
+                                    <span className="text-muted">Transfer pricing guidance</span>
+                                </li>
+                                <li className="flex items-start gap-2">
+                                    <span className="text-primary mt-1">✓</span>
+                                    <span className="text-muted">Ongoing tax compliance monitoring</span>
+                                </li>
+                            </ul>
                             
                             <p className="text-muted mt-6">
                                 Businesses with structured accounting records find corporate tax compliance smoother, which is why many clients align tax advisory with professional Accounting Services to maintain accuracy throughout the year.
@@ -192,12 +151,37 @@ export default function TaxAdvisoryPage() {
                                 Incorrect or delayed tax filings can expose businesses to penalties, fines, and increased scrutiny from authorities. Our Corporate Tax Filing Dubai services ensure that your tax returns are prepared accurately and submitted on time, in full compliance with FTA regulations.
                             </p>
                             <p className="font-semibold text-gray-800 mb-2">We manage the entire tax filing process, including:</p>
-                            <FeatureList items={taxFilingProcess} />
+                            <ul className="space-y-2 mb-4">
+                                <li className="flex items-start gap-2">
+                                    <span className="text-primary mt-1">✓</span>
+                                    <span className="text-muted">Taxable income computation</span>
+                                </li>
+                                <li className="flex items-start gap-2">
+                                    <span className="text-primary mt-1">✓</span>
+                                    <span className="text-muted">Review of allowable deductions</span>
+                                </li>
+                                <li className="flex items-start gap-2">
+                                    <span className="text-primary mt-1">✓</span>
+                                    <span className="text-muted">Verification of financial records</span>
+                                </li>
+                                <li className="flex items-start gap-2">
+                                    <span className="text-primary mt-1">✓</span>
+                                    <span className="text-muted">Preparation of tax returns</span>
+                                </li>
+                                <li className="flex items-start gap-2">
+                                    <span className="text-primary mt-1">✓</span>
+                                    <span className="text-muted">Submission via the FTA portal</span>
+                                </li>
+                                <li className="flex items-start gap-2">
+                                    <span className="text-primary mt-1">✓</span>
+                                    <span className="text-muted">Post-filing clarification support</span>
+                                </li>
+                            </ul>
                             <p className="text-muted mt-4">
                                 Our tax filings are backed by documented calculations and proper disclosures, making them defensible during audits.
                             </p>
                             <p className="text-muted mt-4">
-                                Businesses that undergo regular Audit Services often benefit from smoother tax filing, as financial records are already verified and structured.
+                                Businesses that undergo regular <a href="/services/audit-services" className='underline'>Audit Services</a> often benefit from smoother tax filing, as financial records are already verified and structured.
                             </p>
                         </section>
 
@@ -207,7 +191,28 @@ export default function TaxAdvisoryPage() {
                             <p className="text-muted mb-4">
                                 Sharjah businesses face specific regulatory and operational considerations. Our Tax Advisory Services in Sharjah are tailored to support:
                             </p>
-                            <FeatureList items={sharjahServices} />
+                            <ul className="space-y-2 mb-4">
+                                <li className="flex items-start gap-2">
+                                    <span className="text-primary mt-1">✓</span>
+                                    <span className="text-muted">Mainland companies</span>
+                                </li>
+                                <li className="flex items-start gap-2">
+                                    <span className="text-primary mt-1">✓</span>
+                                    <span className="text-muted">Free zone entities</span>
+                                </li>
+                                <li className="flex items-start gap-2">
+                                    <span className="text-primary mt-1">✓</span>
+                                    <span className="text-muted">Manufacturing and trading businesses</span>
+                                </li>
+                                <li className="flex items-start gap-2">
+                                    <span className="text-primary mt-1">✓</span>
+                                    <span className="text-muted">Professional service firms</span>
+                                </li>
+                                <li className="flex items-start gap-2">
+                                    <span className="text-primary mt-1">✓</span>
+                                    <span className="text-muted">SMEs and family-owned businesses</span>
+                                </li>
+                            </ul>
                             <p className="text-muted mt-4">
                                 We help Sharjah-based companies understand their corporate tax obligations, exemptions, and filing requirements while ensuring compliance with UAE laws.
                             </p>
@@ -222,7 +227,24 @@ export default function TaxAdvisoryPage() {
                             <p className="text-muted mb-4">
                                 Tax advisory is not just about filing returns — it's about planning ahead. Strategic tax planning allows businesses to:
                             </p>
-                            <FeatureList items={taxPlanningBenefits} />
+                            <ul className="space-y-2 mb-4">
+                                <li className="flex items-start gap-2">
+                                    <span className="text-primary mt-1">✓</span>
+                                    <span className="text-muted">Optimize tax positions legally</span>
+                                </li>
+                                <li className="flex items-start gap-2">
+                                    <span className="text-primary mt-1">✓</span>
+                                    <span className="text-muted">Improve cash flow management</span>
+                                </li>
+                                <li className="flex items-start gap-2">
+                                    <span className="text-primary mt-1">✓</span>
+                                    <span className="text-muted">Avoid compliance surprises</span>
+                                </li>
+                                <li className="flex items-start gap-2">
+                                    <span className="text-primary mt-1">✓</span>
+                                    <span className="text-muted">Align financial strategies with long-term goals</span>
+                                </li>
+                            </ul>
                             <p className="text-muted mt-4">
                                 Our tax planning services evaluate your business structure, revenue streams, and operational costs to identify legitimate tax optimization opportunities.
                             </p>
@@ -238,7 +260,24 @@ export default function TaxAdvisoryPage() {
                                 Free zone companies often assume they are fully exempt from corporate tax. In reality, compliance requirements still apply, and eligibility for tax benefits depends on meeting specific conditions.
                             </p>
                             <p className="font-semibold text-gray-800 mb-2">Our tax advisory team helps free zone entities:</p>
-                            <FeatureList items={freeZoneServices} />
+                            <ul className="space-y-2 mb-4">
+                                <li className="flex items-start gap-2">
+                                    <span className="text-primary mt-1">✓</span>
+                                    <span className="text-muted">Determine qualifying income status</span>
+                                </li>
+                                <li className="flex items-start gap-2">
+                                    <span className="text-primary mt-1">✓</span>
+                                    <span className="text-muted">Understand exemption criteria</span>
+                                </li>
+                                <li className="flex items-start gap-2">
+                                    <span className="text-primary mt-1">✓</span>
+                                    <span className="text-muted">Maintain required documentation</span>
+                                </li>
+                                <li className="flex items-start gap-2">
+                                    <span className="text-primary mt-1">✓</span>
+                                    <span className="text-muted">Ensure ongoing compliance</span>
+                                </li>
+                            </ul>
                             <p className="text-muted mt-4">
                                 Failure to meet free zone conditions can result in unexpected tax liabilities, making professional advisory essential.
                             </p>
@@ -251,7 +290,24 @@ export default function TaxAdvisoryPage() {
                                 Many businesses unknowingly carry tax risks due to improper accounting, incomplete documentation, or incorrect interpretations of tax laws.
                             </p>
                             <p className="font-semibold text-gray-800 mb-2">Our tax risk assessment services include:</p>
-                            <FeatureList items={riskAssessmentServices} />
+                            <ul className="space-y-2 mb-4">
+                                <li className="flex items-start gap-2">
+                                    <span className="text-primary mt-1">✓</span>
+                                    <span className="text-muted">Review of financial and tax records</span>
+                                </li>
+                                <li className="flex items-start gap-2">
+                                    <span className="text-primary mt-1">✓</span>
+                                    <span className="text-muted">Identification of compliance gaps</span>
+                                </li>
+                                <li className="flex items-start gap-2">
+                                    <span className="text-primary mt-1">✓</span>
+                                    <span className="text-muted">Risk mitigation strategies</span>
+                                </li>
+                                <li className="flex items-start gap-2">
+                                    <span className="text-primary mt-1">✓</span>
+                                    <span className="text-muted">Recommendations for corrective actions</span>
+                                </li>
+                            </ul>
                             <p className="text-muted mt-4">
                                 Businesses with strong internal controls and structured Financial Accounting Solutions significantly reduce tax exposure and regulatory risks.
                             </p>
@@ -264,13 +320,51 @@ export default function TaxAdvisoryPage() {
                                 Corporate tax compliance is not a one-time activity. Regulations evolve, and business operations change. Our ongoing tax advisory services ensure that your business remains compliant throughout the year.
                             </p>
                             <p className="font-semibold text-gray-800 mb-2">We provide:</p>
-                            <FeatureList items={ongoingSupport} />
+                            <ul className="space-y-2 mb-4">
+                                <li className="flex items-start gap-2">
+                                    <span className="text-primary mt-1">✓</span>
+                                    <span className="text-muted">Continuous advisory support</span>
+                                </li>
+                                <li className="flex items-start gap-2">
+                                    <span className="text-primary mt-1">✓</span>
+                                    <span className="text-muted">Updates on regulatory changes</span>
+                                </li>
+                                <li className="flex items-start gap-2">
+                                    <span className="text-primary mt-1">✓</span>
+                                    <span className="text-muted">Assistance during audits or inspections</span>
+                                </li>
+                                <li className="flex items-start gap-2">
+                                    <span className="text-primary mt-1">✓</span>
+                                    <span className="text-muted">Clarification on complex tax matters</span>
+                                </li>
+                            </ul>
                         </section>
 
                         {/* Why Choose Us */}
                         <section className="bg-primary/5 rounded-2xl p-6 md:p-8 border border-primary/10">
                             <h2 className="text-2xl md:text-3xl font-bold text-primary-dark mb-6">Why Choose Prime Audit Solutions for Tax Advisory Services?</h2>
-                            <FeatureList items={whyChooseUs} />
+                            <ul className="space-y-2 mb-4">
+                                <li className="flex items-start gap-2">
+                                    <span className="text-primary mt-1">✓</span>
+                                    <span className="text-muted">Deep understanding of UAE corporate tax laws</span>
+                                </li>
+                                <li className="flex items-start gap-2">
+                                    <span className="text-primary mt-1">✓</span>
+                                    <span className="text-muted">Practical, business-focused advice</span>
+                                </li>
+                                <li className="flex items-start gap-2">
+                                    <span className="text-primary mt-1">✓</span>
+                                    <span className="text-muted">Experienced tax professionals</span>
+                                </li>
+                                <li className="flex items-start gap-2">
+                                    <span className="text-primary mt-1">✓</span>
+                                    <span className="text-muted">Transparent pricing</span>
+                                </li>
+                                <li className="flex items-start gap-2">
+                                    <span className="text-primary mt-1">✓</span>
+                                    <span className="text-muted">Confidential and ethical approach</span>
+                                </li>
+                            </ul>
                             <p className="text-muted mt-6 font-medium">
                                 Our goal is to protect your business from tax risks while helping you operate with confidence.
                             </p>
@@ -280,17 +374,38 @@ export default function TaxAdvisoryPage() {
                         <section>
                             <h2 className="text-2xl font-bold text-primary-dark mb-4">How Tax Advisory Integrates with Other Financial Services</h2>
                             <p className="text-muted">
-                                Effective tax advisory relies on accurate financial data and structured processes. Businesses that combine tax advisory with professional Accounting Services, regular Audit Services, and reliable Financial Accounting Solutions achieve better compliance and long-term stability.
+                                Effective tax advisory relies on accurate financial data and structured processes. Businesses that combine tax advisory with professional Accounting Services, regular <a href="/services/audit-services" className='underline'>Audit Services</a>, and reliable Financial Accounting Solutions achieve better compliance and long-term stability.
                             </p>
                             <p className="text-muted mt-4">
-                                Tax advisory is most effective when it is part of an integrated financial strategy — not a standalone activity. We are also one of the reputed Audit firms in Dubai.
+                                Tax advisory is most effective when it is part of an integrated financial strategy — not a standalone activity. We are also one of the reputed <a href="/services/audit-services" className='underline'>Audit firms in Dubai</a>.
                             </p>
                         </section>
 
                         {/* FAQ */}
                         <div className="mt-8">
                             <h2 className="text-2xl font-bold text-primary-dark mb-4">Tax Advisory Services – Frequently Asked Questions</h2>
-                            <FAQ items={faqItems} />
+                            <div className="space-y-4">
+                                <div className="bg-white p-5 rounded-lg border border-gray-100">
+                                    <h3 className="font-semibold text-gray-800 mb-2">Is corporate tax applicable to all businesses in Dubai?</h3>
+                                    <p className="text-sm text-muted">Most businesses are subject to corporate tax, subject to exemptions and thresholds.</p>
+                                </div>
+                                <div className="bg-white p-5 rounded-lg border border-gray-100">
+                                    <h3 className="font-semibold text-gray-800 mb-2">Do free zone companies need tax advisory services?</h3>
+                                    <p className="text-sm text-muted">Yes, free zone companies must meet specific conditions to qualify for exemptions.</p>
+                                </div>
+                                <div className="bg-white p-5 rounded-lg border border-gray-100">
+                                    <h3 className="font-semibold text-gray-800 mb-2">What happens if corporate tax filing is delayed?</h3>
+                                    <p className="text-sm text-muted">Late filing can result in penalties and increased scrutiny from the FTA.</p>
+                                </div>
+                                <div className="bg-white p-5 rounded-lg border border-gray-100">
+                                    <h3 className="font-semibold text-gray-800 mb-2">Can tax advisory services reduce tax legally?</h3>
+                                    <p className="text-sm text-muted">Yes, proper planning helps optimize tax while remaining compliant.</p>
+                                </div>
+                                <div className="bg-white p-5 rounded-lg border border-gray-100">
+                                    <h3 className="font-semibold text-gray-800 mb-2">How often should businesses review their tax position?</h3>
+                                    <p className="text-sm text-muted">Ideally on an ongoing basis, especially when operations or regulations change.</p>
+                                </div>
+                            </div>
                         </div>
 
                     </article>
