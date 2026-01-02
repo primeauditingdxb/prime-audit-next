@@ -23,7 +23,7 @@ const ServiceCard: React.FC<{service: ServiceSummary}> = ({ service }) => {
         <p className="text-muted mb-4 text-sm">{service.short}</p>
 
         <div className="flex items-center justify-between">
-          <Link href={`#${service.slug}`} className="text-primary1 font-semibold text-sm hover:underline">
+          <Link href={`/services/${service.slug}`} className="text-primary1 font-semibold text-sm hover:underline">
             Learn more
           </Link>
           <Link href={`/contact`} className="btn-primary py-2 px-3 rounded text-on-primary text-sm">
