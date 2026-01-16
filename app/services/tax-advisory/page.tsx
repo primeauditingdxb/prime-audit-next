@@ -54,13 +54,16 @@ export default function TaxAdvisoryPage() {
                         {/* Intro */}
                         <section className="bg-white rounded-2xl shadow-sm p-6 md:p-8 border border-gray-100">
                             <p className="text-muted leading-relaxed mb-6">
-                                The introduction of corporate tax in the UAE has transformed the way businesses operate, report, and plan their finances. What was once a low-tax environment now requires structured compliance, accurate reporting, and forward-thinking tax planning. For businesses operating in Dubai and Sharjah, professional Tax Advisory Services are no longer optional — they are essential.
+                                Corporate tax filing Dubai has become a critical responsibility for every business operating in the UAE after the introduction of federal corporate tax. What was once a low-tax environment now requires accurate reporting, structured compliance, and proactive financial planning to avoid penalties and ensure long-term stability.
                             </p>
                             <p className="text-muted leading-relaxed mb-6">
-                                At Prime Audit Solutions, we provide reliable, practical, and fully compliant Corporate Tax Advisory Services tailored to UAE regulations. Our role goes far beyond tax filing. We help businesses understand their tax obligations, minimize risks, and align financial strategies with Federal Tax Authority (FTA) requirements.
+                                The new tax framework has transformed how companies operate across Dubai and Sharjah, making Corporate Tax Advisory Services an essential part of business strategy rather than an optional add-on. Companies must now understand taxable income, allowable deductions, transfer pricing rules, and filing deadlines  all under strict Federal Tax Authority (FTA) regulations.
+                            </p>
+                            <p className="text-muted leading-relaxed mb-6">
+                                At Prime Audit Solutions, we deliver practical, compliant, and result-driven Corporate Tax Advisory Services tailored to UAE tax laws. Our support goes far beyond basic tax filing. We help businesses identify risks, optimize tax positions, prepare accurate returns, and build tax-efficient financial structures that align with FTA requirements.
                             </p>
                             <p className="text-muted leading-relaxed">
-                                Whether you are a startup, SME, mainland company, or free zone entity, our tax advisory experts help you stay compliant while protecting your profitability.
+                                With expert guidance in corporate tax filing Dubai, whether you are a startup, SME, mainland company, or free zone entity, our corporate tax specialists ensure your filings are accurate, compliant, and strategically planned  protecting your profitability while keeping you fully aligned with UAE corporate tax regulations.
                             </p>
                         </section>
 
@@ -68,35 +71,13 @@ export default function TaxAdvisoryPage() {
                         <section>
                             <h2 className="text-2xl md:text-3xl font-bold text-primary-dark mb-4">Understanding Corporate Tax in the UAE</h2>
                             <p className="text-muted mb-4">
-                                The UAE corporate tax framework applies to most businesses operating in the country, including mainland companies and certain free zone entities. Corporate tax compliance involves multiple components:
+                                The UAE corporate tax framework applies to most mainland and certain free zone businesses, requiring proper registration, accurate income assessment, and timely reporting. Corporate tax filing Dubai is now a mandatory process under Federal Tax Authority (FTA) regulations, making compliance more important than ever.
                             </p>
-                            <ul className="space-y-2 mb-4">
-                                <li className="flex items-start gap-2">
-                                    <span className="text-primary mt-1">✓</span>
-                                    <span className="text-muted">Corporate tax registration</span>
-                                </li>
-                                <li className="flex items-start gap-2">
-                                    <span className="text-primary mt-1">✓</span>
-                                    <span className="text-muted">Assessment of taxable income</span>
-                                </li>
-                                <li className="flex items-start gap-2">
-                                    <span className="text-primary mt-1">✓</span>
-                                    <span className="text-muted">Accurate financial reporting</span>
-                                </li>
-                                <li className="flex items-start gap-2">
-                                    <span className="text-primary mt-1">✓</span>
-                                    <span className="text-muted">Timely corporate tax filing</span>
-                                </li>
-                                <li className="flex items-start gap-2">
-                                    <span className="text-primary mt-1">✓</span>
-                                    <span className="text-muted">Ongoing compliance and documentation</span>
-                                </li>
-                            </ul>
-                            <p className="text-muted mt-4 italic">
-                                Without professional guidance, businesses often misinterpret exemptions, thresholds, and filing requirements leading to penalties and audits.
+                            <p className="text-muted mb-4">
+                                Misunderstanding tax rules, exemptions, or thresholds can lead to penalties and audits, which is why professional Tax Advisory Services play a vital role. Expert advisors ensure correct filings, proper documentation, and full regulatory compliance.
                             </p>
-                            <p className="text-muted mt-4">
-                                This is where expert Corporate Tax Advisory Services play a critical role.
+                            <p className="text-muted">
+                                For businesses operating across Dubai and Sharjah, trusted tax advisory services in Sharjah help maintain consistency, reduce risk, and support tax-efficient financial planning.
                             </p>
                         </section>
 
@@ -104,43 +85,13 @@ export default function TaxAdvisoryPage() {
                         <section className="bg-surface rounded-2xl p-6 md:p-8">
                             <h2 className="text-2xl md:text-3xl font-bold text-primary-dark mb-4">Corporate Tax Advisory Services Designed for UAE Businesses</h2>
                             <p className="text-muted mb-6">
-                                Our Corporate Tax Advisory Services are structured to support businesses at every stage of compliance. We don't offer generic advice — we provide UAE-specific tax solutions based on your business structure, industry, and operational model.
+                                Our Corporate Tax Advisory Services are built to help UAE businesses stay compliant, tax-efficient, and fully aligned with corporate tax filing Dubai requirements. We provide UAE-specific tax solutions based on your business structure, industry, and regulatory obligations under the Federal Tax Authority.
                             </p>
-                            
-                            <h3 className="text-xl font-bold text-gray-800 mb-4">Our Corporate Tax Advisory Services Include:</h3>
-                            <ul className="space-y-2 mb-4">
-                                <li className="flex items-start gap-2">
-                                    <span className="text-primary mt-1">✓</span>
-                                    <span className="text-muted">Corporate tax impact assessment</span>
-                                </li>
-                                <li className="flex items-start gap-2">
-                                    <span className="text-primary mt-1">✓</span>
-                                    <span className="text-muted">Tax registration with the Federal Tax Authority</span>
-                                </li>
-                                <li className="flex items-start gap-2">
-                                    <span className="text-primary mt-1">✓</span>
-                                    <span className="text-muted">Review of financial statements for tax readiness</span>
-                                </li>
-                                <li className="flex items-start gap-2">
-                                    <span className="text-primary mt-1">✓</span>
-                                    <span className="text-muted">Tax planning and optimization strategies</span>
-                                </li>
-                                <li className="flex items-start gap-2">
-                                    <span className="text-primary mt-1">✓</span>
-                                    <span className="text-muted">Free zone tax compliance advisory</span>
-                                </li>
-                                <li className="flex items-start gap-2">
-                                    <span className="text-primary mt-1">✓</span>
-                                    <span className="text-muted">Transfer pricing guidance</span>
-                                </li>
-                                <li className="flex items-start gap-2">
-                                    <span className="text-primary mt-1">✓</span>
-                                    <span className="text-muted">Ongoing tax compliance monitoring</span>
-                                </li>
-                            </ul>
-                            
-                            <p className="text-muted mt-6">
-                                Businesses with structured accounting records find corporate tax compliance smoother, which is why many clients align tax advisory with professional Accounting Services to maintain accuracy throughout the year.
+                            <p className="text-muted mb-6">
+                                Our Tax Advisory Services include tax impact assessments, FTA registration, financial statement reviews, tax planning, free zone compliance, transfer pricing guidance, and ongoing compliance monitoring. These services help businesses reduce risk and maintain accurate, audit-ready tax records.
+                            </p>
+                            <p className="text-muted">
+                                Many clients combine our tax advisory with professional <a href="/" className='underline'>Audit Services</a> to ensure financial accuracy and smooth compliance, making our tax advisory services in Sharjah and Dubai a reliable choice for growing businesses.
                             </p>
                         </section>
 
@@ -148,40 +99,13 @@ export default function TaxAdvisoryPage() {
                         <section>
                             <h2 className="text-2xl font-bold text-primary-dark mb-4">Corporate Tax Filing in Dubai – Accurate, Timely & Defensible</h2>
                             <p className="text-muted mb-4">
-                                Incorrect or delayed tax filings can expose businesses to penalties, fines, and increased scrutiny from authorities. Our Corporate Tax Filing Dubai services ensure that your tax returns are prepared accurately and submitted on time, in full compliance with FTA regulations.
+                                Incorrect or delayed filings can expose businesses to penalties, fines, and regulatory scrutiny. Our corporate tax filing Dubai services ensure your tax returns are accurate, timely, and fully compliant with Federal Tax Authority (FTA) regulations, helping you avoid costly mistakes.
                             </p>
-                            <p className="font-semibold text-gray-800 mb-2">We manage the entire tax filing process, including:</p>
-                            <ul className="space-y-2 mb-4">
-                                <li className="flex items-start gap-2">
-                                    <span className="text-primary mt-1">✓</span>
-                                    <span className="text-muted">Taxable income computation</span>
-                                </li>
-                                <li className="flex items-start gap-2">
-                                    <span className="text-primary mt-1">✓</span>
-                                    <span className="text-muted">Review of allowable deductions</span>
-                                </li>
-                                <li className="flex items-start gap-2">
-                                    <span className="text-primary mt-1">✓</span>
-                                    <span className="text-muted">Verification of financial records</span>
-                                </li>
-                                <li className="flex items-start gap-2">
-                                    <span className="text-primary mt-1">✓</span>
-                                    <span className="text-muted">Preparation of tax returns</span>
-                                </li>
-                                <li className="flex items-start gap-2">
-                                    <span className="text-primary mt-1">✓</span>
-                                    <span className="text-muted">Submission via the FTA portal</span>
-                                </li>
-                                <li className="flex items-start gap-2">
-                                    <span className="text-primary mt-1">✓</span>
-                                    <span className="text-muted">Post-filing clarification support</span>
-                                </li>
-                            </ul>
-                            <p className="text-muted mt-4">
-                                Our tax filings are backed by documented calculations and proper disclosures, making them defensible during audits.
+                            <p className="text-muted mb-4">
+                                We handle the entire tax filing process, including taxable income calculation, review of allowable deductions, verification of financial records, preparation of tax returns, submission through the FTA portal, and post-filing support. By using structured <a href="/services/accounting-services" className='underline'>Bookkeeping and Accounting Software</a>, we ensure your financial data remains accurate, transparent, and ready for tax reporting at all times.
                             </p>
-                            <p className="text-muted mt-4">
-                                Businesses that undergo regular <a href="/services/audit-services" className='underline'>Audit Services</a> often benefit from smoother tax filing, as financial records are already verified and structured.
+                            <p className="text-muted">
+                                Our filings are supported by detailed calculations and proper documentation, giving your business confidence and compliance throughout the UAE corporate tax filing process.
                             </p>
                         </section>
 
@@ -189,195 +113,41 @@ export default function TaxAdvisoryPage() {
                         <section className="bg-white rounded-2xl shadow-sm p-6 md:p-8 border border-gray-100">
                             <h2 className="text-2xl font-bold text-primary-dark mb-4">Tax Advisory Services in Sharjah for Mainland & Free Zone Companies</h2>
                             <p className="text-muted mb-4">
-                                Sharjah businesses face specific regulatory and operational considerations. Our Tax Advisory Services in Sharjah are tailored to support:
+                                Our tax advisory services in Sharjah are designed to support mainland companies, free zone entities, manufacturing and trading businesses, professional service firms, and SMEs operating under the UAE corporate tax framework. Sharjah businesses face unique regulatory and operational requirements, making professional Tax Advisory Services essential for maintaining compliance and minimizing tax risk.
                             </p>
-                            <ul className="space-y-2 mb-4">
-                                <li className="flex items-start gap-2">
-                                    <span className="text-primary mt-1">✓</span>
-                                    <span className="text-muted">Mainland companies</span>
-                                </li>
-                                <li className="flex items-start gap-2">
-                                    <span className="text-primary mt-1">✓</span>
-                                    <span className="text-muted">Free zone entities</span>
-                                </li>
-                                <li className="flex items-start gap-2">
-                                    <span className="text-primary mt-1">✓</span>
-                                    <span className="text-muted">Manufacturing and trading businesses</span>
-                                </li>
-                                <li className="flex items-start gap-2">
-                                    <span className="text-primary mt-1">✓</span>
-                                    <span className="text-muted">Professional service firms</span>
-                                </li>
-                                <li className="flex items-start gap-2">
-                                    <span className="text-primary mt-1">✓</span>
-                                    <span className="text-muted">SMEs and family-owned businesses</span>
-                                </li>
-                            </ul>
-                            <p className="text-muted mt-4">
-                                We help Sharjah-based companies understand their corporate tax obligations, exemptions, and filing requirements while ensuring compliance with UAE laws.
+                            <p className="text-muted mb-4">
+                                We help Sharjah-based companies clearly understand their corporate tax obligations, available exemptions, and corporate tax filing Dubai requirements, ensuring all filings and records meet Federal Tax Authority (FTA) standards. Our advisors work closely with management teams to integrate tax planning into everyday financial decisions, supporting long-term financial stability.
                             </p>
-                            <p className="text-muted mt-4">
-                                Our advisors work closely with management teams to integrate tax planning into day-to-day financial decision-making.
+                            <p className="text-muted">
+                                By aligning tax strategy with smart <a href="/services/reporting" className='underline'>Budgeting and Forecasting</a>, businesses in Sharjah gain better control over cash flow, tax liabilities, and future growth  creating a more resilient and compliant financial structure.
                             </p>
                         </section>
 
                         {/* Tax Planning */}
                         <section>
-                            <h2 className="text-2xl font-bold text-primary-dark mb-4">Tax Planning That Goes Beyond Compliance</h2>
+                            <h2 className="text-2xl font-bold text-primary-dark mb-4">Tax Advisory Services That Go Beyond Compliance</h2>
                             <p className="text-muted mb-4">
-                                Tax advisory is not just about filing returns — it's about planning ahead. Strategic tax planning allows businesses to:
+                                Effective tax planning is more than just filing returns  it is about building a strong and sustainable financial strategy. With professional Tax Advisory Services, businesses can legally optimize their tax position, improve cash flow, avoid compliance risks, and align financial decisions with long-term goals under the UAE corporate tax framework.
                             </p>
-                            <ul className="space-y-2 mb-4">
-                                <li className="flex items-start gap-2">
-                                    <span className="text-primary mt-1">✓</span>
-                                    <span className="text-muted">Optimize tax positions legally</span>
-                                </li>
-                                <li className="flex items-start gap-2">
-                                    <span className="text-primary mt-1">✓</span>
-                                    <span className="text-muted">Improve cash flow management</span>
-                                </li>
-                                <li className="flex items-start gap-2">
-                                    <span className="text-primary mt-1">✓</span>
-                                    <span className="text-muted">Avoid compliance surprises</span>
-                                </li>
-                                <li className="flex items-start gap-2">
-                                    <span className="text-primary mt-1">✓</span>
-                                    <span className="text-muted">Align financial strategies with long-term goals</span>
-                                </li>
-                            </ul>
-                            <p className="text-muted mt-4">
-                                Our tax planning services evaluate your business structure, revenue streams, and operational costs to identify legitimate tax optimization opportunities.
-                            </p>
-                            <p className="text-muted mt-4">
-                                Strong Budgeting and Forecasting practices also support effective tax planning by helping businesses anticipate tax liabilities and manage cash flow accordingly.
-                            </p>
-                        </section>
-
-                        {/* Free Zone Corporate Tax Advisory */}
-                        <section className="bg-surface rounded-2xl p-6 md:p-8">
-                            <h2 className="text-2xl font-bold text-primary-dark mb-4">Free Zone Corporate Tax Advisory</h2>
                             <p className="text-muted mb-4">
-                                Free zone companies often assume they are fully exempt from corporate tax. In reality, compliance requirements still apply, and eligibility for tax benefits depends on meeting specific conditions.
+                                Our tax advisory services in Sharjah and Dubai evaluate your business structure, revenue streams, and operating costs to identify legitimate tax optimization opportunities while ensuring your corporate tax filing Dubai remains fully compliant with Federal Tax Authority regulations. This strategic approach helps reduce tax liabilities and improve financial predictability.
                             </p>
-                            <p className="font-semibold text-gray-800 mb-2">Our tax advisory team helps free zone entities:</p>
-                            <ul className="space-y-2 mb-4">
-                                <li className="flex items-start gap-2">
-                                    <span className="text-primary mt-1">✓</span>
-                                    <span className="text-muted">Determine qualifying income status</span>
-                                </li>
-                                <li className="flex items-start gap-2">
-                                    <span className="text-primary mt-1">✓</span>
-                                    <span className="text-muted">Understand exemption criteria</span>
-                                </li>
-                                <li className="flex items-start gap-2">
-                                    <span className="text-primary mt-1">✓</span>
-                                    <span className="text-muted">Maintain required documentation</span>
-                                </li>
-                                <li className="flex items-start gap-2">
-                                    <span className="text-primary mt-1">✓</span>
-                                    <span className="text-muted">Ensure ongoing compliance</span>
-                                </li>
-                            </ul>
-                            <p className="text-muted mt-4">
-                                Failure to meet free zone conditions can result in unexpected tax liabilities, making professional advisory essential.
+                            <p className="text-muted">
+                                Strong <a href="/services/audit-services" className='underline'>Budgeting and Forecasting</a> further strengthen tax planning by allowing businesses to anticipate future tax obligations and manage cash flow more effectively. Many companies also rely on trusted <a href="/" className='underline'>Audit Services</a> in Dubai to support financial accuracy, transparency, and long-term regulatory confidence.
                             </p>
-                        </section>
-
-                        {/* Tax Risk Assessment */}
-                        <section>
-                            <h2 className="text-2xl font-bold text-primary-dark mb-4">Tax Risk Assessment & Compliance Review</h2>
-                            <p className="text-muted mb-4">
-                                Many businesses unknowingly carry tax risks due to improper accounting, incomplete documentation, or incorrect interpretations of tax laws.
-                            </p>
-                            <p className="font-semibold text-gray-800 mb-2">Our tax risk assessment services include:</p>
-                            <ul className="space-y-2 mb-4">
-                                <li className="flex items-start gap-2">
-                                    <span className="text-primary mt-1">✓</span>
-                                    <span className="text-muted">Review of financial and tax records</span>
-                                </li>
-                                <li className="flex items-start gap-2">
-                                    <span className="text-primary mt-1">✓</span>
-                                    <span className="text-muted">Identification of compliance gaps</span>
-                                </li>
-                                <li className="flex items-start gap-2">
-                                    <span className="text-primary mt-1">✓</span>
-                                    <span className="text-muted">Risk mitigation strategies</span>
-                                </li>
-                                <li className="flex items-start gap-2">
-                                    <span className="text-primary mt-1">✓</span>
-                                    <span className="text-muted">Recommendations for corrective actions</span>
-                                </li>
-                            </ul>
-                            <p className="text-muted mt-4">
-                                Businesses with strong internal controls and structured Financial Accounting Solutions significantly reduce tax exposure and regulatory risks.
-                            </p>
-                        </section>
-
-                        {/* Ongoing Tax Advisory Support */}
-                        <section className="bg-white rounded-2xl shadow-sm p-6 md:p-8 border border-gray-100">
-                            <h2 className="text-2xl font-bold text-primary-dark mb-4">Ongoing Tax Advisory Support for UAE Businesses</h2>
-                            <p className="text-muted mb-4">
-                                Corporate tax compliance is not a one-time activity. Regulations evolve, and business operations change. Our ongoing tax advisory services ensure that your business remains compliant throughout the year.
-                            </p>
-                            <p className="font-semibold text-gray-800 mb-2">We provide:</p>
-                            <ul className="space-y-2 mb-4">
-                                <li className="flex items-start gap-2">
-                                    <span className="text-primary mt-1">✓</span>
-                                    <span className="text-muted">Continuous advisory support</span>
-                                </li>
-                                <li className="flex items-start gap-2">
-                                    <span className="text-primary mt-1">✓</span>
-                                    <span className="text-muted">Updates on regulatory changes</span>
-                                </li>
-                                <li className="flex items-start gap-2">
-                                    <span className="text-primary mt-1">✓</span>
-                                    <span className="text-muted">Assistance during audits or inspections</span>
-                                </li>
-                                <li className="flex items-start gap-2">
-                                    <span className="text-primary mt-1">✓</span>
-                                    <span className="text-muted">Clarification on complex tax matters</span>
-                                </li>
-                            </ul>
                         </section>
 
                         {/* Why Choose Us */}
                         <section className="bg-primary/5 rounded-2xl p-6 md:p-8 border border-primary/10">
-                            <h2 className="text-2xl md:text-3xl font-bold text-primary-dark mb-6">Why Choose Prime Audit Solutions for Tax Advisory Services?</h2>
-                            <ul className="space-y-2 mb-4">
-                                <li className="flex items-start gap-2">
-                                    <span className="text-primary mt-1">✓</span>
-                                    <span className="text-muted">Deep understanding of UAE corporate tax laws</span>
-                                </li>
-                                <li className="flex items-start gap-2">
-                                    <span className="text-primary mt-1">✓</span>
-                                    <span className="text-muted">Practical, business-focused advice</span>
-                                </li>
-                                <li className="flex items-start gap-2">
-                                    <span className="text-primary mt-1">✓</span>
-                                    <span className="text-muted">Experienced tax professionals</span>
-                                </li>
-                                <li className="flex items-start gap-2">
-                                    <span className="text-primary mt-1">✓</span>
-                                    <span className="text-muted">Transparent pricing</span>
-                                </li>
-                                <li className="flex items-start gap-2">
-                                    <span className="text-primary mt-1">✓</span>
-                                    <span className="text-muted">Confidential and ethical approach</span>
-                                </li>
-                            </ul>
-                            <p className="text-muted mt-6 font-medium">
-                                Our goal is to protect your business from tax risks while helping you operate with confidence.
+                            <h2 className="text-2xl md:text-3xl font-bold text-primary-dark mb-6">Why Choose Our Tax Advisory Services?</h2>
+                            <p className="text-muted mb-4">
+                                Choosing the right tax partner is essential in today's UAE corporate tax environment. Our Tax Advisory Services are designed to help businesses stay compliant, reduce risk, and improve financial efficiency under the latest regulations.
                             </p>
-                        </section>
-
-                        {/* Integration with Other Services */}
-                        <section>
-                            <h2 className="text-2xl font-bold text-primary-dark mb-4">How Tax Advisory Integrates with Other Financial Services</h2>
+                            <p className="text-muted mb-4">
+                                We bring deep expertise in corporate tax filing Dubai, ensuring your tax returns are accurate, timely, and fully aligned with Federal Tax Authority requirements. Our team understands both mainland and free zone structures, allowing us to deliver tailored solutions that match your business model.
+                            </p>
                             <p className="text-muted">
-                                Effective tax advisory relies on accurate financial data and structured processes. Businesses that combine tax advisory with professional Accounting Services, regular <a href="/services/audit-services" className='underline'>Audit Services</a>, and reliable Financial Accounting Solutions achieve better compliance and long-term stability.
-                            </p>
-                            <p className="text-muted mt-4">
-                                Tax advisory is most effective when it is part of an integrated financial strategy — not a standalone activity. We are also one of the reputed <a href="/services/audit-services" className='underline'>Audit firms in Dubai</a>.
+                                With dedicated tax advisory services in Sharjah and Dubai, we provide local expertise, proactive tax planning, and continuous compliance support  giving your business the confidence to grow while staying fully tax compliant.
                             </p>
                         </section>
 
@@ -386,26 +156,34 @@ export default function TaxAdvisoryPage() {
                             <h2 className="text-2xl font-bold text-primary-dark mb-4">Tax Advisory Services – Frequently Asked Questions</h2>
                             <div className="space-y-4">
                                 <div className="bg-white p-5 rounded-lg border border-gray-100">
-                                    <h3 className="font-semibold text-gray-800 mb-2">Is corporate tax applicable to all businesses in Dubai?</h3>
-                                    <p className="text-sm text-muted">Most businesses are subject to corporate tax, subject to exemptions and thresholds.</p>
+                                    <h3 className="font-semibold text-gray-800 mb-2">What are Corporate Tax Advisory Services in the UAE?</h3>
+                                    <p className="text-sm text-muted">Corporate Tax Advisory Services help businesses register, calculate tax, file returns, and stay compliant with UAE corporate tax laws.</p>
                                 </div>
                                 <div className="bg-white p-5 rounded-lg border border-gray-100">
-                                    <h3 className="font-semibold text-gray-800 mb-2">Do free zone companies need tax advisory services?</h3>
-                                    <p className="text-sm text-muted">Yes, free zone companies must meet specific conditions to qualify for exemptions.</p>
+                                    <h3 className="font-semibold text-gray-800 mb-2">Is corporate tax filing in Dubai mandatory?</h3>
+                                    <p className="text-sm text-muted">Yes, corporate tax filing Dubai is required for most mainland companies and certain free zone entities, even if they qualify for exemptions.</p>
                                 </div>
                                 <div className="bg-white p-5 rounded-lg border border-gray-100">
-                                    <h3 className="font-semibold text-gray-800 mb-2">What happens if corporate tax filing is delayed?</h3>
-                                    <p className="text-sm text-muted">Late filing can result in penalties and increased scrutiny from the FTA.</p>
+                                    <h3 className="font-semibold text-gray-800 mb-2">How do Tax Advisory Services reduce tax risk?</h3>
+                                    <p className="text-sm text-muted">They ensure accurate reporting, correct deductions, proper documentation, and timely filing to avoid penalties and audits.</p>
                                 </div>
                                 <div className="bg-white p-5 rounded-lg border border-gray-100">
-                                    <h3 className="font-semibold text-gray-800 mb-2">Can tax advisory services reduce tax legally?</h3>
-                                    <p className="text-sm text-muted">Yes, proper planning helps optimize tax while remaining compliant.</p>
+                                    <h3 className="font-semibold text-gray-800 mb-2">Why use tax advisory services in Sharjah?</h3>
+                                    <p className="text-sm text-muted">Tax advisory services in Sharjah help local businesses meet emirate-specific rules and manage corporate tax efficiently.</p>
                                 </div>
                                 <div className="bg-white p-5 rounded-lg border border-gray-100">
-                                    <h3 className="font-semibold text-gray-800 mb-2">How often should businesses review their tax position?</h3>
-                                    <p className="text-sm text-muted">Ideally on an ongoing basis, especially when operations or regulations change.</p>
+                                    <h3 className="font-semibold text-gray-800 mb-2">How does tax planning support compliance?</h3>
+                                    <p className="text-sm text-muted">Tax planning helps forecast liabilities, manage cash flow, and keep businesses aligned with UAE tax regulations.</p>
                                 </div>
                             </div>
+                        </div>
+
+
+                        <div>
+                        <h2 className="text-2xl font-bold text-primary-dark mb-4">Contact Us</h2>
+                        <p className="text-muted mb-4">Ready to simplify your corporate tax compliance and planning? Our expert team is here to support your business with reliable Tax Advisory Services, accurate corporate tax filing Dubai, and professional tax advisory services in Sharjah.</p>
+                        <p className="text-muted mb-4"><a href="/contact" className='underline'>Get in touch </a>with us today to discuss your requirements, ensure compliance with UAE corporate tax regulations, and build a smarter, more tax-efficient financial strategy for your business.</p>
+                        
                         </div>
 
                     </article>
