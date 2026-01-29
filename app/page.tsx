@@ -14,8 +14,8 @@ const data = getMarkdownSync('home')
 const contactData = getContactContent('contact')
 
 export const metadata = {
-  title:'Corporate Tax Advisory Services in UAE | Prime Audit Solutions',
-  description:'Get expert corporate tax advisory services from Prime Audit Solutions. Reliable guidance to optimize tax strategy and ensure full compliance.',
+  title: 'Corporate Tax Advisory Services in UAE | Prime Audit Solutions',
+  description: 'Get expert corporate tax advisory services from Prime Audit Solutions. Reliable guidance to optimize tax strategy and ensure full compliance.',
 }
 
 export default function HomePage() {
@@ -27,16 +27,16 @@ export default function HomePage() {
     <>
       {/* === Responsive Hero with overlay === */}
       <section
-  className="hero-bg relative min-h-screen"
-  style={{
-    backgroundImage: `url(${banner})`,
-    backgroundSize: 'cover',
-    backgroundPosition: 'center top', // or just 'center'
-    backgroundRepeat: 'no-repeat',
-    imageRendering: 'auto', // prevent pixelation hint (limited effect)
-  }}
-  aria-label={data.meta.title || 'Hero banner'}
->
+        className="hero-bg relative min-h-screen"
+        style={{
+          backgroundImage: `url(${banner})`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center top', // or just 'center'
+          backgroundRepeat: 'no-repeat',
+          imageRendering: 'auto', // prevent pixelation hint (limited effect)
+        }}
+        aria-label={data.meta.title || 'Hero banner'}
+      >
         {/* Decorative overlay for contrast */}
         <div className="absolute inset-0 bg-black/50" />
 
@@ -104,6 +104,41 @@ export default function HomePage() {
               />
             </div>
           ))}
+        </div>
+      </section>
+
+
+      <section>
+        <div className="container mx-auto px-4 py-8 md:py-12 text-muted">
+          <h2 className="text-2xl font-semibold text-primary-dark">Trusted Accounting, Audit & Advisory Services in the UAE</h2>
+          <p className="text-muted mt-2 pt-4">
+            Prime Audit Solutions is a professional accounting and advisory firm supporting businesses across the UAE with accurate financial reporting, regulatory compliance, and strategic financial insight. We work with startups, SMEs, and established enterprises to build reliable financial systems that support sustainable growth in a constantly evolving regulatory environment.
+          </p>
+          <p>Our approach goes beyond basic accounting by delivering structured solutions that improve financial clarity, strengthen internal controls, and support informed decision-making. From daily accounting to complex regulatory requirements, we help businesses operate with confidence and transparency.</p>
+
+          <div className="mx-auto px-4 py-8 md:py-12 text-muted grid gap-6 grid-cols-1 md:grid-cols-2">
+
+
+            <div className='p-6 bg-surface rounded-lg shadow-sm border border-on-surface transition-all duration-300 ease-out hover:shadow-2xl'>
+              <h3 className="text-2xl font-semibold text-primary-dark">Financial Clarity That Supports Business Growth</h3>
+              <p>Accurate financial data is essential for effective planning and long-term success. Our services provide businesses with reliable reporting and financial visibility that support informed <a href="https://primeauditsolutions.com/services/reporting">budgeting and forecasting</a> , allowing management teams to plan cash flow, control costs, and make strategic decisions based on real financial insights rather than assumptions.</p>
+            </div>
+
+            <div className='p-6 bg-surface rounded-lg shadow-sm border border-on-surface transition-all duration-300 ease-out hover:shadow-2xl'>
+              <h3 className="text-2xl font-semibold text-primary-dark">Technology-Driven Accounting & Bookkeeping Solutions</h3>
+              <p>Modern businesses require modern financial systems. We help clients implement and optimize the <a href="/services/accounting-services">best bookkeeping software</a>  to ensure accurate record-keeping, real-time reporting, automated VAT calculations, and secure cloud-based access to financial data. The right technology strengthens compliance, reduces errors, and improves day-to-day financial contro</p>
+            </div>
+
+            <div className='p-6 bg-surface rounded-lg shadow-sm border border-on-surface transition-all duration-300 ease-out hover:shadow-2xl'>
+              <h4 className="text-2xl font-semibold text-primary-dark">Audit-Ready Financial Records You Can Rely On</h4>
+              <p>Maintaining clean and transparent accounting records is critical for audits and regulatory reviews. Our structured accounting processes ensure your financial data is always audit-ready, enabling smooth coordination with approved <a href="/services/audit-services">audit firms in Dubai</a> and reducing delays, queries, and compliance risks during audit engagements.</p>
+            </div>
+
+            <div className='p-6 bg-surface rounded-lg shadow-sm border border-on-surface transition-all duration-300 ease-out hover:shadow-2xl'>
+              <h4 className="text-2xl font-semibold text-primary-dark">Integrated Accounting & Tax Advisory Support</h4>
+              <p>Accurate accounting forms the foundation of effective tax compliance. Our services work seamlessly alongside professional <a href="/services/tax-advisory">Tax Advisory Services</a> , ensuring correct tax calculations, timely filings, and compliance with UAE VAT and corporate tax regulations. This integrated approach helps businesses reduce tax risk while maintaining full regulatory confidence.</p>
+            </div>
+          </div>
         </div>
       </section>
 

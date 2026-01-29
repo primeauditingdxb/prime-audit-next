@@ -5,8 +5,8 @@ import { FaWhatsapp } from 'react-icons/fa'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-    title: 'Financial Accounting Solutions for UAE Businesses',
-    description: 'Reliable financial accounting solutions for UAE businesses. Ensure accurate records, compliance, audit readiness, and informed decision-making.',
+    title: 'Financial Accounting Solutions for Businesses in the UAE | Prime Audit Solutions',
+    description: 'Financial accounting solutions are essential for building financial stability, regulatory compliance, and long-term growth in the UAE’s highly structured business environment.',
     alternates: {
         canonical: 'https://primeauditsolutions.com/services/core-services'
     }
@@ -26,13 +26,13 @@ export default function CoreServicesPage() {
                 }}
             >
                 <div className="container mx-auto px-4 relative z-10">
-                    <Breadcrumbs items={[{ href: '/services', label: 'Services' }, { label: 'Core Services' }]} />
+                    <Breadcrumbs items={[{ href: '/services', label: 'Services' }, { label: 'Financial Accounting Solutions' }]} />
                     <div className="max-w-4xl mt-8 text-white">
                         <h1 className="text-3xl md:text-5xl font-extrabold leading-tight drop-shadow-lg">
-                            Financial Accounting Solutions for Businesses in Dubai & Sharjah
+                            Financial Accounting Solutions for Businesses in the UAE
                         </h1>
                         <p className="mt-4 text-white/90 max-w-3xl text-sm md:text-lg">
-                            Reliable financial accounting solutions ensuring accuracy, compliance, and clarity at every stage of operation.
+                            Financial accounting solutions are essential for building financial stability, regulatory compliance, and long-term growth in the UAE’s highly structured business environment.
                         </p>
                         <div className="mt-8 flex flex-wrap gap-4">
                             <a href="#details" className="inline-flex items-center px-6 py-3 bg-primary text-white rounded-full shadow-lg hover:bg-primary-dark transition-colors font-medium">
@@ -50,363 +50,142 @@ export default function CoreServicesPage() {
                 <div className="grid grid-cols-1 lg:grid-cols-3 gap-10">
                     {/* Left column - main content */}
                     <article className="lg:col-span-2 space-y-12">
-                        
+
                         {/* Intro */}
                         <section className="bg-white rounded-2xl shadow-sm p-6 md:p-8 border border-gray-100">
                             <p className="text-muted leading-relaxed mb-6">
-                                Strong financial management begins with accurate accounting. In the UAE's structured regulatory environment, businesses require more than basic bookkeeping — they need reliable Financial Accounting Solutions that ensure accuracy, compliance, and clarity at every stage of operation.
+                                In today’s complex regulatory and commercial environment, businesses often require specialized expertise beyond standard accounting or audit services. Financial accounting solutions are no longer optional  they are a core compliance and risk-management requirement for businesses operating in the region.
+                            </p>
+                            <p className="text-muted leading-relaxed mb-6">
+                                As regulatory requirements continue to evolve with VAT implementation, corporate tax laws, and enhanced financial reporting standards, businesses can no longer rely on basic bookkeeping practices. They need comprehensive financial accounting solutions that deliver accuracy, transparency, and actionable financial insights.
                             </p>
                             <p className="text-muted leading-relaxed">
-                                At Prime Audit Solutions, our financial accounting solutions are designed to support businesses in Dubai and Sharjah with structured accounting frameworks that align with regulatory requirements while delivering meaningful financial insights for management.
-                            </p>
-                        </section>
-
-                        {/* What Are Financial Accounting Solutions */}
-                        <section>
-                            <h2 className="text-2xl md:text-3xl font-bold text-primary-dark mb-4">What Are Financial Accounting Solutions?</h2>
-                            <p className="text-muted mb-4">
-                                Financial accounting solutions encompass the systems, processes, and controls used to record, classify, summarize, and report financial transactions. These solutions ensure that financial data is accurate, consistent, and compliant with applicable accounting standards and UAE regulations.
-                            </p>
-                            <p className="font-semibold text-gray-800 mb-2">Effective financial accounting solutions provide businesses with:</p>
-                            <ul className="space-y-2 mb-4">
-                                <li className="flex items-start gap-2">
-                                    <span className="text-primary mt-1">✓</span>
-                                    <span className="text-muted">Accurate financial records</span>
-                                </li>
-                                <li className="flex items-start gap-2">
-                                    <span className="text-primary mt-1">✓</span>
-                                    <span className="text-muted">Clear financial statements</span>
-                                </li>
-                                <li className="flex items-start gap-2">
-                                    <span className="text-primary mt-1">✓</span>
-                                    <span className="text-muted">Reliable data for decision-making</span>
-                                </li>
-                                <li className="flex items-start gap-2">
-                                    <span className="text-primary mt-1">✓</span>
-                                    <span className="text-muted">Regulatory and audit readiness</span>
-                                </li>
-                                <li className="flex items-start gap-2">
-                                    <span className="text-primary mt-1">✓</span>
-                                    <span className="text-muted">Long-term financial stability</span>
-                                </li>
-                            </ul>
-                            <p className="text-muted mt-4 italic">
-                                Without a structured accounting foundation, businesses face increased risks of errors, non-compliance, and poor financial visibility.
+                                At Prime Audit Solutions, our financial accounting solutions are designed to support businesses in Dubai and Sharjah through structured, compliant, and audit-ready accounting frameworks. We work closely with startups, SMEs, and established enterprises to ensure their financial records are accurate, up to date, and aligned with UAE regulations, enabling confident decision-making and sustainable business operations.
                             </p>
                         </section>
 
                         {/* Importance */}
-                        <section className="bg-surface rounded-2xl p-6 md:p-8">
-                            <h2 className="text-2xl md:text-3xl font-bold text-primary-dark mb-4">Importance of Financial Accounting Solutions in the UAE</h2>
-                            <p className="text-muted mb-4">
-                                Businesses operating in Dubai and Sharjah must adhere to strict financial and regulatory standards. Inaccurate or inconsistent accounting records can lead to penalties, audit issues, and loss of stakeholder confidence.
-                            </p>
-                            <p className="font-semibold text-gray-800 mb-2">Professional financial accounting solutions help businesses:</p>
-                            <ul className="space-y-2 mb-4">
-                                <li className="flex items-start gap-2">
-                                    <span className="text-primary mt-1">✓</span>
-                                    <span className="text-muted">Maintain compliance with UAE laws</span>
-                                </li>
-                                <li className="flex items-start gap-2">
-                                    <span className="text-primary mt-1">✓</span>
-                                    <span className="text-muted">Meet audit and regulatory requirements</span>
-                                </li>
-                                <li className="flex items-start gap-2">
-                                    <span className="text-primary mt-1">✓</span>
-                                    <span className="text-muted">Support tax calculations and filings</span>
-                                </li>
-                                <li className="flex items-start gap-2">
-                                    <span className="text-primary mt-1">✓</span>
-                                    <span className="text-muted">Improve financial transparency</span>
-                                </li>
-                                <li className="flex items-start gap-2">
-                                    <span className="text-primary mt-1">✓</span>
-                                    <span className="text-muted">Strengthen internal controls</span>
-                                </li>
-                            </ul>
-                            <p className="text-muted mt-4">
-                                A strong accounting framework is essential for both operational efficiency and regulatory confidence.
-                            </p>
-                        </section>
-
-                        {/* Core Components */}
                         <section>
-                            <h2 className="text-2xl font-bold text-primary-dark mb-6">Core Components of Financial Accounting Solutions</h2>
-                            <div className="space-y-4">
-                                <div className="bg-white p-5 rounded-xl border border-gray-100">
-                                    <h3 className="text-lg font-bold text-gray-800 mb-2">Transaction Recording and Classification</h3>
-                                    <p className="text-sm text-muted">All financial transactions must be recorded accurately and categorized correctly to ensure reliable reporting.</p>
-                                </div>
-                                <div className="bg-white p-5 rounded-xl border border-gray-100">
-                                    <h3 className="text-lg font-bold text-gray-800 mb-2">Financial Statement Preparation</h3>
-                                    <p className="text-sm text-muted">Structured accounting enables the preparation of balance sheets, income statements, and cash flow statements that reflect true financial performance.</p>
-                                </div>
-                                <div className="bg-white p-5 rounded-xl border border-gray-100">
-                                    <h3 className="text-lg font-bold text-gray-800 mb-2">Reconciliations and Controls</h3>
-                                    <p className="text-sm text-muted">Regular reconciliations help detect errors early and ensure consistency across financial records.</p>
-                                </div>
-                                <div className="bg-white p-5 rounded-xl border border-gray-100">
-                                    <h3 className="text-lg font-bold text-gray-800 mb-2">Documentation and Audit Trails</h3>
-                                    <p className="text-sm text-muted">Well-maintained documentation supports audits, reviews, and regulatory inspections.</p>
-                                </div>
-                            </div>
+                            <h2 className="text-2xl md:text-3xl font-bold text-primary-dark mb-4">Importance of Financial Accounting Solutions in the UAE Regulatory Landscape</h2>
+                            <p className="text-muted mb-4">
+                                The UAE operates under a well-defined legal and financial framework where regulators, banks, investors, and auditors rely heavily on accurate financial information. Financial accounting solutions are no longer optional  they are a core compliance and risk-management requirement for businesses operating in the region.
+                            </p>
+                            <p className="text-muted mb-4">
+                                Professional financial accounting solutions help businesses comply with the UAE Commercial Companies Law, meet VAT and corporate tax obligations, maintain proper books of accounts, and reduce exposure to penalties or regulatory scrutiny. Accurate accounting records also improve financial credibility, making it easier to secure financing, attract investors, and pass regulatory inspections.
+                            </p>
+                            <p className="text-muted">
+                                Well-maintained accounting data further supports effective <a href="/services/reporting">budgeting and forecasting</a>, enabling businesses to plan cash flow, manage expenses, and prepare for growth using reliable financial information rather than assumptions.
+                            </p>
                         </section>
 
-                        {/* Foundation for Planning */}
+                        {/* Startups, SMEs & Corporates */}
+                        <section className="bg-surface rounded-2xl p-6 md:p-8">
+                            <h2 className="text-2xl md:text-3xl font-bold text-primary-dark mb-4">Financial Accounting Solutions for Startups, SMEs & Corporates</h2>
+                            <p className="text-muted mb-6">
+                                Our financial accounting solutions are tailored to meet the needs of businesses at every stage of growth. Startups benefit from structured accounting systems that establish compliance from day one, while SMEs gain better financial visibility and control as operations scale. Large corporates rely on our solutions to maintain consistency, regulatory accuracy, and detailed financial reporting across departments or multiple entities.
+                            </p>
+                            <p className="text-muted">
+                                By implementing standardized accounting frameworks, we help businesses move from fragmented financial data to clear, reliable, and compliant accounting systems that support both daily operations and long-term strategy.
+                            </p>
+                        </section>
+
+                        {/* Bookkeeping */}
+                        <section>
+                            <h2 className="text-2xl font-bold text-primary-dark mb-4">Bookkeeping as the Core of Effective Financial Accounting Solutions</h2>
+                            <p className="text-muted mb-4">
+                                Accurate bookkeeping forms the foundation of all successful financial accounting solutions. Inconsistent or poorly maintained records often result in incorrect VAT filings, cash flow mismatches, audit qualifications, and tax compliance issues. Our approach ensures that every financial transaction is recorded accurately, supported by proper documentation, and maintained in accordance with UAE accounting standards.
+                            </p>
+                            <p className="text-muted">
+                                To enhance efficiency and accuracy, we assist businesses in selecting and implementing the <a href="/services/accounting-services">best bookkeeping software</a> suited to their industry, transaction volume, and reporting requirements. Modern accounting software enables real-time financial tracking, clear audit trails, automated VAT calculations, and secure cloud-based access to financial data.
+                            </p>
+                        </section>
+
+                        {/* Scope */}
                         <section className="bg-white rounded-2xl shadow-sm p-6 md:p-8 border border-gray-100">
-                            <h2 className="text-2xl font-bold text-primary-dark mb-4">Financial Accounting Solutions as a Foundation for Planning</h2>
-                            <p className="text-muted">
-                                Accurate accounting is not only about historical reporting — it plays a vital role in financial planning and performance evaluation. Reliable financial data allows management to plan with confidence and assess future opportunities.
-                            </p>
-                            <p className="text-muted mt-4">
-                                Businesses with structured financial accounting frameworks are better positioned to implement effective <a href="/services/reporting">Budgeting And Forecasting</a>, as forecasts and budgets rely heavily on accurate historical data.
-                            </p>
-                        </section>
-
-                        {/* Supporting Business Decision-Making */}
-                        <section>
-                            <h2 className="text-2xl font-bold text-primary-dark mb-4">Supporting Business Decision-Making</h2>
+                            <h2 className="text-2xl font-bold text-primary-dark mb-4">Scope of Our Financial Accounting Solutions</h2>
                             <p className="text-muted mb-4">
-                                Management decisions should be based on facts, not assumptions. Financial accounting solutions provide real-time visibility into:
+                                Our comprehensive financial accounting solutions cover all essential accounting and reporting functions required for regulatory compliance and management oversight, including:
                             </p>
-                            <ul className="space-y-2 mb-4">
-                                <li className="flex items-start gap-2">
-                                    <span className="text-primary mt-1">✓</span>
-                                    <span className="text-muted">Profitability</span>
-                                </li>
-                                <li className="flex items-start gap-2">
-                                    <span className="text-primary mt-1">✓</span>
-                                    <span className="text-muted">Cash flow position</span>
-                                </li>
-                                <li className="flex items-start gap-2">
-                                    <span className="text-primary mt-1">✓</span>
-                                    <span className="text-muted">Cost structures</span>
-                                </li>
-                                <li className="flex items-start gap-2">
-                                    <span className="text-primary mt-1">✓</span>
-                                    <span className="text-muted">Financial risks</span>
-                                </li>
+                            <ul className="list-disc pl-5 space-y-2 text-muted mb-6">
+                                <li>Daily and monthly accounting support</li>
+                                <li>General ledger maintenance</li>
+                                <li>Accounts payable and receivable management</li>
+                                <li>Bank and credit card reconciliations</li>
+                                <li>VAT accounting and reporting</li>
+                                <li>Monthly, quarterly, and annual financial statements</li>
                             </ul>
-                            <p className="text-muted mt-4">
-                                This visibility empowers leadership to make informed decisions related to pricing, expansion, investment, and cost management.
+                            <p className="text-muted">
+                                All accounting services are delivered by experienced professionals with in-depth knowledge of UAE regulations and industry-specific requirements. Our structured processes ensure that your financial records remain accurate, consistent, and audit-ready throughout the year.
                             </p>
                         </section>
 
-                        {/* SMEs and Growing Businesses */}
+                        {/* Audit-Ready */}
+                        <section>
+                            <h2 className="text-2xl font-bold text-primary-dark mb-4">Audit-Ready Financial Accounting Solutions</h2>
+                            <p className="text-muted mb-4">
+                                Strong financial accounting solutions play a critical role in ensuring smooth audits and compliance reviews. Clean, transparent, and well-organized accounting records reduce audit risks and improve coordination with approved <a href="/services/audit-services">audit firms in Dubai</a>, enabling timely audits and accurate financial disclosures.
+                            </p>
+                            <p className="text-muted">
+                                Audit-ready accounting systems also strengthen relationships with banks, investors, and regulatory authorities by demonstrating financial discipline, transparency, and compliance with UAE standards.
+                            </p>
+                        </section>
+
+                        {/* Tax Integration */}
                         <section className="bg-surface rounded-2xl p-6 md:p-8">
-                            <h2 className="text-2xl font-bold text-primary-dark mb-4">Financial Accounting Solutions for SMEs and Growing Businesses</h2>
+                            <h2 className="text-2xl font-bold text-primary-dark mb-4">Financial Accounting Solutions Integrated with Tax Advisory Services</h2>
                             <p className="text-muted mb-4">
-                                Small and medium-sized enterprises often underestimate the importance of structured accounting. However, SMEs benefit significantly from professional financial accounting solutions by gaining:
+                                Accurate financial accounting solutions are essential for effective tax planning and compliance. VAT filings, corporate tax calculations, and regulatory submissions depend entirely on reliable and well-maintained financial data.
                             </p>
-                            <ul className="space-y-2 mb-4">
-                                <li className="flex items-start gap-2">
-                                    <span className="text-primary mt-1">✓</span>
-                                    <span className="text-muted">Better control over finances</span>
-                                </li>
-                                <li className="flex items-start gap-2">
-                                    <span className="text-primary mt-1">✓</span>
-                                    <span className="text-muted">Improved cash flow management</span>
-                                </li>
-                                <li className="flex items-start gap-2">
-                                    <span className="text-primary mt-1">✓</span>
-                                    <span className="text-muted">Clear financial reporting</span>
-                                </li>
-                                <li className="flex items-start gap-2">
-                                    <span className="text-primary mt-1">✓</span>
-                                    <span className="text-muted">Easier access to financing</span>
-                                </li>
-                                <li className="flex items-start gap-2">
-                                    <span className="text-primary mt-1">✓</span>
-                                    <span className="text-muted">Reduced compliance risk</span>
-                                </li>
-                            </ul>
-                            <p className="text-muted mt-4">
-                                As businesses grow, scalable accounting solutions ensure continuity and accuracy without disruption.
-                            </p>
-                        </section>
-
-                        {/* Reducing Financial and Compliance Risks */}
-                        <section>
-                            <h2 className="text-2xl font-bold text-primary-dark mb-4">Reducing Financial and Compliance Risks</h2>
-                            <p className="text-muted mb-4">
-                                Weak accounting practices expose businesses to financial and regulatory risks. Inconsistent records, missing documentation, or delayed reconciliations can result in audit issues and compliance penalties.
-                            </p>
-                            <p className="font-semibold text-gray-800 mb-2">Structured financial accounting solutions help mitigate these risks by:</p>
-                            <ul className="space-y-2 mb-4">
-                                <li className="flex items-start gap-2">
-                                    <span className="text-primary mt-1">✓</span>
-                                    <span className="text-muted">Ensuring accuracy and consistency</span>
-                                </li>
-                                <li className="flex items-start gap-2">
-                                    <span className="text-primary mt-1">✓</span>
-                                    <span className="text-muted">Strengthening internal controls</span>
-                                </li>
-                                <li className="flex items-start gap-2">
-                                    <span className="text-primary mt-1">✓</span>
-                                    <span className="text-muted">Maintaining clear audit trails</span>
-                                </li>
-                                <li className="flex items-start gap-2">
-                                    <span className="text-primary mt-1">✓</span>
-                                    <span className="text-muted">Supporting regulatory compliance</span>
-                                </li>
-                            </ul>
-                            <p className="text-muted mt-4">
-                                This proactive approach reduces surprises and builds financial resilience.
-                            </p>
-                        </section>
-
-                        {/* Integration with Performance Monitoring */}
-                        <section className="bg-white rounded-2xl shadow-sm p-6 md:p-8 border border-gray-100">
-                            <h2 className="text-2xl font-bold text-primary-dark mb-4">Integration with Performance Monitoring</h2>
                             <p className="text-muted">
-                                Financial accounting solutions also support ongoing performance monitoring. By comparing actual results against planned figures, businesses can identify deviations early and take corrective action.
-                            </p>
-                            <p className="text-muted mt-4">
-                                This comparison becomes meaningful only when supported by accurate accounting data and aligned <a href="/services/reporting">Budgeting And Forecasting</a>  processes.
+                                Our accounting services work seamlessly with professional <a href="/services/tax-advisory">Tax Advisory Services</a>, ensuring accurate tax computations, compliant filings, and reduced exposure to penalties or disputes. This integrated approach allows businesses to manage tax obligations confidently while maintaining complete regulatory alignment.
                             </p>
                         </section>
 
-                        {/* Technology */}
+                        {/* Benefits */}
                         <section>
-                            <h2 className="text-2xl font-bold text-primary-dark mb-4">Technology and Financial Accounting Solutions</h2>
+                            <h2 className="text-2xl font-bold text-primary-dark mb-4">Benefits of Professional Financial Accounting Solutions</h2>
                             <p className="text-muted mb-4">
-                                Modern accounting solutions leverage technology to improve accuracy, efficiency, and security. Digital accounting systems allow businesses to:
+                                Implementing professional financial accounting solutions provides businesses with significant operational and regulatory advantages, including:
                             </p>
-                            <ul className="space-y-2 mb-4">
-                                <li className="flex items-start gap-2">
-                                    <span className="text-primary mt-1">✓</span>
-                                    <span className="text-muted">Automate transaction processing</span>
-                                </li>
-                                <li className="flex items-start gap-2">
-                                    <span className="text-primary mt-1">✓</span>
-                                    <span className="text-muted">Reduce manual errors</span>
-                                </li>
-                                <li className="flex items-start gap-2">
-                                    <span className="text-primary mt-1">✓</span>
-                                    <span className="text-muted">Generate real-time reports</span>
-                                </li>
-                                <li className="flex items-start gap-2">
-                                    <span className="text-primary mt-1">✓</span>
-                                    <span className="text-muted">Maintain secure financial records</span>
-                                </li>
+                            <ul className="list-disc pl-5 space-y-2 text-muted mb-6">
+                                <li>Accurate and transparent financial records</li>
+                                <li>Compliance with UAE accounting, VAT, and corporate tax regulations</li>
+                                <li>Improved cash flow management and financial control</li>
+                                <li>Strong internal controls and reduced operational risk</li>
+                                <li>Audit-ready accounting systems at all times</li>
+                                <li>Better decision-making through clear financial insights</li>
                             </ul>
-                            <p className="text-muted mt-4">
-                                Technology-enabled accounting enhances transparency and simplifies financial management.
-                            </p>
-                        </section>
-
-                        {/* Customised Solutions */}
-                        <section className="bg-surface rounded-2xl p-6 md:p-8">
-                            <h2 className="text-2xl font-bold text-primary-dark mb-4">Customised Financial Accounting Solutions for Different Industries</h2>
-                            <p className="text-muted mb-4">
-                                Different industries have different accounting requirements. A trading business requires detailed inventory tracking, while a service-based company focuses on revenue recognition and cost allocation.
-                            </p>
-                            <p className="font-semibold text-gray-800 mb-2">We tailor financial accounting solutions based on:</p>
-                            <div className="flex flex-wrap gap-2 mb-4">
-                                <span className="px-3 py-1 bg-primary/10 text-primary-dark rounded-full text-sm font-medium">Industry type</span>
-                                <span className="px-3 py-1 bg-primary/10 text-primary-dark rounded-full text-sm font-medium">Business size</span>
-                                <span className="px-3 py-1 bg-primary/10 text-primary-dark rounded-full text-sm font-medium">Operational complexity</span>
-                                <span className="px-3 py-1 bg-primary/10 text-primary-dark rounded-full text-sm font-medium">Regulatory requirements</span>
-                            </div>
                             <p className="text-muted">
-                                This customization ensures relevance and effectiveness.
-                            </p>
-                        </section>
-
-                        {/* Support Audits and Reviews */}
-                        <section>
-                            <h2 className="text-2xl font-bold text-primary-dark mb-4">How Financial Accounting Solutions Support Audits and Reviews</h2>
-                            <p className="text-muted mb-4">
-                                Audits and financial reviews are smoother when accounting systems are structured and well-maintained. Clear records reduce audit queries and speed up verification processes.
-                            </p>
-                            <p className="font-semibold text-gray-800 mb-2">Businesses with strong financial accounting solutions experience:</p>
-                            <ul className="space-y-2 mb-4">
-                                <li className="flex items-start gap-2">
-                                    <span className="text-primary mt-1">✓</span>
-                                    <span className="text-muted">Faster audit completion</span>
-                                </li>
-                                <li className="flex items-start gap-2">
-                                    <span className="text-primary mt-1">✓</span>
-                                    <span className="text-muted">Fewer audit observations</span>
-                                </li>
-                                <li className="flex items-start gap-2">
-                                    <span className="text-primary mt-1">✓</span>
-                                    <span className="text-muted">Improved auditor confidence</span>
-                                </li>
-                                <li className="flex items-start gap-2">
-                                    <span className="text-primary mt-1">✓</span>
-                                    <span className="text-muted">Better regulatory outcomes</span>
-                                </li>
-                            </ul>
-                        </section>
-
-                        {/* Why Choose Us */}
-                        <section className="bg-primary/5 rounded-2xl p-6 md:p-8 border border-primary/10">
-                            <h2 className="text-2xl md:text-3xl font-bold text-primary-dark mb-6">Why Choose Prime Audit Solutions for Financial Accounting Solutions?</h2>
-                            <ul className="space-y-2 mb-4">
-                                <li className="flex items-start gap-2">
-                                    <span className="text-primary mt-1">✓</span>
-                                    <span className="text-muted">Experienced accounting professionals</span>
-                                </li>
-                                <li className="flex items-start gap-2">
-                                    <span className="text-primary mt-1">✓</span>
-                                    <span className="text-muted">Deep understanding of UAE regulations</span>
-                                </li>
-                                <li className="flex items-start gap-2">
-                                    <span className="text-primary mt-1">✓</span>
-                                    <span className="text-muted">Structured and scalable accounting frameworks</span>
-                                </li>
-                                <li className="flex items-start gap-2">
-                                    <span className="text-primary mt-1">✓</span>
-                                    <span className="text-muted">Confidential and reliable service</span>
-                                </li>
-                                <li className="flex items-start gap-2">
-                                    <span className="text-primary mt-1">✓</span>
-                                    <span className="text-muted">Practical, business-focused approach</span>
-                                </li>
-                            </ul>
-                            <p className="text-muted mt-6 font-medium">
-                                Our financial accounting solutions are designed to support both compliance and growth.
+                                By outsourcing financial accounting solutions to experienced professionals, businesses reduce internal workload, minimize errors, and focus on growth while maintaining full financial confidence.
                             </p>
                         </section>
 
                         {/* FAQ */}
                         <div className="mt-8">
-                            <h2 className="text-2xl font-bold text-primary-dark mb-4">Financial Accounting Solutions - FAQ's</h2>
+                            <h2 className="text-2xl font-bold text-primary-dark mb-4">Financial Accounting Solutions – Frequently Asked Questions</h2>
                             <div className="space-y-4">
                                 <div className="bg-white p-5 rounded-lg border border-gray-100">
-                                    <h3 className="font-semibold text-gray-800 mb-2">Are financial accounting solutions mandatory in the UAE?</h3>
-                                    <p className="text-sm text-muted">While not always mandatory, structured accounting is essential for compliance and audits.</p>
+                                    <h3 className="font-semibold text-gray-800 mb-2">1. What are financial accounting solutions?</h3>
+                                    <p className="text-sm text-muted">Financial accounting solutions include structured accounting systems, accurate bookkeeping, financial reporting, and compliance support that help businesses manage financial performance and meet UAE regulatory requirements.</p>
                                 </div>
                                 <div className="bg-white p-5 rounded-lg border border-gray-100">
-                                    <h3 className="font-semibold text-gray-800 mb-2">Do SMEs need professional financial accounting solutions?</h3>
-                                    <p className="text-sm text-muted">Yes, SMEs benefit from improved control, transparency, and planning.</p>
+                                    <h3 className="font-semibold text-gray-800 mb-2">2. Are financial accounting solutions mandatory in the UAE?</h3>
+                                    <p className="text-sm text-muted">Yes, UAE regulations require businesses to maintain proper accounting records, making professional financial accounting solutions essential for legal and tax compliance.</p>
                                 </div>
                                 <div className="bg-white p-5 rounded-lg border border-gray-100">
-                                    <h3 className="font-semibold text-gray-800 mb-2">How often should financial records be updated?</h3>
-                                    <p className="text-sm text-muted">Financial records should be updated regularly, ideally on a monthly basis.</p>
+                                    <h3 className="font-semibold text-gray-800 mb-2">3. Do you provide financial accounting solutions in Dubai and Sharjah?</h3>
+                                    <p className="text-sm text-muted">Yes, we offer financial accounting solutions in both Dubai and Sharjah, supporting businesses operating across multiple emirates with consistent and compliant reporting.</p>
                                 </div>
                                 <div className="bg-white p-5 rounded-lg border border-gray-100">
-                                    <h3 className="font-semibold text-gray-800 mb-2">Can financial accounting solutions reduce audit risks?</h3>
-                                    <p className="text-sm text-muted">Yes, accurate records significantly reduce audit issues and compliance risks.</p>
+                                    <h3 className="font-semibold text-gray-800 mb-2">4. How do financial accounting solutions support VAT and corporate tax compliance?</h3>
+                                    <p className="text-sm text-muted">Accurate financial accounting ensures correct tax calculations, proper documentation, and timely filings, reducing the risk of penalties or regulatory issues.</p>
                                 </div>
                                 <div className="bg-white p-5 rounded-lg border border-gray-100">
-                                    <h3 className="font-semibold text-gray-800 mb-2">Are financial accounting solutions scalable?</h3>
-                                    <p className="text-sm text-muted">Yes, they can be adapted as the business grows.</p>
+                                    <h3 className="font-semibold text-gray-800 mb-2">5. Can financial accounting solutions help with audits?</h3>
+                                    <p className="text-sm text-muted">Yes, well-maintained financial accounting solutions make audits smoother, faster, and more efficient while supporting compliance with approved audit firms.</p>
                                 </div>
                             </div>
                         </div>
-                        
-                        {/* Conclusion */}
-                        <section className="bg-surface rounded-xl p-6 border border-gray-100">
-                            <h2 className="text-xl font-bold text-primary-dark mb-3">Financial Accounting Solutions as a Business Backbone</h2>
-                            <p className="text-muted">
-                                In today's competitive UAE market, businesses cannot afford weak financial foundations. Financial Accounting Solutions provide the structure, accuracy, and clarity required to operate confidently, comply with regulations, and plan for sustainable growth.
-                            </p>
-                            <p className="text-muted mt-4">
-                                At Prime Audit Solutions, we help businesses build accounting systems that support transparency, efficiency, and informed decision-making — forming the backbone of long-term financial success.
-                            </p>
-                        </section>
 
                     </article>
 
@@ -429,7 +208,7 @@ export default function CoreServicesPage() {
                                 </li>
                                 <li className="flex justify-between pb-2">
                                     <span className="font-medium text-gray-700">Ideal For</span>
-                                    <span>All Business Sizes</span>
+                                    <span>All Business Types</span>
                                 </li>
                             </ul>
 
@@ -456,7 +235,7 @@ export default function CoreServicesPage() {
                         <div className="bg-surface rounded-xl p-5 border border-gray-100">
                             <h5 className="font-semibold text-primary-dark mb-3">Who Needs This?</h5>
                             <ul className="space-y-2 text-sm text-muted list-disc pl-4">
-                                <li>SMEs and startups</li>
+                                <li>Startups & SMEs</li>
                                 <li>Growing businesses</li>
                                 <li>Companies seeking compliance</li>
                                 <li>Organizations needing clarity</li>

@@ -5,7 +5,7 @@ import Link from 'next/link'
 
 export interface LongCardProps {
   title: string
-  content: string
+  content: string | React.ReactNode
   image: string
   tag?: string
   link?: string
@@ -24,9 +24,8 @@ const LongCard: React.FC<LongCardProps> = ({
 }) => {
   return (
     <div
-      className={`relative flex flex-col ${
-        reverse ? 'md:flex-row-reverse' : 'md:flex-row'
-      } w-full my-6 bg-surface shadow-xl border border-on-surface rounded-lg overflow-hidden 
+      className={`relative flex flex-col ${reverse ? 'md:flex-row-reverse' : 'md:flex-row'
+        } w-full my-6 bg-surface shadow-xl border border-on-surface rounded-lg overflow-hidden 
       ${transition ? 'transition-transform duration-300 hover:scale-[1.02]' : ''}`}
     >
       {/* Image section */}
@@ -47,7 +46,7 @@ const LongCard: React.FC<LongCardProps> = ({
           </div>
         )}
         <h4 className="mb-3 text-primary-dark text-xl font-semibold">{title}</h4>
-        <p className="mb-6 text-muted leading-relaxed font-light">{content}</p>
+        <div className="mb-6 text-muted leading-relaxed font-light text-base">{content}</div>
 
         {link && (
           <Link
