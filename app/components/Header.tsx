@@ -18,6 +18,7 @@ export default function Header({ services = [] }: HeaderProps) {
     { href: "/services", label: "Services" },
     { href: "/associates", label: "Associates" },
     { href: "/gallery", label: "Gallery" },
+    { href: "/blog", label: "Blog" },
     { href: "/contact", label: "Contact" },
   ];
 
@@ -103,11 +104,10 @@ export default function Header({ services = [] }: HeaderProps) {
               <Link
                 key={item.href}
                 href={item.href}
-                className={`px-2 py-1 rounded ${
-                  isActive
-                    ? "text-primary1 font-semibold"
-                    : "text-text hover:text-primary1"
-                } transition-colors`}
+                className={`px-2 py-1 rounded ${isActive
+                  ? "text-primary1 font-semibold"
+                  : "text-text hover:text-primary1"
+                  } transition-colors`}
                 aria-current={isActive ? "page" : undefined}
               >
                 {item.label}
@@ -149,22 +149,22 @@ export default function Header({ services = [] }: HeaderProps) {
                 if (item.href === '/services') {
                   return (
                     <div key="mobile-services" className="mb-1">
-                          <button onClick={() => setMobileServicesOpen(s => !s)} className="w-full text-left px-4 py-2 text-text font-medium flex justify-between items-center">
-                            <span>Services</span>
-                            <span className="ml-2">{mobileServicesOpen ? '−' : '+'}</span>
-                          </button>
-                          {mobileServicesOpen && (
-                            <div className="pl-4">
-                              {services.length === 0 ? (
-                                <div className="px-4 py-2 text-sm text-muted">No services</div>
-                              ) : (
-                                services.map((s: any) => (
-                                  <button key={s.slug} onClick={() => { setOpen(false); setMobileServicesOpen(false); router.push(`/services/${s.slug}`) }} className="block w-full text-left px-4 py-2 text-sm text-primary-dark hover:bg-gray-50">{s.title}</button>
-                                ))
-                              )}
-                            </div>
+                      <button onClick={() => setMobileServicesOpen(s => !s)} className="w-full text-left px-4 py-2 text-text font-medium flex justify-between items-center">
+                        <span>Services</span>
+                        <span className="ml-2">{mobileServicesOpen ? '−' : '+'}</span>
+                      </button>
+                      {mobileServicesOpen && (
+                        <div className="pl-4">
+                          {services.length === 0 ? (
+                            <div className="px-4 py-2 text-sm text-muted">No services</div>
+                          ) : (
+                            services.map((s: any) => (
+                              <button key={s.slug} onClick={() => { setOpen(false); setMobileServicesOpen(false); router.push(`/services/${s.slug}`) }} className="block w-full text-left px-4 py-2 text-sm text-primary-dark hover:bg-gray-50">{s.title}</button>
+                            ))
                           )}
                         </div>
+                      )}
+                    </div>
                   )
                 }
 
@@ -175,11 +175,10 @@ export default function Header({ services = [] }: HeaderProps) {
                       setOpen(false);
                       router.push(item.href);
                     }}
-                    className={`block w-full text-left px-4 py-2 ${
-                      isActive
-                        ? "text-primary1 font-semibold"
-                        : "text-text hover:text-primary1"
-                    }`}
+                    className={`block w-full text-left px-4 py-2 ${isActive
+                      ? "text-primary1 font-semibold"
+                      : "text-text hover:text-primary1"
+                      }`}
                     aria-current={isActive ? "page" : undefined}
                   >
                     {item.label}
