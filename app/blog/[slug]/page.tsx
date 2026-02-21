@@ -73,11 +73,11 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
                         {post.h1Title}
                     </h1>
 
-                    <div className="flex items-center gap-4 text-zinc-500">
+                    {/* <div className="flex items-center gap-4 text-zinc-500">
                         <time dateTime={post.date}>
                             {format(parseISO(post.date), 'MMMM d, yyyy')}
                         </time>
-                    </div>
+                    </div> */}
                 </header>
 
                 {post.coverImage && (

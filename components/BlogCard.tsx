@@ -20,11 +20,11 @@ export default function BlogCard({ post }: BlogCardProps) {
                 </Link>
             )}
             <div className="flex flex-1 flex-col p-6">
-                <div className="flex items-center gap-2 text-sm text-zinc-500">
+                {/* <div className="flex items-center gap-2 text-sm text-zinc-500">
                     <time dateTime={post.date}>
                         {format(parseISO(post.date), 'MMMM d, yyyy')}
                     </time>
-                </div>
+                </div> */}
 
                 <Link href={`/blog/${post.slug}`} className="mt-2 block">
                     <h3 className="text-xl font-semibold text-zinc-900 group-hover:text-[#1e643e] hover:text-[#1e643e] transition-colors">
