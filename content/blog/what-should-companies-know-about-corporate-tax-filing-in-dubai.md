@@ -1,12 +1,23 @@
 ---
-metaTitle: "Corporate Tax Filing in Dubai | Prime Audit Solutions"
-metaDescription: "Learn how Corporate Tax Filing in Dubai works, deadlines, required documents, and how Prime Audit Solutions simplifies compliance with expert tax advisory services."
-canonical: "https://primeauditsolutions.com/blog/what-should-companies-know-about-corporate-tax-filing-in-dubai"
-coverImage: "/images/blogs/chart4.jpg"
-h1Title: "What Should Companies Know About Corporate Tax Filing in Dubai?"
-date: "2026-02-11"
-tags: ["Corporate Tax", "Dubai", "UAE", "Tax Filing", "Business"]
-excerpt: "Get a complete guide on corporate tax filing in Dubai, including deadlines, required documents, and compliance tips for your business."
+metaTitle: Corporate Tax Filing in Dubai | Prime Audit Solutions
+metaDescription: >-
+  Learn how Corporate Tax Filing in Dubai works, deadlines, required documents,
+  and how Prime Audit Solutions simplifies compliance with expert tax advisory
+  services.
+canonical: >-
+  https://primeauditsolutions.com/blog/what-should-companies-know-about-corporate-tax-filing-in-dubai
+coverImage: /images/blogs/chart4.jpg
+h1Title: What Should Companies Know About Corporate Tax Filing in Dubai?
+date: '2026-02-27'
+tags:
+  - Corporate Tax
+  - Dubai
+  - UAE
+  - Tax Filing
+  - Business
+excerpt: >-
+  Get a complete guide on corporate tax filing in Dubai, including deadlines,
+  required documents, and compliance tips for your business.
 ---
 
 ## Introduction
