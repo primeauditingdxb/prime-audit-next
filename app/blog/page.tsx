@@ -1,5 +1,5 @@
 import { Metadata } from 'next';
-import { getSortedPostsData } from '@/lib/blog';
+import { PrismaClient } from '@prisma/client';
 import BlogCard from '@/components/BlogCard';
 
 export const metadata: Metadata = {
@@ -7,8 +7,16 @@ export const metadata: Metadata = {
     description: 'Latest news, insights, and tutorials from the Prime Audit team.',
 };
 
-export default function BlogIndex() {
-    const allPosts = getSortedPostsData();
+const prisma = new PrismaClient();
+
+export const revalidate = 60; // Revalidate every minute if necessary
+
+export default async function BlogIndex() {
+    const allPosts = await prisma.blog.findMany({
+        orderBy: {
+            date: 'desc'
+        }
+    });
 
     return (
         <div className="bg-white min-h-screen py-20 lg:py-40">

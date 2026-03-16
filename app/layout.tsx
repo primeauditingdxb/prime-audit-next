@@ -49,7 +49,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         </Script>
       </head>
 
-      <body className="min-h-screen flex flex-col">
+      <body className="min-h-screen flex flex-col" suppressHydrationWarning>
         {/* Google Tag Manager (noscript) */}
         <noscript
           dangerouslySetInnerHTML={{

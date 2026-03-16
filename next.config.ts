@@ -3,7 +3,7 @@ import type { NextConfig } from "next";
 const nextConfig: NextConfig = {
   reactStrictMode: true,
   // Use Next 16's static export output mode (replaces `next export`)
-  output: "export",
+  // output: "export", // Disabled for API routes
   // If you need any image or other config, add here
   // images: { unoptimized: true }, // example if using next/image in export mode
 };
