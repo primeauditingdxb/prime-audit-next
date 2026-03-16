@@ -4,11 +4,9 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
-    "postbuild": "node scripts/post-export.js",
+    "build": "npx prisma generate && next build",
     "start": "next start",
-    "lint": "eslint",
-    "build:export": "next build && node scripts/post-export.js"
+    "lint": "eslint"
   },
   "dependencies": {
     "@prisma/client": "^6.4.1",
@@ -29,6 +27,7 @@
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "baseline-browser-mapping": "^2.10.8",
     "eslint": "^9",
     "eslint-config-next": "16.0.1",
     "tailwindcss": "^4",
