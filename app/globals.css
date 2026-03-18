@@ -259,6 +259,11 @@ body {
   text-underline-offset: 4px;
 }
 
+.prose u {
+  /* Using requested color */
+  text-decoration: none;
+}
+
 .prose a:hover {
   color: var(--color-primary);
 }

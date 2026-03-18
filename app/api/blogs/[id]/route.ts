@@ -5,6 +5,12 @@ import { join } from 'path';
 
 const prisma = new PrismaClient();
 
+// Helper to strip &nbsp; entities and non-breaking space characters from text
+function sanitizeText(text: string): string {
+  if (!text) return text;
+  return text.replace(/&nbsp;/gi, ' ').replace(/\u00A0/g, ' ');
+}
+
 export async function GET(request: Request, context: { params: Promise<{ id: string }> }) {
   try {
     const resolvedParams = await context.params;
@@ -36,14 +42,14 @@ export async function PUT(request: Request, context: { params: Promise<{ id: str
 
     const formData = await request.formData();
     
-    const metaTitle = formData.get('metaTitle') as string;
-    const metaDescription = formData.get('metaDescription') as string;
+    const metaTitle = sanitizeText(formData.get('metaTitle') as string);
+    const metaDescription = sanitizeText(formData.get('metaDescription') as string);
     const canonical = formData.get('canonical') as string;
-    const h1Title = formData.get('h1Title') as string;
+    const h1Title = sanitizeText(formData.get('h1Title') as string);
     const date = formData.get('date') as string;
-    const tags = formData.get('tags') as string;
-    const excerpt = formData.get('excerpt') as string;
-    const content = formData.get('content') as string;
+    const tags = sanitizeText(formData.get('tags') as string);
+    const excerpt = sanitizeText(formData.get('excerpt') as string);
+    const content = sanitizeText(formData.get('content') as string);
     const slug = formData.get('slug') as string;
     
     const coverImageFile = formData.get('coverImage') as File | null;

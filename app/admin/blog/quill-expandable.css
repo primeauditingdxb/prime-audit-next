@@ -1,0 +1,39 @@
+/* Expandable Quill Editor Styles */
+
+/* Make the wrapper resizable with a drag handle */
+.quill-expandable-wrapper {
+  resize: vertical;
+  overflow: auto;
+  min-height: 350px;
+  position: relative;
+}
+
+/* Remove fixed height so editor grows with content */
+.quill-expandable .ql-container {
+  min-height: 280px;
+  max-height: none;
+  overflow-y: auto;
+}
+
+.quill-expandable .ql-editor {
+  min-height: 280px;
+  max-height: none;
+  overflow-y: auto;
+}
+
+/* Style the resize handle area for visibility on dark backgrounds */
+.quill-expandable-wrapper::after {
+  content: '';
+  position: absolute;
+  bottom: 2px;
+  right: 2px;
+  width: 14px;
+  height: 14px;
+  cursor: ns-resize;
+  background:
+    linear-gradient(135deg, transparent 40%, rgba(99, 102, 241, 0.5) 40%, rgba(99, 102, 241, 0.5) 45%, transparent 45%,
+    transparent 55%, rgba(99, 102, 241, 0.5) 55%, rgba(99, 102, 241, 0.5) 60%, transparent 60%,
+    transparent 70%, rgba(99, 102, 241, 0.5) 70%, rgba(99, 102, 241, 0.5) 75%, transparent 75%);
+  pointer-events: none;
+  border-radius: 0 0 6px 0;
+}

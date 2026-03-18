@@ -4,6 +4,7 @@ import React, { useState, useEffect } from 'react';
 import dynamic from 'next/dynamic';
 import { useRouter, useParams } from 'next/navigation';
 import 'react-quill-new/dist/quill.snow.css';
+import '../../blog/quill-expandable.css';
 
 // Dynamically import react-quill-new to avoid SSR issues
 const ReactQuill = dynamic(() => import('react-quill-new'), { ssr: false, loading: () => <div className="h-64 border border-neutral-800 bg-neutral-950/80 rounded-lg animate-pulse"></div> });
@@ -192,13 +193,13 @@ export default function EditBlogDashboard() {
 
             <div className="space-y-2">
               <label htmlFor="content" className="text-sm font-medium text-neutral-300">Rich Text Content</label>
-              <div className="bg-neutral-100 text-neutral-950 rounded-lg overflow-hidden border-2 border-neutral-800 focus-within:border-blue-500 transition-all">
+              <div className="bg-neutral-100 text-neutral-950 rounded-lg overflow-hidden border-2 border-neutral-800 focus-within:border-blue-500 transition-all quill-expandable-wrapper">
                 <ReactQuill 
                   theme="snow" 
                   value={content} 
                   onChange={setContent} 
                   modules={quillModules}
-                  className="h-64 sm:h-80 md:h-96"
+                  className="quill-expandable"
                 />
               </div>
             </div>

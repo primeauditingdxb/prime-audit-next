@@ -5,14 +5,21 @@ interface BlogCardProps {
     post: Pick<Blog, 'slug' | 'coverImage' | 'h1Title' | 'metaDescription' | 'excerpt' | 'date'>;
 }
 
+function cleanText(text: string): string {
+    return text.replace(/&nbsp;/gi, ' ').replace(/\u00A0/g, ' ');
+}
+
 export default function BlogCard({ post }: BlogCardProps) {
+    const title = cleanText(post.h1Title);
+    const description = cleanText(post.excerpt || post.metaDescription);
+
     return (
         <article className="flex flex-col overflow-hidden rounded-lg shadow-md transition-shadow hover:shadow-xl bg-white border border-zinc-100">
             {post.coverImage && (
                 <Link href={`/blog/${post.slug}`} className="relative h-48 w-full overflow-hidden">
                     <img
                         src={post.coverImage}
-                        alt={post.h1Title}
+                        alt={title}
                         className="object-cover transition-transform duration-300 hover:scale-105 h-full w-full"
                     />
                 </Link>
@@ -20,12 +27,12 @@ export default function BlogCard({ post }: BlogCardProps) {
             <div className="flex flex-1 flex-col p-6">
                 <Link href={`/blog/${post.slug}`} className="mt-2 block">
                     <h3 className="text-xl font-semibold text-zinc-900 group-hover:text-[#1e643e] hover:text-[#1e643e] transition-colors">
-                        {post.h1Title}
+                        {title}
                     </h3>
                 </Link>
 
                 <p className="mt-3 flex-1 text-base text-zinc-600 line-clamp-3">
-                    {post.excerpt || post.metaDescription}
+                    {description}
                 </p>
             </div>
         </article>
