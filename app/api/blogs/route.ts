@@ -3,24 +3,43 @@ import { PrismaClient } from '@prisma/client';
 
 const prisma = new PrismaClient();
 
-export async function GET() {
-  try {
-    const blogs = await prisma.blog.findMany({
-      orderBy: { date: 'desc' },
-      select: {
-        id: true,
-        slug: true,
-        h1Title: true,
-        date: true,
-        createdAt: true,
-        coverImage: true,
-      }
-    });
-    return NextResponse.json({ success: true, data: blogs });
-  } catch (error: any) {
-    return NextResponse.json(
-      { success: false, error: error.message || 'Failed to fetch blogs' },
-      { status: 500 }
-    );
-  }
+export const revalidate = 60; // Cache API responses for 60 seconds
+
+export async function GET(request: Request) {
+    try {
+        const { searchParams } = new URL(request.url);
+        const pageParam = searchParams.get('page');
+        const limitParam = searchParams.get('limit');
+
+        let posts;
+
+        if (pageParam && limitParam) {
+            const page = parseInt(pageParam);
+            const limit = parseInt(limitParam);
+            const skip = (page - 1) * limit;
+
+            posts = await prisma.blog.findMany({
+                skip,
+                take: limit,
+                orderBy: {
+                    date: 'desc'
+                }
+            });
+        } else {
+            posts = await prisma.blog.findMany({
+                orderBy: {
+                    date: 'desc'
+                }
+            });
+        }
+
+        return NextResponse.json({ success: true, data: posts }, {
+            headers: {
+                'Cache-Control': 'public, s-maxage=60, stale-while-revalidate=300'
+            }
+        });
+    } catch (error: any) {
+        console.error("Error fetching blogs:", error);
+        return NextResponse.json({ success: false, error: 'Failed to fetch blogs', details: error?.message }, { status: 500 });
+    }
 }

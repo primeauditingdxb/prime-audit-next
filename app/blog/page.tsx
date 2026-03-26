@@ -1,6 +1,6 @@
 import { Metadata } from 'next';
 import { PrismaClient } from '@prisma/client';
-import BlogCard from '@/components/BlogCard';
+import BlogList from '@/components/BlogList';
 
 export const metadata: Metadata = {
     title: 'Blog | Prime Audit Next',
@@ -12,9 +12,19 @@ const prisma = new PrismaClient();
 export const revalidate = 60; // Revalidate every minute if necessary
 
 export default async function BlogIndex() {
-    const allPosts = await prisma.blog.findMany({
+    const totalPosts = await prisma.blog.count();
+    const initialPosts = await prisma.blog.findMany({
+        take: 12,
         orderBy: {
             date: 'desc'
+        },
+        select: {
+            slug: true,
+            coverImage: true,
+            h1Title: true,
+            metaDescription: true,
+            excerpt: true,
+            date: true,
         }
     });
 
@@ -28,11 +38,7 @@ export default async function BlogIndex() {
 
                 </header>
 
-                <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3 lg:pt-20">
-                    {allPosts.map((post) => (
-                        <BlogCard key={post.slug} post={post} />
-                    ))}
-                </div>
+                <BlogList initialPosts={initialPosts} totalPosts={totalPosts} />
             </div>
         </div>
     );
