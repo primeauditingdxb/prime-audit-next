@@ -64,7 +64,7 @@ export default function EditBlogDashboard() {
 
       if (response.ok) {
         setSuccess('Blog post successfully updated!');
-        setTimeout(() => router.push('/admin'), 1500);
+        setTimeout(() => router.push('/ppdl-admin'), 1500);
       } else {
         setError(data.error || 'Failed to update blog post.');
       }
@@ -113,7 +113,7 @@ export default function EditBlogDashboard() {
         <header className="mb-10 text-center relative">
           <button 
             type="button" 
-            onClick={() => router.push('/admin')}
+            onClick={() => router.push('/ppdl-admin')}
             className="absolute left-0 top-1/2 -translate-y-1/2 text-neutral-400 hover:text-white transition-colors"
           >
             ← Back to Dash

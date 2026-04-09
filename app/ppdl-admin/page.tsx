@@ -55,7 +55,7 @@ export default function AdminDashboard() {
             <p className="text-neutral-400 mt-2">Manage all your published blog posts.</p>
           </div>
           <Link
-            href="/admin/blog"
+            href="/ppdl-admin/blog"
             className="whitespace-nowrap bg-blue-600 hover:bg-blue-500 text-white font-semibold py-3 px-6 rounded-lg transition-colors shadow-lg shadow-blue-500/20"
           >
             + Create New Blog
@@ -102,7 +102,7 @@ export default function AdminDashboard() {
                         {blog.date}
                       </td>
                       <td className="px-6 py-4 text-right whitespace-nowrap">
-                        <Link href={`/admin/edit/${blog.id}`} className="font-medium text-blue-500 hover:text-blue-400 mr-4">
+                        <Link href={`/ppdl-admin/edit/${blog.id}`} className="font-medium text-blue-500 hover:text-blue-400 mr-4">
                           Edit
                         </Link>
                         <button

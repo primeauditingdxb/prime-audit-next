@@ -1,7 +1,6 @@
 import { NextResponse } from 'next/server';
 import { PrismaClient } from '@prisma/client';
-import { writeFile } from 'fs/promises';
-import { join } from 'path';
+import { uploadBlogImageToR2 } from '@/lib/r2';
 
 const prisma = new PrismaClient();
 
@@ -30,17 +29,16 @@ export async function POST(request: Request) {
     const coverImageFile = formData.get('coverImage') as File | null;
     let coverImagePath = '';
 
-    if (coverImageFile && coverImageFile.name) {
+    if (coverImageFile && coverImageFile.name && coverImageFile.size > 0) {
       const bytes = await coverImageFile.arrayBuffer();
       const buffer = Buffer.from(bytes);
 
-      // Save to public/images/blogs
-      const fileExtension = coverImageFile.name.split('.').pop();
-      const filename = `${slug || 'blog'}-${Date.now()}.${fileExtension}`;
-      const filepath = join(process.cwd(), 'public', 'images', 'blogs', filename);
-      
-      await writeFile(filepath, buffer);
-      coverImagePath = `/images/blogs/${filename}`;
+      // Upload to Cloudflare R2
+      coverImagePath = await uploadBlogImageToR2(
+        buffer,
+        coverImageFile.name,
+        coverImageFile.type
+      );
     }
 
     // Parse tags JSON or comma-separated
