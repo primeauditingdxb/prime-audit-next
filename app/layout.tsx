@@ -5,8 +5,7 @@ import Header from './components/Header'
 import Footer from './components/Footer'
 import { getMarkdownSync } from '@/lib/content'
 import Script from 'next/script'
-import { authClient } from '@/lib/auth/client'
-import { NeonAuthUIProvider } from '@neondatabase/auth/react'
+import { Providers } from './components/Providers'
 
 
 export const metadata: Metadata = {
@@ -53,7 +52,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
       </head>
 
       <body className="min-h-screen flex flex-col" suppressHydrationWarning>
-        <NeonAuthUIProvider authClient={authClient}>
+        <Providers>
           {/* Google Tag Manager (noscript) */}
           <noscript
             dangerouslySetInnerHTML={{
@@ -67,7 +66,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
           <Header services={services} />
           <main className="grow">{children}</main>
           <Footer />
-        </NeonAuthUIProvider>
+        </Providers>
       </body>
     </html>
   )
