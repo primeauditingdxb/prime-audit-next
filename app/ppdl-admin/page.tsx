@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
+import { UserButton } from '@neondatabase/auth/react';
 
 export default function AdminDashboard() {
   const [blogs, setBlogs] = useState<any[]>([]);
@@ -43,7 +44,6 @@ export default function AdminDashboard() {
       alert(err?.message || 'Error deleting blog');
     }
   };
-
   return (
     <div className="min-h-screen bg-neutral-950 text-neutral-100 font-sans p-6 lg:p-12">
       <div className="max-w-6xl mx-auto">
@@ -54,12 +54,15 @@ export default function AdminDashboard() {
             </h1>
             <p className="text-neutral-400 mt-2">Manage all your published blog posts.</p>
           </div>
-          <Link
-            href="/ppdl-admin/blog"
-            className="whitespace-nowrap bg-blue-600 hover:bg-blue-500 text-white font-semibold py-3 px-6 rounded-lg transition-colors shadow-lg shadow-blue-500/20"
-          >
-            + Create New Blog
-          </Link>
+          <div className="flex flex-wrap items-center gap-3">
+            <Link
+              href="/ppdl-admin/blog"
+              className="whitespace-nowrap bg-blue-600 hover:bg-blue-500 text-white font-semibold py-3 px-6 rounded-lg transition-colors shadow-lg shadow-blue-500/20"
+            >
+              + Create New Blog
+            </Link>
+            <UserButton />
+          </div>
         </header>
 
         {loading ? (

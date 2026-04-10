@@ -5,6 +5,9 @@ import Header from './components/Header'
 import Footer from './components/Footer'
 import { getMarkdownSync } from '@/lib/content'
 import Script from 'next/script'
+import { authClient } from '@/lib/auth/client'
+import { NeonAuthUIProvider } from '@neondatabase/auth/react'
+
 
 export const metadata: Metadata = {
   title: 'Prime Audit Solutions',
@@ -50,19 +53,21 @@ export default function RootLayout({ children }: { children: ReactNode }) {
       </head>
 
       <body className="min-h-screen flex flex-col" suppressHydrationWarning>
-        {/* Google Tag Manager (noscript) */}
-        <noscript
-          dangerouslySetInnerHTML={{
-            __html: `
-              <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NHGW543M"
-              height="0" width="0" style="display:none;visibility:hidden"></iframe>
-            `,
-          }}
-        />
+        <NeonAuthUIProvider authClient={authClient}>
+          {/* Google Tag Manager (noscript) */}
+          <noscript
+            dangerouslySetInnerHTML={{
+              __html: `
+                <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NHGW543M"
+                height="0" width="0" style="display:none;visibility:hidden"></iframe>
+              `,
+            }}
+          />
 
-        <Header services={services} />
-        <main className="grow">{children}</main>
-        <Footer />
+          <Header services={services} />
+          <main className="grow">{children}</main>
+          <Footer />
+        </NeonAuthUIProvider>
       </body>
     </html>
   )
