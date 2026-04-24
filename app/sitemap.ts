@@ -2,6 +2,10 @@ import { MetadataRoute } from 'next';
 import { PrismaClient } from '@prisma/client';
 import { getMarkdownSync } from '@/lib/content';
 
+// Force dynamic rendering so new blogs always appear in the sitemap
+export const dynamic = 'force-dynamic';
+export const revalidate = 0;
+
 const prisma = new PrismaClient();
 const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL || 'https://primeauditsolutions.com';
 
@@ -42,18 +46,20 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   let blogRoutes: any[] = [];
   try {
     const blogs = await prisma.blog.findMany({
-      select: { slug: true, updatedAt: true },
-      orderBy: { date: 'desc' }
+      select: { slug: true, updatedAt: true, createdAt: true },
+      orderBy: { createdAt: 'desc' },
     });
 
     blogRoutes = blogs.map((blog) => ({
       url: `${BASE_URL}/blog/${blog.slug}`,
       lastModified: blog.updatedAt,
-      changeFrequency: 'daily' as const,
+      changeFrequency: 'weekly' as const,
       priority: 0.7,
     }));
   } catch (error) {
     console.error('Failed to fetch blogs for sitemap', error);
+  } finally {
+    await prisma.$disconnect();
   }
 
   // Combine and return all routes
