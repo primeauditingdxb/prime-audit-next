@@ -1,5 +1,9 @@
 User-agent: *
-Disallow: /wp-admin/
-Allow: /wp-admin/admin-ajax.php
+Disallow: /admin/
+Disallow: /login/
+Disallow: /dashboard/
+Disallow: /api/
+Disallow: /_next/
+Allow: /
 
 Sitemap: https://primeauditsolutions.com/sitemap.xml
