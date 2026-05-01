@@ -210,7 +210,12 @@ body {
   }
 }
 
-
+input,
+select,
+textarea {
+  background-color: var(--color-surface);
+  color: var(--color-text);
+}
 
 /* Prose / Typography Styles for Blog Content */
 .prose {

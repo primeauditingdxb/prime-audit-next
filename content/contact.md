@@ -9,17 +9,17 @@ phone:
 landline:
   - "045647807"
 address: 
-  - "Hamsa building,"
-  - "Unique world business center,"
-  - "MC 01-40/ 278,"
-  - "Near Al ansar gallery," 
+  - "Hamsa building"
+  - "Unique world business center"
+  - "MC 01-40/ 278"
+  - "Near Al ansar gallery" 
   - "Al karama"
 map_link: "https://maps.app.goo.gl/jVLswEUkRzxLobrG8"
 
 address2:
-  - "23/949 Arumbasherry Building,"
-  - "near Private Bus stand,"
-  - "Aluva,"
+  - "23/949 Arumbasherry Building"
+  - "near Private Bus stand"
+  - "Aluva"
   - "Kerala, India"
 map_link2: ""
 ---
