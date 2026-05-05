@@ -112,6 +112,108 @@ services:
       taxation support, entity formation, mergers, liquidation, and accounting
       software implementation assistance.
 
+  - id: bookkeeping-services-dubai
+    title: Bookkeeping Services Dubai
+    slug: bookkeeping-services-dubai
+    metaTitle: "Bookkeeping Services Dubai | Professional Bookkeeping for UAE Businesses"
+    metaDescription: "Professional bookkeeping services in Dubai for SMEs and growing businesses. VAT-ready, cloud-based bookkeeping with monthly reporting and fixed-fee support."
+    short: "VAT-ready, cloud-based bookkeeping with monthly reporting for Dubai businesses."
+    image: "/images/bookkeeping_card.png"
+    features:
+      - Daily / Weekly / Monthly Transaction Recording
+      - Bank & Ledger Reconciliation
+      - VAT-Compliant Bookkeeping
+      - Bookkeeping Cleanup & Catch-Up Support
+    content: >
+      Professional bookkeeping services in Dubai for SMEs and growing businesses.
+      We keep your day-to-day financial records accurate, organised, and always
+      ready for VAT filing, audit review, and management reporting.
+
+  - id: bookkeeping-accounting-software
+    title: Bookkeeping & Accounting Software UAE
+    slug: bookkeeping-accounting-software
+    metaTitle: "Bookkeeping & Accounting Software UAE | Setup, Migration & Support"
+    metaDescription: "Bookkeeping and accounting software UAE businesses can rely on. Setup, migration, cleanup, automation, and reporting support for Xero, Zoho Books, QuickBooks, Sage, and more."
+    short: "Software setup, migration & support for Xero, Zoho Books, QuickBooks & Sage."
+    image: "/images/bookkeeping_accounting_software_card.png"
+    features:
+      - Accounting Software Selection & Advisory
+      - Software Migration & Data Transfer
+      - VAT Configuration & Setup
+      - Ongoing Software Support & Optimisation
+    content: >
+      We help UAE businesses select, implement, optimise, and manage bookkeeping
+      and accounting software that improves financial visibility, reduces manual
+      work, and supports stronger compliance across VAT, corporate tax, and audit.
+
+  - id: corporate-tax-filing-dubai
+    title: Corporate Tax Filing Dubai
+    slug: corporate-tax-filing-dubai
+    metaTitle: "Corporate Tax Filing Dubai | FTA-Compliant Tax Returns for UAE Businesses"
+    metaDescription: "Corporate tax filing in Dubai made simple. FTA-compliant CT return preparation, EmaraTax filing, deadline management, and penalty risk reduction for UAE businesses."
+    short: "FTA-compliant CT return preparation and EmaraTax filing for UAE businesses."
+    image: "/images/corporate_tax_filing_card.png"
+    features:
+      - Taxable Income Computation
+      - Deduction & Exemption Review
+      - EmaraTax CT Return Preparation
+      - Final FTA Submission
+    content: >
+      End-to-end corporate tax filing services in Dubai. We help businesses
+      file accurately, reduce compliance risk, and avoid unnecessary penalties
+      through complete CT return preparation and EmaraTax submission.
+
+  - id: tax-advisory-sharjah
+    title: Tax Advisory Services in Sharjah
+    slug: tax-advisory-sharjah
+    metaTitle: "Tax Advisory Services in Sharjah | Corporate Tax Compliance for Sharjah"
+    metaDescription: "Corporate tax advisory services in Sharjah. Expert guidance on FTA compliance for free zone & mainland entities. Prime Audit Solutions LLC."
+    short: "Corporate tax & VAT advisory for Sharjah mainland and free zone businesses."
+    image: "/images/tax_advisory_sharjah_card.png"
+    features:
+      - QFZP Eligibility Assessment
+      - Corporate Tax Registration & EmaraTax Setup
+      - VAT Advisory for Cross-Emirate Transactions
+      - Annual CT Return Preparation
+    content: >
+      Specialist tax advisory services for Sharjah mainland and free zone businesses.
+      We provide FTA compliance guidance, QFZP eligibility assessment, VAT advisory,
+      and annual CT return preparation tailored to Sharjah-specific requirements.
+
+  - id: audit-firms-sharjah
+    title: Audit Firms in Sharjah
+    slug: audit-firms-sharjah
+    metaTitle: "Audit Firms in Sharjah | Trusted Audit Services for Mainland & Free Zone Businesses"
+    metaDescription: "Trusted audit firm in Sharjah for mainland and free zone businesses. ISA-compliant statutory, internal, and compliance audit services with fixed-fee support."
+    short: "ISA-compliant statutory, internal & compliance audits for Sharjah businesses."
+    image: "/images/audit_firms_sharjah_card.png"
+    features:
+      - Statutory (External) Audit
+      - Internal Audit
+      - Free Zone Audit
+      - Compliance Audit
+    content: >
+      Reliable, ISA-compliant audit services in Sharjah for mainland companies,
+      free zone entities, and growing businesses that need accurate, independent,
+      and regulator-ready financial assurance.
+
+  - id: accounting-services-sharjah
+    title: Accounting Services in Sharjah
+    slug: accounting-services-sharjah
+    metaTitle: "Accounting Services in Sharjah | Reliable Accounting for Sharjah Businesses"
+    metaDescription: "Professional accounting services in Sharjah for mainland and free zone businesses. VAT-compliant, IFRS-ready accounting with monthly reporting and fixed-fee support."
+    short: "VAT-compliant, IFRS-ready monthly accounting for Sharjah businesses."
+    image: "/images/accounting_services_sharjah_card.png"
+    features:
+      - General Ledger Maintenance
+      - Monthly Management Accounts
+      - VAT Accounting & FTA-Compliant Support
+      - Year-End Financial Statements (IFRS-Ready)
+    content: >
+      Professional accounting services in Sharjah for mainland companies, free zone
+      businesses, and SMEs that need reliable reporting, stronger compliance, and
+      better financial decision-making supported by qualified accountants.
+
 ---
 
 - Bookkeeping: Accurate record keeping and financial statements.
