@@ -3,8 +3,8 @@ import { PrismaClient } from '@prisma/client';
 import BlogList from '@/components/BlogList';
 
 export const metadata: Metadata = {
-    title: 'Blog | Prime Audit Next',
-    description: 'Latest news, insights, and tutorials from the Prime Audit team.',
+    title: 'Accounting & Tax Blog in Dubai | Prime Audit Solutions UAE',
+    description: 'Explore the Prime Audit Solutions blog for expert insights on accounting, tax, audit, bookkeeping, and business finance in Dubai and the UAE.',
 };
 
 const prisma = new PrismaClient();

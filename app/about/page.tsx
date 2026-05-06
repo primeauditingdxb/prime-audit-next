@@ -3,8 +3,8 @@ import LongCard from '../components/LongCard'
 import FaqAccordion from '../components/FaqAccordion'
 
 export const metadata = {
-    title: 'About — Prime Audit Solutions',
-    description: 'About Prime Audit Solutions: bookkeeping, auditing and software implementation.',
+    title: 'About Prime Audit Solutions | Accounting & Audit Firm in Dubai, UAE',
+    description: 'Prime Audit Solutions is a trusted accounting and audit firm in Dubai, UAE, offering expert corporate tax, bookkeeping, and audit services for SMEs.',
 }
 
 export default function AboutPage() {

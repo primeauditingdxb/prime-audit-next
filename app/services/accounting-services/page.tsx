@@ -5,8 +5,8 @@ import { FaWhatsapp } from 'react-icons/fa'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-    title: 'Bookkeeping & Accounting Services in Dubai & Sharjah for Businesses',
-    description: 'Professional accounting services in Dubai and Sharjah including bookkeeping, accounting software support, and financial compliance for all businesses.',
+    title: 'Accounting Services in Dubai | Prime Audit Solutions UAE',
+    description: 'Prime Audit Solutions offers expert accounting services in Dubai, helping businesses manage bookkeeping, reporting, and financial compliance across the UAE.',
     alternates: {
         canonical: 'https://primeauditsolutions.com/services/accounting-services'
     }
@@ -29,7 +29,7 @@ export default function AccountingServicesPage() {
                     <Breadcrumbs items={[{ href: '/services', label: 'Services' }, { label: 'Accounting Services' }]} />
                     <div className="max-w-4xl mt-8 text-white">
                         <h1 className="text-3xl md:text-5xl font-extrabold leading-tight drop-shadow-lg">
-                            Accounting Services in Dubai & Sharjah for Accurate, Compliant, and Scalable Businesses
+                            Accounting Services in Dubai
                         </h1>
                         <p className="mt-4 text-white/90 max-w-3xl text-sm md:text-lg">
                             Professional accounting and bookkeeping services designed specifically for UAE businesses.

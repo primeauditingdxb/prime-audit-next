@@ -5,8 +5,8 @@ import { FaWhatsapp } from 'react-icons/fa'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-    title: 'Audit Services in Dubai & Sharjah | Trusted Firm in UAE',
-    description: 'Professional audit services in Dubai and Sharjah for compliance, transparency, and business confidence. Reliable audits tailored to UAE regulations.',
+    title: 'Audit Services in Dubai | Top Audit Firms in Dubai UAE',
+    description: 'Prime Audit Solutions offers trusted audit services in Dubai. As one of the reliable audit firms in Dubai, we help businesses stay compliant and audit-ready.',
     alternates: {
         canonical: 'https://primeauditsolutions.com/services/audit-services'
     }
@@ -29,7 +29,7 @@ export default function AuditServicesPage() {
                     <Breadcrumbs items={[{ href: '/services', label: 'Services' }, { label: 'Audit Services' }]} />
                     <div className="max-w-4xl mt-8 text-white">
                         <h1 className="text-3xl md:text-5xl font-extrabold leading-tight drop-shadow-lg">
-                            Audit Services in Dubai & Sharjah for Reliable Financial Transparency
+                            Audit Services in Dubai
                         </h1>
                         <p className="mt-4 text-white/90 max-w-3xl text-sm md:text-lg">
                             Comprehensive, regulation-compliant audit services tailored for businesses in the UAE.
