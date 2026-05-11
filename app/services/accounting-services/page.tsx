@@ -6,7 +6,7 @@ import { Metadata } from 'next'
 
 export const metadata: Metadata = {
     title: 'Accounting Services in Dubai | Prime Audit Solutions UAE',
-    description: 'Prime Audit Solutions offers expert accounting services in Dubai, helping businesses manage bookkeeping, reporting, and financial compliance across the UAE.',
+    description: 'Prime Audit Solutions provides comprehensive outsourced accounting services in Dubai — from structured bookkeeping and management accounts to IFRS financial statement preparation, payroll management, and strategic CFO-level advisory.',
     alternates: {
         canonical: 'https://primeauditsolutions.com/services/accounting-services'
     }
@@ -29,10 +29,10 @@ export default function AccountingServicesPage() {
                     <Breadcrumbs items={[{ href: '/services', label: 'Services' }, { label: 'Accounting Services' }]} />
                     <div className="max-w-4xl mt-8 text-white">
                         <h1 className="text-3xl md:text-5xl font-extrabold leading-tight drop-shadow-lg">
-                            Accounting Services in Dubai
+                            Accounting Services in Dubai — Accurate Books, Confident Business Decisions
                         </h1>
                         <p className="mt-4 text-white/90 max-w-3xl text-sm md:text-lg">
-                            Professional accounting and bookkeeping services designed specifically for UAE businesses.
+                            Prime Audit Solutions provides comprehensive outsourced accounting services in Dubai — from structured bookkeeping and management accounts to IFRS financial statement preparation, payroll management, and strategic CFO-level advisory.
                         </p>
                         <div className="mt-8 flex flex-wrap gap-4">
                             <a href="#details" className="inline-flex items-center px-6 py-3 bg-primary text-white rounded-full shadow-lg hover:bg-primary-dark transition-colors font-medium">
@@ -50,165 +50,179 @@ export default function AccountingServicesPage() {
                 <div className="grid grid-cols-1 lg:grid-cols-3 gap-10">
                     {/* Left column - main content */}
                     <article className="lg:col-span-2 space-y-12">
-                        
+
                         {/* Intro */}
                         <section className="bg-white rounded-2xl shadow-sm p-6 md:p-8 border border-gray-100">
-                            <p className="text-muted leading-relaxed mb-6">
-                                Accounting services in Dubai have evolved far beyond basic transaction recording in the UAE's rapidly changing regulatory environment. With the introduction of VAT, corporate tax, and stricter financial reporting standards, businesses now require strong compliance, financial control, clear visibility, and long-term sustainability to operate successfully.
+                            <h2 className="text-2xl md:text-3xl font-bold text-primary-dark mb-6">Your Business Needs More Than Just a Record of Transactions</h2>
+                            <p className="text-muted leading-relaxed mb-4">
+                                Accounting is the financial language of your business. Done well, it provides accurate, timely information that drives better decisions, supports tax compliance, and creates a credible financial picture for banks, investors, and regulatory authorities. Done poorly, it generates costly errors, compliance failures, and year-end surprises that damage both finances and reputation — sometimes irreparably.
                             </p>
-                            <p className="text-muted leading-relaxed mb-6">
-                                At Prime Audit Solutions, we deliver end-to-end accounting and bookkeeping services Dubai businesses can rely on. Our solutions are fully aligned with UAE regulations and designed to support startups, SMEs, and established enterprises with accurate records, timely reporting, and audit-ready financial systems.
+                            <p className="text-muted leading-relaxed mb-4">
+                                Under the UAE's current regulatory environment — with corporate tax firmly in force, VAT compliance actively monitored, and the Federal Tax Authority conducting increasingly systematic audits — the quality of your accounting has never been more consequential. Errors in your books translate directly into errors in your tax filings, VAT returns, and audited financial statements.
                             </p>
                             <p className="text-muted leading-relaxed">
-                                We help business owners move from uncertainty to clarity by implementing reliable accounting frameworks that withstand audits, tax reviews, and strategic decision-making allowing you to focus on growth while we manage financial accuracy and compliance.
+                                Prime Audit Solutions provides comprehensive outsourced accounting services to businesses across Dubai — from startups requiring structured bookkeeping services Dubai to established companies needing full management accounting, IFRS financial statement preparation, and strategic CFO-level support. As a full-service financial accounting solutions provider, we ensure every client has clean, current, audit-ready books at all times.
                             </p>
                         </section>
 
-                        {/* Why Essential */}
+                        {/* Our Accounting Services */}
                         <section>
-                            <h2 className="text-2xl md:text-3xl font-bold text-primary-dark mb-4">Why Professional Accounting Services Are Essential in the UAE</h2>
-                            <p className="text-muted mb-4">
-                                Accounting services in Dubai are essential for businesses operating under the UAE's structured legal and financial framework, where regulators, banks, investors, and auditors rely heavily on accurate and transparent financial data. Proper accounting is no longer optionalit is a core compliance and risk-management requirement.
-                            </p>
-                            <p className="text-muted mb-4">
-                                Professional bookkeeping services Dubai help businesses comply with the UAE Commercial Companies Law, meet VAT and corporate tax obligations, maintain accurate books of accounts, improve cash flow management, and avoid penalties or regulatory issues. Well-maintained records also make audits and financial reviews smoother and more efficient.
-                            </p>
-                            <p className="text-muted">
-                                Using reliable bookkeeping and accounting software further strengthens financial control by enabling accurate tracking, clear audit trails, and real-time reporting. Businesses that adopt the best bookkeeping software are better prepared for audits, tax filings, and bank financing, while those managing accounting internally without expertise often face delays, errors, and compliance challenges.
-                            </p>
+                            <h2 className="text-2xl md:text-3xl font-bold text-primary-dark mb-6">Our Accounting Services in Dubai</h2>
+                            <div className="space-y-6">
+                                <div className="bg-surface p-6 rounded-xl border border-gray-100 shadow-sm">
+                                    <h3 className="text-xl font-bold text-gray-800 mb-3">1. Outsourced Bookkeeping and General Ledger Management</h3>
+                                    <p className="text-muted leading-relaxed">
+                                        We maintain your books on a monthly basis — recording all transactions, reconciling bank statements, managing the general ledger, and ensuring your accounts reflect your real financial position at all times. Our <strong>bookkeeping services Dubai</strong> service forms the foundation of every other financial function: payroll, VAT compliance, management reporting, and audit preparation all depend on accurate, current books.
+                                    </p>
+                                    <p className="text-muted mt-3 italic text-sm">
+                                        For clients evaluating or upgrading their accounting technology, our <Link href="/services/bookkeeping-accounting-software" className="underline decoration-primary/30 hover:decoration-primary text-primary-dark font-medium transition-all">bookkeeping and accounting software advisory service</Link> provides independent guidance on platform selection, migration, and staff training.
+                                    </p>
+                                </div>
+
+                                <div className="bg-surface p-6 rounded-xl border border-gray-100 shadow-sm">
+                                    <h3 className="text-xl font-bold text-gray-800 mb-3">2. Management Accounts</h3>
+                                    <p className="text-muted leading-relaxed">
+                                        Monthly or quarterly management accounts give your leadership team a live, decision-ready view of business performance — including profit and loss statements, balance sheets, and cash flow statements formatted clearly and concisely. We tailor management account packs to your specific KPIs and reporting preferences, giving you the information you actually need to run your business — not a generic set of numbers that takes an hour to interpret.
+                                    </p>
+                                    <p className="text-muted mt-3 italic text-sm">
+                                        Management accounts are available within ten working days of each month end, giving you timely data when it matters most.
+                                    </p>
+                                </div>
+
+                                <div className="bg-surface p-6 rounded-xl border border-gray-100 shadow-sm">
+                                    <h3 className="text-xl font-bold text-gray-800 mb-3">3. Financial Statement Preparation (IFRS)</h3>
+                                    <p className="text-muted leading-relaxed">
+                                        We prepare year-end financial statements in full compliance with International Financial Reporting Standards (IFRS), suitable for statutory audit, corporate tax filing, and bank or investor submission. Our financial statements are prepared with audit-readiness in mind from the outset — meaning your external audit proceeds faster, with less back-and-forth, and at lower cost.
+                                    </p>
+                                    <p className="text-muted mt-3">
+                                        For clients requiring audited financials for corporate tax purposes, our integrated <Link href="/services/corporate-tax-filing-dubai" className="underline decoration-primary/30 hover:decoration-primary text-primary-dark font-medium transition-all">corporate tax filing Dubai service</Link> prepares and files your UAE corporate tax return directly from our audited financial statements — ensuring complete consistency.
+                                    </p>
+                                </div>
+
+                                <div className="bg-surface p-6 rounded-xl border border-gray-100 shadow-sm">
+                                    <h3 className="text-xl font-bold text-gray-800 mb-3">4. Payroll Accounting and WPS Management</h3>
+                                    <p className="text-muted leading-relaxed">
+                                        We manage payroll calculations, Wages Protection System (WPS) transfer file generation, leave accruals, end-of-service gratuity provisions, and all related payroll journal entries. Your team is paid correctly and on time, every month, with complete payroll records maintained for audit and regulatory compliance.
+                                    </p>
+                                </div>
+
+                                <div className="bg-surface p-6 rounded-xl border border-gray-100 shadow-sm">
+                                    <h3 className="text-xl font-bold text-gray-800 mb-3">5. Accounts Payable and Receivable Management</h3>
+                                    <p className="text-muted leading-relaxed">
+                                        We process supplier invoices, manage payment scheduling, record customer invoices, track outstanding receivables, and flag overdue accounts — keeping your working capital in order and your cash flow healthy. Disciplined accounts payable and receivable management is one of the most impactful steps an SME can take to improve cash flow without increasing revenue.
+                                    </p>
+                                </div>
+
+                                <div className="bg-surface p-6 rounded-xl border border-gray-100 shadow-sm">
+                                    <h3 className="text-xl font-bold text-gray-800 mb-3">6. VAT Accounting and Compliance Support</h3>
+                                    <p className="text-muted leading-relaxed">
+                                        Every transaction is correctly coded for UAE VAT purposes, with input and output tax tracked accurately and consistently. Our VAT-accurate bookkeeping integrates directly with quarterly VAT return preparation by our Corporate Tax Advisory Services team — eliminating double-handling and minimising the risk of coding errors that attract FTA scrutiny.
+                                    </p>
+                                </div>
+
+                                <div className="bg-surface p-6 rounded-xl border border-gray-100 shadow-sm">
+                                    <h3 className="text-xl font-bold text-gray-800 mb-3">7. Part-Time CFO and Financial Advisory</h3>
+                                    <p className="text-muted leading-relaxed">
+                                        For growing businesses that need strategic financial guidance but are not yet ready to hire a full-time CFO, our part-time CFO service provides access to senior financial expertise on a flexible, cost-effective basis. We advise on cash management, funding strategy, financial controls, budgeting, and business planning — working as a genuine extension of your leadership team, not an external vendor.
+                                    </p>
+                                </div>
+                            </div>
                         </section>
 
-                        {/* Accounting Services in Dubai */}
-                        <section className="bg-surface rounded-2xl p-6 md:p-8">
-                            <h2 className="text-2xl md:text-3xl font-bold text-primary-dark mb-4">Accounting Services in Dubai for Startups, SMEs & Corporates</h2>
-                            <p className="text-muted mb-6">
-                                Our accounting services in Dubai are designed to support businesses at every stage of growth from early-stage startups to established SMEs and large corporates. We focus on financial accuracy, regulatory compliance, and clear reporting to help businesses operate with confidence in the UAE market.
-                            </p>
-                            
-                            <ul className="space-y-2 mb-4">
-                                <li className="flex items-start gap-2">
-                                    <span className="text-primary mt-1">✓</span>
-                                    <span className="text-muted">Daily and monthly bookkeeping services Dubai</span>
-                                </li>
-                                <li className="flex items-start gap-2">
-                                    <span className="text-primary mt-1">✓</span>
-                                    <span className="text-muted">General ledger maintenance</span>
-                                </li>
-                                <li className="flex items-start gap-2">
-                                    <span className="text-primary mt-1">✓</span>
-                                    <span className="text-muted">Accounts payable and receivable management</span>
-                                </li>
-                                <li className="flex items-start gap-2">
-                                    <span className="text-primary mt-1">✓</span>
-                                    <span className="text-muted">Bank and credit card reconciliation</span>
-                                </li>
-                                <li className="flex items-start gap-2">
-                                    <span className="text-primary mt-1">✓</span>
-                                    <span className="text-muted">VAT accounting and reporting</span>
-                                </li>
-                                <li className="flex items-start gap-2">
-                                    <span className="text-primary mt-1">✓</span>
-                                    <span className="text-muted">Monthly, quarterly, and annual financial statements</span>
-                                </li>
-                            </ul>
-                            
-                            <p className="text-muted mt-6">
-                                All services are delivered by experienced accountants with in-depth knowledge of UAE regulations and industry-specific requirements. Our structured accounting processes ensure your records are accurate, up to date, and audit-ready.
-                            </p>
-                            <p className="text-muted mt-4">
-                                Clean and reliable accounting records also form the foundation for effective Corporate Tax Advisory Services, as accurate tax calculations and compliant filings depend on well-maintained financial data.
-                            </p>
-                        </section>
-
-                        {/* Bookkeeping Services */}
-                        <section>
-                            <h2 className="text-2xl font-bold text-primary-dark mb-4">Bookkeeping Services in Dubai That Eliminate Financial Guesswork</h2>
-                            <p className="text-muted mb-4">
-                                Accurate bookkeeping is the backbone of effective financial management. Our professional Bookkeeping Services Dubai ensure every transaction is recorded correctly, supported by proper documentation, and maintained in line with UAE compliance requirements.
-                            </p>
-                            <p className="text-muted mb-4">
-                                Poor or inconsistent bookkeeping often results in incorrect VAT returns, cash flow mismatches, audit qualifications, and tax compliance issues. By using reliable bookkeeping and accounting software, we help businesses maintain real-time accuracy, clear audit trails, and better financial control. We also guide clients in selecting the best bookkeeping software suited to their business size and industry.
-                            </p>
-                            <p className="text-muted">
-                                In addition to Dubai, we provide integrated accounting services in Sharjah and complete bookkeeping and accounting services in Sharjah, ensuring businesses across both emirates benefit from compliant, transparent, and well-structured financial records throughout the year.
-                            </p>
-                        </section>
-
-                        {/* Best Bookkeeping Software */}
+                        {/* Software We Work With */}
                         <section className="bg-white rounded-2xl shadow-sm p-6 md:p-8 border border-gray-100">
-                            <h2 className="text-2xl font-bold text-primary-dark mb-4">Using the Best Bookkeeping Software for UAE Compliance</h2>
-                            <p className="text-muted mb-4">
-                                Modern accounting requires modern tools. To support regulatory accuracy and efficiency, we use the best bookkeeping software and advanced cloud-based bookkeeping and accounting software that fully comply with UAE financial and tax requirements.
+                            <h2 className="text-2xl md:text-3xl font-bold text-primary-dark mb-6">Accounting Software We Work With</h2>
+                            <p className="text-muted mb-6">
+                                Our team is proficient in all major accounting platforms used by UAE businesses. For software selection, implementation, and training guidance, visit our dedicated <Link href="/services/bookkeeping-accounting-software" className="underline decoration-primary/30 hover:decoration-primary text-primary-dark font-medium">best bookkeeping software page</Link>:
                             </p>
-                            <p className="text-muted mb-4">
-                                Professional accounting software provides real-time financial visibility, reduces manual errors, ensures secure cloud-based data access, automates VAT calculations, and offers scalable systems that grow with your business. These tools play a key role in maintaining compliance and improving day-to-day financial control.
-                            </p>
-                            <p className="text-muted">
-                                Businesses using our accounting services in Sharjah and complete bookkeeping and accounting services in Sharjah also receive support in selecting, implementing, and optimizing the right software for their operational needs. Our technology-driven accounting approach works seamlessly with <a href="/services/tax-advisory" className='underline'>Corporate Tax Advisory Services</a>, ensuring accurate tax calculations, compliant filings, and audit-ready financial records.
-                            </p>
+                            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                {[
+                                    "Xero — preferred for SMEs and professional service firms",
+                                    "QuickBooks Online — widely used across trading and retail businesses",
+                                    "Zoho Books — ideal for businesses already using the Zoho ecosystem",
+                                    "Sage Business Cloud — suited to mid-sized businesses with complex payroll needs",
+                                    "Oracle NetSuite — for larger enterprises requiring ERP-level functionality"
+                                ].map((item, index) => (
+                                    <div key={index} className="flex items-center gap-3 bg-surface p-4 rounded-xl border border-gray-100">
+                                        <div className="h-2 w-2 rounded-full bg-primary" />
+                                        <span className="text-sm font-medium text-gray-700">{item}</span>
+                                    </div>
+                                ))}
+                            </div>
                         </section>
 
-                        {/* Accounting Services in Sharjah */}
-                        <section>
-                            <h2 className="text-2xl font-bold text-primary-dark mb-4">Accounting Services in Sharjah with Local Expertise</h2>
-                            <p className="text-muted mb-4">
-                                Accounting services in Sharjah require a clear understanding of both mainland and free zone regulations. Our services are tailored to meet these local requirements while remaining fully compliant with UAE federal laws. We support businesses with accurate reporting, structured records, and regulatory-ready financial systems.
-                            </p>
-                            <p className="text-muted mb-4">
-                                We provide specialized bookkeeping and accounting services in Sharjah for trading companies, manufacturing units, service providers, and family-owned businesses. Our Sharjah-focused approach helps businesses maintain financial clarity, control cash flow, and meet authority expectations without operational stress.
-                            </p>
-                            <p className="text-muted">
-                                In addition to Sharjah, our accounting services in Dubai ensure consistency for businesses operating across multiple emirates. Well-maintained accounting records also support smoother audits and compliance reviews, especially when working with trusted <a href="/services/audit-services" className='underline'>audit firms in dubai</a>.
-                            </p>
-                        </section>
-
-                        {/* VAT Accounting */}
+                        {/* The Case for Outsourcing */}
                         <section className="bg-surface rounded-2xl p-6 md:p-8">
-                            <h2 className="text-2xl font-bold text-primary-dark mb-4">VAT Accounting & Compliance Support</h2>
-                            <p className="text-muted">
-                                Our VAT accounting support ensures correct VAT registration, accurate calculations, timely return filing, and proper documentation helping businesses stay compliant while avoiding penalties and audit issues.
+                            <h2 className="text-2xl md:text-3xl font-bold text-primary-dark mb-6">The Case for Outsourced Accounting in Dubai</h2>
+                            <p className="text-muted leading-relaxed mb-6">
+                                Hiring a full-time, qualified accountant in Dubai costs between AED 8,000 and AED 20,000 per month — before visa fees, health insurance, gratuity provisions, and software licences. That is AED 100,000 to AED 240,000 per year, before accounting for recruitment cost, training time, and the ongoing risk of staff turnover disrupting your finance function.
                             </p>
+                            <p className="text-muted leading-relaxed mb-6">
+                                Outsourcing to Prime Audit Solutions gives you access to a supervised team of qualified professionals, the latest cloud accounting technology, and seamless integration with your audit and tax functions — at a predictable, scalable monthly fee. As your business grows, your accounting service grows with it — without the HR complexity of expanding an in-house team.
+                            </p>
+                            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                {[
+                                    "Dedicated named account manager — you always know who is responsible for your accounts",
+                                    "Real-time cloud access — view your financial position 24/7 from any device",
+                                    "Tax-ready output — books coded correctly for VAT and corporate tax filing Dubai from day one",
+                                    "Audit-ready records — year-end audits proceed faster and at lower cost",
+                                    "Scalable service — add management accounts, budgeting, or CFO advisory as you grow",
+                                    "Full integration — accounting, audit, and tax under one roof"
+                                ].map((item, index) => (
+                                    <div key={index} className="flex items-start gap-3 bg-white p-4 rounded-xl shadow-sm border border-gray-100">
+                                        <svg className="h-5 w-5 text-green-500 shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                                        </svg>
+                                        <span className="text-sm text-muted">{item}</span>
+                                    </div>
+                                ))}
+                            </div>
                         </section>
 
-                        {/* Benefits */}
-                        <section className="bg-primary/5 rounded-2xl p-6 md:p-8 border border-primary/10">
-                            <h2 className="text-2xl md:text-3xl font-bold text-primary-dark mb-6">Benefits of Professional Accounting Services</h2>
-                            <p className="text-muted mb-4">
-                                Using expert accounting services in Sharjah and Dubai provides businesses with the financial clarity and regulatory confidence needed to operate smoothly in the UAE. These services go beyond basic record-keeping and support long-term compliance and growth.
+                        {/* Sharjah Section */}
+                        <section className="bg-white rounded-2xl shadow-sm p-6 md:p-8 border border-gray-100">
+                            <h2 className="text-2xl md:text-3xl font-bold text-primary-dark mb-6">Accounting Services in Sharjah</h2>
+                            <p className="text-muted leading-relaxed mb-6">
+                                For businesses based in Sharjah, our accounting services in Sharjah team delivers identical service standards across all Sharjah free zones and mainland entities. Whether you operate in SAIF Zone, Hamriyah, SHAMS, or Sharjah mainland, our Sharjah accounting team manages your books with the same rigour and professionalism as our Dubai practice.
                             </p>
-                            <p className="text-muted mb-4">
-                                Professional accounting services in Dubai help businesses maintain accurate books, meet VAT and corporate tax requirements, and avoid costly penalties. With structured reporting and real-time financial visibility, management can make informed decisions with confidence.
-                            </p>
-                            <p className="text-muted">
-                                Reliable bookkeeping and accounting services in Sharjah improve cash flow management, strengthen internal controls, and ensure records are audit-ready at all times. By outsourcing accounting to experienced professionals, businesses reduce operational risk, save time, and focus on scaling their operations while staying fully compliant with UAE regulations.
+                            <p className="text-muted leading-relaxed">
+                                For Sharjah clients requiring tax advisory alongside accounting, our <Link href="/services/tax-advisory-sharjah" className="underline decoration-primary/30 hover:decoration-primary text-primary-dark font-medium transition-all">tax advisory services in Sharjah</Link> service provides integrated VAT and corporate tax support — ensuring your books, VAT returns, and tax filings are always consistent.
                             </p>
                         </section>
 
                         {/* FAQ */}
                         <div className="mt-8">
-                            <h2 className="text-2xl font-bold text-primary-dark mb-4">Accounting Services – Frequently Asked Questions</h2>
+                            <h2 className="text-2xl font-bold text-primary-dark mb-6">Frequently Asked Questions</h2>
                             <div className="space-y-4">
-                                <div className="bg-white p-5 rounded-lg border border-gray-100">
-                                    <h3 className="font-semibold text-gray-800 mb-2">Why are professional accounting services in Sharjah important?</h3>
-                                    <p className="text-sm text-muted">Professional accounting services in Sharjah help businesses comply with local mainland and free zone regulations while meeting UAE federal accounting and tax requirements.</p>
+                                <div className="bg-white p-6 rounded-xl border border-gray-100 shadow-sm">
+                                    <h3 className="font-bold text-gray-800 mb-2">Q: What is the difference between bookkeeping and accounting services?</h3>
+                                    <p className="text-sm text-muted leading-relaxed"><strong>A:</strong> Bookkeeping covers the day-to-day recording of financial transactions. Accounting goes further — preparing financial statements, management accounts, tax computations, and providing financial analysis and advisory support. We offer both, individually or as a fully integrated service.</p>
                                 </div>
-                                <div className="bg-white p-5 rounded-lg border border-gray-100">
-                                    <h3 className="font-semibold text-gray-800 mb-2">Do you provide accounting services in Dubai as well?</h3>
-                                    <p className="text-sm text-muted">Yes, we offer accounting services in Dubai and Sharjah, supporting businesses operating across multiple emirates with consistent and compliant financial reporting.</p>
+                                <div className="bg-white p-6 rounded-xl border border-gray-100 shadow-sm">
+                                    <h3 className="font-bold text-gray-800 mb-2">Q: Can you take over from my existing accountant or bookkeeper?</h3>
+                                    <p className="text-sm text-muted leading-relaxed"><strong>A:</strong> Yes. We manage transitions from in-house bookkeepers, previous accounting firms, and self-managed spreadsheets. We assess the current state of your books, clean up any backlogs, and establish a structured, reliable going-forward process — with no disruption to your business.</p>
                                 </div>
-                                <div className="bg-white p-5 rounded-lg border border-gray-100">
-                                    <h3 className="font-semibold text-gray-800 mb-2">What businesses can use bookkeeping and accounting services in Sharjah?</h3>
-                                    <p className="text-sm text-muted">Trading companies, manufacturers, service providers, and family-owned businesses can all benefit from structured bookkeeping and accounting services in Sharjah.</p>
+                                <div className="bg-white p-6 rounded-xl border border-gray-100 shadow-sm">
+                                    <h3 className="font-bold text-gray-800 mb-2">Q: How does outsourced accounting work on a day-to-day basis?</h3>
+                                    <p className="text-sm text-muted leading-relaxed"><strong>A:</strong> You share invoices, bank statements, and financial documents with us via a secure shared folder or your accounting software. We process all transactions, reconcile accounts, and provide you with monthly reports and management accounts. Communication is via email, phone, or video call — whichever works best for you.</p>
                                 </div>
-                                <div className="bg-white p-5 rounded-lg border border-gray-100">
-                                    <h3 className="font-semibold text-gray-800 mb-2">How do accounting services support VAT compliance?</h3>
-                                    <p className="text-sm text-muted">Accounting services ensure accurate VAT calculations, proper documentation, and timely VAT return filing in line with UAE regulations.</p>
+                                <div className="bg-white p-6 rounded-xl border border-gray-100 shadow-sm">
+                                    <h3 className="font-bold text-gray-800 mb-2">Q: Do you provide financial statements for bank loan applications?</h3>
+                                    <p className="text-sm text-muted leading-relaxed"><strong>A:</strong> Yes. We prepare IFRS-compliant financial statements suitable for bank submission, and can also prepare supporting some cash flow projections and financial models through our <Link href="/services/budgeting-forecasting" className="underline decoration-primary/30 hover:decoration-primary text-primary-dark font-medium transition-all">budgeting and forecasting service</Link>.</p>
                                 </div>
-                                <div className="bg-white p-5 rounded-lg border border-gray-100">
-                                    <h3 className="font-semibold text-gray-800 mb-2">Can accounting services help with audits?</h3>
-                                    <p className="text-sm text-muted">Yes, well-maintained accounting records make audits smoother and support compliance when working with approved audit firms.</p>
+                                <div className="bg-white p-6 rounded-xl border border-gray-100 shadow-sm">
+                                    <h3 className="font-bold text-gray-800 mb-2">Q: Do you work with businesses in Sharjah as well as Dubai?</h3>
+                                    <p className="text-sm text-muted leading-relaxed"><strong>A:</strong> Yes. Our Sharjah accounting team serves clients across SAIF Zone, Hamriyah, SHAMS, and Sharjah mainland. Visit our <Link href="/services/accounting-services-sharjah" className="underline decoration-primary/30 hover:decoration-primary text-primary-dark font-medium transition-all">accounting services in Sharjah page</Link> for details.</p>
                                 </div>
                             </div>
+                        </div>
+
+                        <div className="bg-primary-dark text-white rounded-3xl p-8 md:p-12 text-center">
+                            <h2 className="text-2xl md:text-3xl font-bold mb-4">Contact Us</h2>
+                            <p className="text-white/80 mb-8 max-w-2xl mx-auto">Ready to streamline your business finances? Contact our expert team today for a consultation on how our accounting services can support your growth in the UAE.</p>
+                            <Link href="/contact" className="inline-block px-8 py-4 bg-primary text-white rounded-full font-bold hover:bg-primary-dark transition-colors border border-white/20">
+                                Contact us today
+                            </Link>
                         </div>
 
                     </article>
@@ -227,12 +241,12 @@ export default function AccountingServicesPage() {
                                     <span>Dubai & Sharjah</span>
                                 </li>
                                 <li className="flex justify-between border-b pb-2">
-                                    <span className="font-medium text-gray-700">Frequency</span>
-                                    <span>Daily, Monthly, Quarterly</span>
+                                    <span className="font-medium text-gray-700">Reporting</span>
+                                    <span>Monthly / Quarterly</span>
                                 </li>
                                 <li className="flex justify-between pb-2">
-                                    <span className="font-medium text-gray-700">Ideal For</span>
-                                    <span>Startups, SMEs, Corporates</span>
+                                    <span className="font-medium text-gray-700">Standard</span>
+                                    <span>IFRS Compliance</span>
                                 </li>
                             </ul>
 
@@ -257,19 +271,22 @@ export default function AccountingServicesPage() {
                         </div>
 
                         <div className="bg-surface rounded-xl p-5 border border-gray-100">
-                            <h5 className="font-semibold text-primary-dark mb-3">Who Needs This?</h5>
+                            <h5 className="font-semibold text-primary-dark mb-3">Service Coverage</h5>
                             <ul className="space-y-2 text-sm text-muted list-disc pl-4">
-                                <li>Startups setting up systems</li>
-                                <li>SMEs needing compliance</li>
-                                <li>Growing businesses</li>
-                                <li>Companies optimizing taxes</li>
+                                <li>Outsourced Bookkeeping</li>
+                                <li>Management Accounts</li>
+                                <li>Financial Statements (IFRS)</li>
+                                <li>Payroll & WPS Management</li>
+                                <li>Payables & Receivables</li>
+                                <li>VAT Accounting</li>
+                                <li>Part-Time CFO Advisory</li>
                             </ul>
                         </div>
 
-                        <div className="bg-linear-to-r from-primary/10 to-transparent rounded-xl p-5">
+                        <div className="bg-linear-to-r from-primary/10 to-transparent rounded-xl p-5 border border-primary/5">
                             <h5 className="font-semibold text-primary-dark">Have questions?</h5>
                             <p className="text-sm text-muted mt-2">Reach out to our experts for tailored advice on your accounting requirements.</p>
-                            <Link href="/contact" className="mt-4 inline-block px-4 py-2 bg-primary-dark text-white text-sm rounded hover:opacity-90">Contact us</Link>
+                            <Link href="/contact" className="mt-4 inline-block px-4 py-2 bg-primary-dark text-white text-sm rounded hover:opacity-90 transition-opacity">Contact us</Link>
                         </div>
                     </aside>
                 </div>

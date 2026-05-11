@@ -5,8 +5,8 @@ import { FaWhatsapp } from 'react-icons/fa'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-    title: 'Audit Services in Dubai | Top Audit Firms in Dubai UAE',
-    description: 'Prime Audit Solutions offers trusted audit services in Dubai. As one of the reliable audit firms in Dubai, we help businesses stay compliant and audit-ready.',
+    title: 'Audit Services in the UAE | Statutory & Internal Audit Firms',
+    description: 'Prime Audit Solutions delivers comprehensive audit services across the UAE — statutory, internal, and forensic accounting — aligned with ISA and IFRS standards.',
     alternates: {
         canonical: 'https://primeauditsolutions.com/services/audit-services'
     }
@@ -29,10 +29,10 @@ export default function AuditServicesPage() {
                     <Breadcrumbs items={[{ href: '/services', label: 'Services' }, { label: 'Audit Services' }]} />
                     <div className="max-w-4xl mt-8 text-white">
                         <h1 className="text-3xl md:text-5xl font-extrabold leading-tight drop-shadow-lg">
-                            Audit Services in Dubai
+                            Audit Services in the UAE — Independent, Thorough, and Fully Compliant
                         </h1>
                         <p className="mt-4 text-white/90 max-w-3xl text-sm md:text-lg">
-                            Comprehensive, regulation-compliant audit services tailored for businesses in the UAE.
+                            Prime Audit Solutions delivers comprehensive audit services across all UAE emirates and free zones — statutory audit, internal audit, special purpose engagements, and forensic accounting — aligned with ISA and IFRS.
                         </p>
                         <div className="mt-8 flex flex-wrap gap-4">
                             <a href="#details" className="inline-flex items-center px-6 py-3 bg-primary text-white rounded-full shadow-lg hover:bg-primary-dark transition-colors font-medium">
@@ -50,192 +50,184 @@ export default function AuditServicesPage() {
                 <div className="grid grid-cols-1 lg:grid-cols-3 gap-10">
                     {/* Left column - main content */}
                     <article className="lg:col-span-2 space-y-12">
-                        
+
                         {/* Intro */}
                         <section className="bg-white rounded-2xl shadow-sm p-6 md:p-8 border border-gray-100">
-                            <p className="text-muted leading-relaxed mb-6">
-                                Audit firms in Dubai play a critical role in ensuring financial transparency, regulatory compliance, and business credibility in the UAE's highly regulated environment. Whether required by free zone authorities, banks, investors, or internal governance policies, professional audit firms in Sharjah and Dubai help protect businesses from financial, legal, and reputational risks.
+                            <h2 className="text-2xl md:text-3xl font-bold text-primary-dark mb-6">A UAE Audit Partner You Can Rely On</h2>
+                            <p className="text-muted leading-relaxed mb-4">
+                                Every business operating in the UAE — whether a mainland LLC, a free zone entity, or the branch of a foreign corporation — is required to have its annual financial statements independently audited by a registered, qualified auditor. Under the UAE corporate tax framework, audited IFRS financial statements now form the statutory basis for calculating taxable income and filing corporate tax returns, making the quality of your audit directly relevant to your tax position.
+                            </p>
+                            <p className="text-muted leading-relaxed mb-4">
+                                But a well-executed audit delivers far more than regulatory compliance. It provides assurance to shareholders, confidence to lenders, credibility with the Federal Tax Authority, and management insights that strengthen governance and financial controls across the organisation.
                             </p>
                             <p className="text-muted leading-relaxed">
-                                At Prime Audit Solutions, we are among the trusted audit firms in Dubai and audit firms in Sharjah, delivering independent, accurate, and regulation-compliant audit services across the UAE. Our audits go beyond statutory compliance, providing management with meaningful financial insights that support better decision-making, stronger internal controls, and long-term business stability.
+                                Prime Audit Solutions is an established UAE audit firm providing statutory, external, and internal audit services to businesses across Dubai, Sharjah, Abu Dhabi, and the Northern Emirates. For tax compliance beyond the audit, our <Link href="/services/tax-advisory" className="underline decoration-primary/30 hover:decoration-primary text-primary-dark font-medium transition-all">Corporate Tax Advisory Services</Link> and <Link href="/services/corporate-tax-filing-dubai" className="underline decoration-primary/30 hover:decoration-primary text-primary-dark font-medium transition-all">corporate tax filing Dubai</Link> services ensure seamless integration between your audited accounts and your annual tax return.
                             </p>
                         </section>
 
-                        {/* Why Essential */}
+                        {/* Our UAE Audit Services */}
                         <section>
-                            <h2 className="text-2xl md:text-3xl font-bold text-primary-dark mb-4">Why Audit Services Are Essential for UAE Businesses</h2>
-                            <p className="text-muted mb-4">
-                                Professional audit firms in Dubai and Sharjah play a key role in helping businesses maintain financial accuracy, regulatory compliance, and operational transparency. While audited financial statements are often a legal requirement, audits also add real business value by identifying risks, inefficiencies, and internal control gaps.
-                            </p>
-                            <p className="text-muted mb-4">
-                                Audit services help companies meet regulatory and free zone requirements, build trust with banks and investors, detect errors or irregularities, improve financial discipline, and support long-term growth. Without structured audits, businesses may face difficulties during financing, regulatory reviews, or ownership transitions.
-                            </p>
-                        </section>
-
-                        {/* Comprehensive Services */}
-                        <section>
-                            <h2 className="text-2xl md:text-3xl font-bold text-primary-dark mb-6">Comprehensive Audit Services Tailored to UAE Regulations</h2>
-                            <p className="text-muted mb-8">
-                                Leading audit firms in Dubai and audit firms in Sharjah must operate in line with both International Standards on Auditing (ISA) and UAE regulatory requirements. Our audit services are fully compliant with these standards and are customized based on the size, structure, and risk profile of each business.
-                            </p>
-                            
+                            <h2 className="text-2xl md:text-3xl font-bold text-primary-dark mb-6">Our UAE Audit Services</h2>
                             <div className="space-y-6">
-                                <div className="bg-surface p-5 rounded-xl border border-gray-100">
-                                    <h3 className="text-lg font-bold text-gray-800 mb-2">Statutory Audit Services</h3>
-                                    <p className="text-sm text-muted">Statutory audits are mandatory for many UAE free zones, regulated entities, and businesses seeking financing. These audits verify the accuracy and fairness of financial statements and ensure compliance with applicable laws and regulations.</p>
+                                <div className="bg-surface p-6 rounded-xl border border-gray-100 shadow-sm">
+                                    <h3 className="text-xl font-bold text-gray-800 mb-3">Statutory and External Audit</h3>
+                                    <p className="text-muted leading-relaxed">
+                                        We conduct annual statutory audits for companies of all sizes, structures, and sectors across every UAE emirate and free zone. Our audit methodology covers planning and risk assessment, internal controls evaluation, substantive testing of financial transactions and balances, and the issuance of an independent audit opinion. Every engagement produces a complete set of IFRS-compliant audited financial statements and a management letter identifying areas for operational and control improvement.
+                                    </p>
                                 </div>
-                                <div className="bg-surface p-5 rounded-xl border border-gray-100">
-                                    <h3 className="text-lg font-bold text-gray-800 mb-2">Internal Audit Services</h3>
-                                    <p className="text-sm text-muted">Internal audits evaluate internal controls, operational efficiency, and risk management systems. They help businesses identify weaknesses early and improve governance.</p>
+
+                                <div className="bg-surface p-6 rounded-xl border border-gray-100 shadow-sm">
+                                    <h3 className="text-xl font-bold text-gray-800 mb-3">Internal Audit</h3>
+                                    <p className="text-muted leading-relaxed">
+                                        Our internal audit service provides independent, objective assurance over your internal control environment, risk management framework, and key operational processes. We design and execute risk-based internal audit programmes calibrated to your organisation's size and risk profile, delivering structured reports with prioritised findings and recommendations that management can act on immediately.
+                                    </p>
+                                    <p className="text-muted mt-3 italic text-sm">
+                                        Internal audit is an increasingly valued tool for UAE businesses preparing for corporate tax scrutiny from the Federal Tax Authority.
+                                    </p>
                                 </div>
-                                <div className="bg-surface p-5 rounded-xl border border-gray-100">
-                                    <h3 className="text-lg font-bold text-gray-800 mb-2">Compliance Audits</h3>
-                                    <p className="text-sm text-muted">Compliance audits review whether a company follows UAE laws, internal policies, and regulatory guidelines  especially important for businesses operating across multiple jurisdictions.</p>
+
+                                <div className="bg-surface p-6 rounded-xl border border-gray-100 shadow-sm">
+                                    <h3 className="text-xl font-bold text-gray-800 mb-3">Free Zone Audit Services</h3>
+                                    <p className="text-muted leading-relaxed">
+                                        We are approved auditors across major UAE free zones in both Dubai and Sharjah. Our team understands the specific audit report formats, financial statement requirements, portal submission procedures, and regulatory deadlines that apply to each zone. We manage the entire submission process on your behalf, from document preparation to final portal upload.
+                                    </p>
+                                    <p className="text-muted mt-3">
+                                        For Dubai free zone specifics, see our dedicated <Link href="/services/audit-services" className="underline decoration-primary/30 hover:decoration-primary text-primary-dark font-medium transition-all">audit firms in Dubai</Link> page. For Sharjah free zone entities, visit our <Link href="/services/audit-firms-sharjah" className="underline decoration-primary/30 hover:decoration-primary text-primary-dark font-medium transition-all">audit firms in Sharjah</Link> page.
+                                    </p>
                                 </div>
-                                <div className="bg-surface p-5 rounded-xl border border-gray-100">
-                                    <h3 className="text-lg font-bold text-gray-800 mb-2">Free Zone Audit Reports</h3>
-                                    <p className="text-sm text-muted">Most free zones require annual audited financial statements. We prepare audit reports that meet free zone authority submission and compliance standards.</p>
+
+                                <div className="bg-surface p-6 rounded-xl border border-gray-100 shadow-sm">
+                                    <h3 className="text-xl font-bold text-gray-800 mb-3">Special Purpose Audits and Agreed-Upon Procedures</h3>
+                                    <p className="text-muted leading-relaxed">
+                                        We perform assurance engagements for specific purposes — including immigration financial requirements, bank financing applications, business acquisitions, and investor due diligence. Where a full statutory audit is not required, we perform targeted agreed-upon procedures to provide documented assurance over specific financial data or transactions.
+                                    </p>
                                 </div>
-                                <div className="bg-surface p-5 rounded-xl border border-gray-100">
-                                    <h3 className="text-lg font-bold text-gray-800 mb-2">Special Purpose Audits</h3>
-                                    <p className="text-sm text-muted">These audits are designed for specific needs such as mergers, acquisitions, restructuring, or management reviews, providing clarity and financial assurance during critical business decisions.</p>
+
+                                <div className="bg-surface p-6 rounded-xl border border-gray-100 shadow-sm">
+                                    <h3 className="text-xl font-bold text-gray-800 mb-3">Forensic Accounting and Fraud Review</h3>
+                                    <p className="text-muted leading-relaxed">
+                                        For businesses that have identified potential financial irregularities, or that wish to conduct a proactive fraud risk assessment, our forensic accounting team delivers structured investigations and fraud examinations — producing clear, documented findings and practical recommendations for remediation.
+                                    </p>
                                 </div>
                             </div>
                         </section>
 
-                        {/* Industry Experience */}
+                        {/* UAE Audit Service Coverage */}
                         <section className="bg-white rounded-2xl shadow-sm p-6 md:p-8 border border-gray-100">
-                            <h2 className="text-2xl font-bold text-primary-dark mb-4">Audit Firms in Dubai with Industry-Specific Experience</h2>
-                            <p className="text-muted mb-4">
-                                As one of the trusted audit firms in Dubai and audit firms in Sharjah, we provide audit services across a wide range of industries, including trading and distribution, manufacturing, real estate and construction, professional services, retail and e-commerce, and logistics and transportation. Each sector has unique financial and regulatory challenges, which is why our audits are tailored to industry-specific risks and reporting requirements.
+                            <h2 className="text-2xl md:text-3xl font-bold text-primary-dark mb-6">UAE Audit Service Coverage</h2>
+                            <p className="text-muted mb-6">
+                                Our audit services are available across the UAE. We maintain established presence and regulatory approvals in both Dubai and Sharjah, and serve clients across all Northern Emirates.
                             </p>
-                            <p className="text-muted">
-                                Our experienced auditors apply targeted audit procedures to ensure accuracy, compliance, and meaningful financial insights. We also align audit findings with related compliance areas such as <a href="/services/tax-advisory" className='underline'>Corporate Tax Filing in Dubai</a>, helping businesses maintain consistent, audit-ready financial records while meeting UAE tax and regulatory obligations.
-                            </p>
+                            <ul className="space-y-4">
+                                <li className="flex items-start gap-3">
+                                    <div className="mt-1.5 h-2 w-2 rounded-full bg-primary shrink-0" />
+                                    <p className="text-muted">
+                                        <strong className="text-gray-900">Dubai</strong> — free zone approvals across DMCC, JAFZA, DAFZA, DIFC, Dubai South, and IFZA. For integrated tax support, our <Link href="/services/corporate-tax-filing-dubai" className="underline decoration-primary/30 hover:decoration-primary text-primary-dark font-medium">corporate tax filing Dubai</Link> service works directly from audited financial statements.
+                                    </p>
+                                </li>
+                                <li className="flex items-start gap-3">
+                                    <div className="mt-1.5 h-2 w-2 rounded-full bg-primary shrink-0" />
+                                    <p className="text-muted">
+                                        <strong className="text-gray-900">Sharjah</strong> — see our <Link href="/services/audit-firms-sharjah" className="underline decoration-primary/30 hover:decoration-primary text-primary-dark font-medium">audit firms in Sharjah</Link> page for SAIF Zone, Hamriyah Free Zone, and SHAMS-specific coverage.
+                                    </p>
+                                </li>
+                                <li className="flex items-start gap-3">
+                                    <div className="mt-1.5 h-2 w-2 rounded-full bg-primary shrink-0" />
+                                    <p className="text-muted">
+                                        <strong className="text-gray-900">Abu Dhabi & Northern Emirates</strong> — available upon request for mainland and free zone entities across Abu Dhabi, Ras Al Khaimah, Fujairah, Umm Al Quwain, and Ajman.
+                                    </p>
+                                </li>
+                            </ul>
                         </section>
 
-                         {/* Sharjah Focus */}
-                        <section>
-                            <h2 className="text-2xl font-bold text-primary-dark mb-4">Audit Firms in Sharjah Supporting Mainland & Free Zone Businesses</h2>
-                            <p className="text-muted mb-4">
-                                Audit firms in Sharjah play a vital role in helping businesses meet emirate-specific regulatory and financial reporting requirements. Sharjah-based companies operate under distinct mainland and free zone frameworks, making professional audit support essential for compliance and credibility.
-                            </p>
-                            <p className="text-muted">
-                                As one of the experienced audit firms in Sharjah, we provide reliable and regulation-compliant audit services for both mainland and free zone entities, helping businesses maintain accurate financial records, meet authority requirements, and operate with confidence in the UAE market.
-                            </p>
-                        </section>
-
-                        {/* Methodology */}
+                        {/* Audit Quality and Professional Standards */}
                         <section className="bg-surface rounded-2xl p-6 md:p-8">
-                            <h2 className="text-2xl font-bold text-primary-dark mb-6">Our Audit Methodology</h2>
-                            <p className="text-muted mb-6">
-                                As one of the experienced audit firms in Dubai and audit firms in Sharjah, we follow a structured and transparent audit methodology designed to ensure accuracy, consistency, and minimal business disruption. We begin by developing a deep understanding of your business model, industry risks, and regulatory environment.
-                            </p>
-                            <p className="text-muted mb-6">
-                                Next, we evaluate internal controls by reviewing accounting systems, financial processes, and documentation practices. This is followed by detailed substantive testing, where transactions, balances, and supporting records are verified to ensure compliance with UAE regulations.
-                            </p>
-                            <p className="text-muted">
-                                The process concludes with a clear and professional audit report that includes key findings, observations, and actionable recommendations. This approach helps businesses maintain reliable financial reporting while meeting the standards expected from leading audit firms across Dubai and Sharjah.
-                            </p>
+                            <h2 className="text-2xl md:text-3xl font-bold text-primary-dark mb-6">Audit Quality and Professional Standards</h2>
+                            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                {[
+                                    "Audit methodology fully aligned with International Standards on Auditing (ISA)",
+                                    "Financial statements prepared in accordance with IFRS as adopted in the UAE",
+                                    "Registered with the UAE Ministry of Economy — compliant across all Emirates",
+                                    "Approved auditors across multiple UAE free zones in Dubai and Sharjah",
+                                    "Senior-led engagements — Chartered Accountants (ACCA, ACA, CPA) on every file",
+                                    "Quality control procedures aligned with ISQM 1"
+                                ].map((item, index) => (
+                                    <div key={index} className="flex items-center gap-3 bg-white p-4 rounded-xl shadow-sm border border-gray-100">
+                                        <svg className="h-5 w-5 text-green-500 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                                        </svg>
+                                        <span className="text-sm font-medium text-gray-700">{item}</span>
+                                    </div>
+                                ))}
+                            </div>
                         </section>
 
-                         {/* Accounting & Bookkeeping Importance */}
+                        {/* Integrated Compliance */}
                         <section>
-                            <h2 className="text-2xl font-bold text-primary-dark mb-4">Importance of Strong Accounting Systems in Audit Readiness</h2>
-                            <p className="text-muted mb-6">
-                                Audit results rely heavily on the quality and accuracy of financial records. Businesses that use professional <a href="/services/accounting-services" className='underline'>Accounting Services in Dubai</a> benefit from structured bookkeeping, clear documentation, and fewer audit queries, leading to faster and smoother audit completion.
+                            <h2 className="text-2xl md:text-3xl font-bold text-primary-dark mb-6">Integrated Compliance — Audit, Accounting, and Tax Under One Roof</h2>
+                            <p className="text-muted leading-relaxed mb-6">
+                                Our audit services integrate seamlessly with our full compliance offering. Audit-ready books reduce year-end cost and friction: our <Link href="/services/bookkeeping-services-dubai" className="underline decoration-primary/30 hover:decoration-primary text-primary-dark font-medium transition-all">bookkeeping services Dubai</Link> team ensures your records are clean, current, and correctly coded throughout the year.
                             </p>
-                            <p className="text-muted mb-6">
-                                Likewise, companies supported by reliable Accounting Services in Sharjah gain from localized compliance expertise and well-organized financial data, which significantly improves audit efficiency and overall financial transparency.
+                            <p className="text-muted leading-relaxed mb-6">
+                                Post-audit, our <Link href="/services/tax-advisory" className="underline decoration-primary/30 hover:decoration-primary text-primary-dark font-medium transition-all">Corporate Tax Advisory Services</Link> team uses audited financials as the foundation for corporate tax filings — ensuring complete consistency between your audit opinion and your Federal Tax Authority submission.
                             </p>
-
-                            <h3 className="text-xl font-bold text-primary-dark mb-3">Role of Bookkeeping in Successful Audits</h3>
-                            <p className="text-muted mb-4">
-                                Inconsistent or incomplete bookkeeping is one of the most common reasons for audit delays. Professional Bookkeeping Services Dubai ensure that all transactions are recorded accurately and supported by proper documentation, making audits faster and more reliable.
-                            </p>
-                            <p className="text-muted">
-                                Strong bookkeeping reduces audit observations, improves financial accuracy, strengthens auditor confidence, and minimizes regulatory risk. When combined with effective <a href="/services/reporting" className='underline'>Budgeting and Forecasting</a>, businesses gain better control over cash flow, financial planning, and audit readiness.
-                            </p>
+                            <div className="bg-primary/5 p-6 rounded-2xl border border-primary/10">
+                                <p className="text-muted leading-relaxed">
+                                    For Sharjah clients requiring integrated support, our <Link href="/services/accounting-services-sharjah" className="underline decoration-primary/30 hover:decoration-primary text-primary-dark font-medium transition-all">accounting services in Sharjah</Link> and <Link href="/services/tax-advisory-sharjah" className="underline decoration-primary/30 hover:decoration-primary text-primary-dark font-medium transition-all">tax advisory services in Sharjah</Link> teams are available. For technology guidance, see our <Link href="/services/bookkeeping-accounting-software" className="underline decoration-primary/30 hover:decoration-primary text-primary-dark font-medium transition-all">best bookkeeping software</Link> service.
+                                </p>
+                            </div>
                         </section>
 
-                        {/* Technology */}
-                         <section className="bg-white rounded-2xl shadow-sm p-6 md:p-8 border border-gray-100">
-                             <h2 className="text-2xl font-bold text-primary-dark mb-4">Technology and Audit Efficiency</h2>
-                             <p className="text-muted mb-4">
-                                Modern audits depend heavily on digital systems. Businesses that use reliable bookkeeping and compliant accounting software allow auditors to access accurate financial data quickly, reducing audit time, minimizing errors, and improving overall audit efficiency.
-                             </p>
-                             <p className="text-muted">
-                                The right accounting software also provides clear audit trails, automated reconciliations, secure data storage, and faster financial verification. Choosing the <a href="/services/accounting-services" className='underline'>best bookkeeping software</a> helps businesses maintain transparent records, strengthen audit readiness, and stay compliant with UAE financial and regulatory requirements.
-                             </p>
-                        </section>
-
-                        {/* Challenges */}
-                        <section>
-                             <h2 className="text-2xl font-bold text-primary-dark mb-4">Common Audit Challenges Faced by UAE Businesses</h2>
-                             <p className="text-muted mb-4">
-                                Many UAE businesses face audit challenges due to poor bookkeeping, incomplete documentation, weak internal controls, lack of financial transparency, and non-compliance with regulations. These issues often lead to delays, audit observations, and increased regulatory risk.
-                             </p>
-                             <p className="text-muted">
-                                Working with professional audit firms in Dubai and audit firms in Sharjah helps businesses identify and resolve these problems early, ensuring smoother audits, stronger compliance, and greater financial credibility.
-                             </p>
-                        </section>
-
-                        {/* Long Term Value */}
-                        <section>
-                            <h2 className="text-2xl font-bold text-primary-dark mb-4">How Audit Services Add Long-Term Business Value</h2>
-                            <p className="text-muted mb-4">
-                                Audits are more than a compliance requirement  they are a strategic business tool. When conducted by experienced audit firms in Dubai or Sharjah, audits help companies improve financial governance, strengthen internal controls, and enhance management accountability.
-                            </p>
-                            <p className="text-muted">
-                                Professional audit services also build confidence with investors and lenders, support better decision-making, and prepare businesses for growth, expansion, or restructuring. Companies that treat audits as part of their long-term strategy gain stronger financial stability and greater operational clarity over time.
-                            </p>
+                        {/* Who We Serve */}
+                        <section className="bg-white rounded-2xl shadow-sm p-6 md:p-8 border border-gray-100">
+                            <h2 className="text-2xl md:text-3xl font-bold text-primary-dark mb-6">Who We Serve</h2>
+                            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                {[
+                                    "SMEs and owner-managed businesses",
+                                    "Free zone entities for licence renewals",
+                                    "Subsidiaries of international groups",
+                                    "Family businesses preparing for succession",
+                                    "Startups establishing audit relationships",
+                                    "Corporates seeking high-quality alternatives"
+                                ].map((item, index) => (
+                                    <div key={index} className="flex items-center gap-3">
+                                        <div className="h-2 w-2 rounded-full bg-primary" />
+                                        <span className="text-muted">{item}</span>
+                                    </div>
+                                ))}
+                            </div>
                         </section>
 
 
-                        {/* Why Choose Us */}
-                        <section className="bg-primary/5 rounded-2xl p-6 md:p-8 border border-primary/10">
-                            <h2 className="text-2xl md:text-3xl font-bold text-primary-dark mb-6">Why Choose Our Audit Services?</h2>
-                            <p className="text-muted mb-4">
-                                Choosing the right audit partner is critical for compliance, transparency, and business credibility. As one of the trusted audit firms in Dubai and Sharjah, we deliver independent, accurate, and regulation-compliant audits tailored to your business structure and industry.
-                            </p>
-                            <p className="text-muted">
-                                Our team combines technical expertise with a practical understanding of UAE regulations, free zone requirements, and reporting standards. This allows us to provide clear audit reports, meaningful financial insights, and reliable compliance support helping your business operate with confidence and long-term stability.
-                            </p>
-                        </section>
-
-
-
-                         {/* FAQ */}
+                        {/* FAQ */}
                         <div className="mt-8">
-                            <h2 className="text-2xl font-bold text-primary-dark mb-4">Audit Services – Frequently Asked Questions (UAE)</h2>
+                            <h2 className="text-2xl font-bold text-primary-dark mb-6">Frequently Asked Questions</h2>
                             <div className="space-y-4">
-                                <div className="bg-white p-5 rounded-lg border border-gray-100">
-                                    <h3 className="font-semibold text-gray-800 mb-2">What do audit firms in Dubai do?</h3>
-                                    <p className="text-sm text-muted">Audit firms in Dubai review and verify financial statements to ensure accuracy, compliance, and regulatory acceptance.</p>
+                                <div className="bg-white p-6 rounded-xl border border-gray-100 shadow-sm">
+                                    <h3 className="font-bold text-gray-800 mb-2">Which UAE free zones does Prime Audit Solutions cover?</h3>
+                                    <p className="text-sm text-muted leading-relaxed">We cover major free zones across Dubai and Sharjah, including DMCC, JAFZA, DAFZA, Dubai South, IFZA, SAIF Zone, Hamriyah, and SHAMS.</p>
                                 </div>
-                                <div className="bg-white p-5 rounded-lg border border-gray-100">
-                                    <h3 className="font-semibold text-gray-800 mb-2">Are audit firms in Sharjah required for free zone companies?</h3>
-                                    <p className="text-sm text-muted">Yes, most Sharjah free zones require audited financial statements from approved audit firms in Sharjah.</p>
+                                <div className="bg-white p-6 rounded-xl border border-gray-100 shadow-sm">
+                                    <h3 className="font-bold text-gray-800 mb-2">Is an audit mandatory for all UAE companies?</h3>
+                                    <p className="text-sm text-muted leading-relaxed">Yes, for virtually all UAE entities. Free zone companies must submit audited financial statements for annual licence renewal. Mainland companies are required to maintain audited accounts, and tax returns must be based on IFRS-compliant audited statements.</p>
                                 </div>
-                                <div className="bg-white p-5 rounded-lg border border-gray-100">
-                                    <h3 className="font-semibold text-gray-800 mb-2">Why are audits important for UAE businesses?</h3>
-                                    <p className="text-sm text-muted">Audits improve financial transparency, support compliance, and build trust with banks, investors, and authorities.</p>
+                                <div className="bg-white p-6 rounded-xl border border-gray-100 shadow-sm">
+                                    <h3 className="font-bold text-gray-800 mb-2">How long does the audit process take?</h3>
+                                    <p className="text-sm text-muted leading-relaxed">For most SMEs, the process takes three to six weeks from the date complete records are received. We work to your deadline wherever possible.</p>
                                 </div>
-                                <div className="bg-white p-5 rounded-lg border border-gray-100">
-                                    <h3 className="font-semibold text-gray-800 mb-2">How often should a business be audited?</h3>
-                                    <p className="text-sm text-muted">Most UAE companies must complete an audit annually, depending on their license and regulatory requirements.</p>
-                                </div>
-                                <div className="bg-white p-5 rounded-lg border border-gray-100">
-                                    <h3 className="font-semibold text-gray-800 mb-2">How do professional audit services reduce business risk?</h3>
-                                    <p className="text-sm text-muted">They identify errors, control gaps, and compliance issues early, helping businesses avoid penalties and financial problems.</p>
+                                <div className="bg-white p-6 rounded-xl border border-gray-100 shadow-sm">
+                                    <h3 className="font-bold text-gray-800 mb-2">Can you handle both the audit and the corporate tax filing?</h3>
+                                    <p className="text-sm text-muted leading-relaxed">Yes. Our integrated service covers audit, corporate tax return preparation, and FTA filing — ensuring your audit and tax positions are always aligned.</p>
                                 </div>
                             </div>
                         </div>
 
-                        <div>
-                        <h2 className="text-2xl font-bold text-primary-dark mb-4">Contact Us</h2>
-                        <p className="text-muted mb-4">Looking for reliable support from experienced audit firms in Dubai or Sharjah? Our professional audit team is here to help you meet regulatory requirements, maintain financial accuracy, and strengthen business credibility.</p>
-                        <p className="text-muted mb-4"><a href="/contact" className='underline'>Contact us today </a>to discuss your audit needs and get expert guidance tailored to your business.</p>
+                        <div className="bg-primary-dark text-white rounded-3xl p-8 md:p-12 text-center">
+                            <h2 className="text-2xl md:text-3xl font-bold mb-4">Contact Us</h2>
+                            <p className="text-white/80 mb-8 max-w-2xl mx-auto">Looking for reliable support from experienced audit firms in Dubai or Sharjah? Our professional audit team is here to help you meet regulatory requirements.</p>
+                            <Link href="/contact" className="inline-block px-8 py-4 bg-primary text-white rounded-full font-bold hover:bg-primary-dark transition-colors border border-white/20">
+                                Contact us today
+                            </Link>
                         </div>
 
                     </article>
@@ -251,15 +243,15 @@ export default function AuditServicesPage() {
                                 </li>
                                 <li className="flex justify-between border-b pb-2">
                                     <span className="font-medium text-gray-700">Location</span>
-                                    <span>Dubai & Sharjah</span>
+                                    <span>All UAE Emirates</span>
                                 </li>
                                 <li className="flex justify-between border-b pb-2">
                                     <span className="font-medium text-gray-700">Duration</span>
-                                    <span>2–4 Weeks (Avg)</span>
+                                    <span>3–6 Weeks (Avg)</span>
                                 </li>
                                 <li className="flex justify-between pb-2">
-                                    <span className="font-medium text-gray-700">Ideal For</span>
-                                    <span>SMEs, Free Zone & Regulated Entities</span>
+                                    <span className="font-medium text-gray-700">Standard</span>
+                                    <span>ISA & IFRS</span>
                                 </li>
                             </ul>
 
@@ -284,19 +276,20 @@ export default function AuditServicesPage() {
                         </div>
 
                         <div className="bg-surface rounded-xl p-5 border border-gray-100">
-                            <h5 className="font-semibold text-primary-dark mb-3">Who Needs This?</h5>
+                            <h5 className="font-semibold text-primary-dark mb-3">Service Coverage</h5>
                             <ul className="space-y-2 text-sm text-muted list-disc pl-4">
-                                <li>Free zone companies</li>
-                                <li>Businesses seeking loans</li>
-                                <li>Companies restructuring</li>
-                                <li>SMEs improving discipline</li>
+                                <li>Statutory & External Audit</li>
+                                <li>Internal Audit Services</li>
+                                <li>Free Zone Audit Reports</li>
+                                <li>Forensic Accounting</li>
+                                <li>Agreed-Upon Procedures</li>
                             </ul>
                         </div>
 
-                        <div className="bg-linear-to-r from-primary/10 to-transparent rounded-xl p-5">
+                        <div className="bg-linear-to-r from-primary/10 to-transparent rounded-xl p-5 border border-primary/5">
                             <h5 className="font-semibold text-primary-dark">Have questions?</h5>
                             <p className="text-sm text-muted mt-2">Reach out to our experts for tailored advice on your audit requirements.</p>
-                            <Link href="/contact" className="mt-4 inline-block px-4 py-2 bg-primary-dark text-white text-sm rounded hover:opacity-90">Contact us</Link>
+                            <Link href="/contact" className="mt-4 inline-block px-4 py-2 bg-primary-dark text-white text-sm rounded hover:opacity-90 transition-opacity">Contact us</Link>
                         </div>
                     </aside>
                 </div>
@@ -309,3 +302,4 @@ export default function AuditServicesPage() {
         </>
     )
 }
+
