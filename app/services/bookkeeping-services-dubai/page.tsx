@@ -95,7 +95,7 @@ export default function BookkeepingServicesDubaiPage() {
                                 <li>Businesses with overdue or disorganised records needing cleanup</li>
                             </ul>
                             <p className="text-muted">
-                                We also support multi-location businesses needing <Link href="/services/bookkeeping-accounting-sharjah" className="underline">Bookkeeping &amp; Accounting in Sharjah</Link> alongside Dubai operations. Whether you need ongoing monthly support or historical cleanup, our bookkeeping team helps restore financial control.
+                                We also support multi-location businesses needing <Link href="/services/accounting-services-sharjah" className="underline">Bookkeeping &amp; Accounting in Sharjah</Link> alongside Dubai operations. Whether you need ongoing monthly support or historical cleanup, our bookkeeping team helps restore financial control.
                             </p>
                         </section>
 
@@ -157,7 +157,7 @@ export default function BookkeepingServicesDubaiPage() {
                                 Many businesses come to us with incomplete books, missing reconciliations, and months of unrecorded transactions. Before regular monthly bookkeeping begins, we can clean up historical records, reconstruct ledgers, correct VAT coding issues, and bring your accounts up to date.
                             </p>
                             <p className="text-muted">
-                                This is especially valuable for businesses preparing for audit, tax filing, funding review, or internal restructuring. Clean books are also essential before starting <Link href="/services/corporate-tax" className="underline">Corporate Tax Filing Dubai</Link>.
+                                This is especially valuable for businesses preparing for audit, tax filing, funding review, or internal restructuring. Clean books are also essential before starting <Link href="/services/corporate-tax-filing-dubai" className="underline">Corporate Tax Filing Dubai</Link>.
                             </p>
                         </section>
 

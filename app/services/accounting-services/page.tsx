@@ -208,7 +208,7 @@ export default function AccountingServicesPage() {
                                 </div>
                                 <div className="bg-white p-6 rounded-xl border border-gray-100 shadow-sm">
                                     <h3 className="font-bold text-gray-800 mb-2">Q: Do you provide financial statements for bank loan applications?</h3>
-                                    <p className="text-sm text-muted leading-relaxed"><strong>A:</strong> Yes. We prepare IFRS-compliant financial statements suitable for bank submission, and can also prepare supporting some cash flow projections and financial models through our <Link href="/services/budgeting-forecasting" className="underline decoration-primary/30 hover:decoration-primary text-primary-dark font-medium transition-all">budgeting and forecasting service</Link>.</p>
+                                    <p className="text-sm text-muted leading-relaxed"><strong>A:</strong> Yes. We prepare IFRS-compliant financial statements suitable for bank submission, and can also prepare supporting some cash flow projections and financial models through our <Link href="/services/reporting" className="underline decoration-primary/30 hover:decoration-primary text-primary-dark font-medium transition-all">budgeting and forecasting service</Link>.</p>
                                 </div>
                                 <div className="bg-white p-6 rounded-xl border border-gray-100 shadow-sm">
                                     <h3 className="font-bold text-gray-800 mb-2">Q: Do you work with businesses in Sharjah as well as Dubai?</h3>
@@ -290,6 +290,21 @@ export default function AccountingServicesPage() {
                         </div>
                     </aside>
                 </div>
+
+
+                <section className="mt-16 bg-white rounded-2xl p-8 border border-gray-100 shadow-sm">
+                    <h2 className="text-2xl font-bold text-primary-dark mb-4">Related Services</h2>
+                    <p className="text-muted leading-relaxed">
+                        For a complete compliance solution: 
+                        <Link href="/services/bookkeeping-services-dubai" className="text-primary-dark font-bold hover:underline mx-1">bookkeeping services Dubai</Link> | 
+                        <Link href="/services/bookkeeping-accounting-software" className="text-primary-dark font-bold hover:underline mx-1">bookkeeping and accounting software</Link> | 
+                        <Link href="/services/accounting-services-sharjah" className="text-primary-dark font-bold hover:underline mx-1">accounting services in Sharjah</Link> | 
+                        <Link href="/services/tax-advisory-sharjah" className="text-primary-dark font-bold hover:underline mx-1">tax advisory services in Sharjah</Link> | 
+                        <Link href="/services/tax-advisory" className="text-primary-dark font-bold hover:underline mx-1">Corporate Tax Advisory Services</Link> | 
+                        <Link href="/services/corporate-tax-filing-dubai" className="text-primary-dark font-bold hover:underline mx-1">corporate tax filing Dubai</Link>
+                    </p>
+                </section>
+
 
                 {/* Wide CTA */}
                 <div className="mt-16">

@@ -294,6 +294,18 @@ export default function AuditServicesPage() {
                     </aside>
                 </div>
 
+                <section className="mt-16 bg-white rounded-2xl p-8 border border-gray-100 shadow-sm">
+                    <h2 className="text-2xl font-bold text-primary-dark mb-4">Related Services</h2>
+                    <p className="text-muted leading-relaxed">
+                        Explore our full compliance offering: 
+                        <Link href="/services/tax-advisory" className="text-primary-dark font-bold hover:underline mx-1">Corporate Tax Advisory Services</Link> | 
+                        <Link href="/services/audit-firms-sharjah" className="text-primary-dark font-bold hover:underline mx-1">audit firms in Sharjah</Link> | 
+                        <Link href="/services/bookkeeping-services-dubai" className="text-primary-dark font-bold hover:underline mx-1">bookkeeping services Dubai</Link> | 
+                        <Link href="/services/accounting-services-sharjah" className="text-primary-dark font-bold hover:underline mx-1">accounting services in Sharjah</Link> | 
+                        <Link href="/services/tax-advisory-sharjah" className="text-primary-dark font-bold hover:underline mx-1">tax advisory services in Sharjah</Link>
+                    </p>
+                </section>
+
                 {/* Wide CTA */}
                 <div className="mt-16">
                     <CTA />

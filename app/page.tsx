@@ -91,7 +91,7 @@ export default function HomePage() {
           We cover a range of services for small and medium businesses.
         </p>
 
-        <div className="mt-5 grid gap-6 grid-cols-1 md:grid-cols-3">
+        <div className="mt-5 grid gap-6 grid-cols-1 md:grid-cols-4">
           {(data.meta.cards || []).map((c: any, i: number) => (
             <div key={i} className="flex justify-center">
               <Card
