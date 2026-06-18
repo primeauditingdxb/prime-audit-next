@@ -111,7 +111,7 @@ export default function Footer() {
             </p>
 
             {/* India Address */}
-            <p className="text-sm text-muted mt-3">
+            {/* <p className="text-sm text-muted mt-3">
               <span className="font-medium text-primary-dark">India: </span>
               {mapLink2 ? (
                 <a
@@ -126,7 +126,7 @@ export default function Footer() {
               ) : (
                 <span>{address2}</span>
               )}
-            </p>
+            </p> */}
 
             {/* Social icons */}
             <div className="mt-4 flex items-center gap-3">

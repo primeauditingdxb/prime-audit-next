@@ -79,7 +79,7 @@ export default function ContactPage() {
                                 )}
 
                                 {/* India */}
-                                {address2?.length > 0 && (
+                                {/* {address2?.length > 0 && (
                                     <div className="flex items-start gap-3">
                                         <FaMapMarkerAlt className="text-primary1 mt-1 shrink-0" size={15} />
                                         <div>
@@ -93,7 +93,7 @@ export default function ContactPage() {
                                             )}
                                         </div>
                                     </div>
-                                )}
+                                )} */}
 
                             </div>
                         </div>
