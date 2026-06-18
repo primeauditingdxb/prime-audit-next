@@ -1,7 +1,7 @@
 ---
 title: "Contact Us"
 whatsapp: "https://api.whatsapp.com/send?phone=+971547986690&text=Hi!%20I%27d%20like%20to%20talk%20to%20one%20of%20the%20experts."
-email: primeaudituae@gmail.com
+email: info@primeauditsolutions.com
 phone:
   - "+971 545660697"
   - "+971 547986690"

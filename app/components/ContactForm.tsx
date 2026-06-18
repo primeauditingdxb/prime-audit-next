@@ -52,7 +52,12 @@ export default function ContactForm({ endpoint = 'https://formspree.io/f/mrbreab
         if (!validate(true)) return
         setSubmitting(true)
         try {
-            const payload = { name, email: mail, message, _cc: 'renuka.d@pluspointdigital.com' }
+            const payload = {
+                name,
+                email: mail,
+                message,
+                _cc: 'renuka.d@pluspointdigital.com,primeaudituae@gmail.com'
+            }
             const res = await fetch(submitUrl, {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
