@@ -1,7 +1,7 @@
 ---
 title: "Contact Us"
 whatsapp: "https://api.whatsapp.com/send?phone=+971547986690&text=Hi!%20I%27d%20like%20to%20talk%20to%20one%20of%20the%20experts."
-email: info@primeauditsolutions.com
+email: primeaudituae@gmail.com
 phone:
   - "+971 545660697"
   - "+971 547986690"
@@ -16,11 +16,11 @@ address:
   - "Al karama"
 map_link: "https://maps.app.goo.gl/jVLswEUkRzxLobrG8"
 
-address2:
-  - "23/949 Arumbasherry Building"
-  - "near Private Bus stand"
-  - "Aluva"
-  - "Kerala, India"
+# address2:
+#   - "23/949 Arumbasherry Building"
+#   - "near Private Bus stand"
+#   - "Aluva"
+#   - "Kerala, India"
 map_link2: ""
 ---
 

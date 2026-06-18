@@ -13,10 +13,10 @@ address: "Hamsa building,
  MC 01-40/ 278,
  Near Al ansar gallery, 
  Al karama"
-address2: "23/949 Arumbasherry Building,
- near Private Bus stand, 
- Aluva, Kerala, 
- Pin : 683101"
+# address2: "23/949 Arumbasherry Building,
+#  near Private Bus stand, 
+#  Aluva, Kerala, 
+#  Pin : 683101"
 map_link: "https://maps.app.goo.gl/jVLswEUkRzxLobrG8"
 map_link2: ""
 social:
