@@ -9,7 +9,7 @@ export default function ContactPage() {
     const email: string = meta.email || 'info@primeaudit.example'
     const phone: string = meta.phone || '+91 1122334455'
     const landline: string = meta.landline || '+91 1122334455'
-    const address: string = meta.address || 'Kerala, India'
+    const address: string = meta.address || ''
     const mapLink: string = meta.map_link || ''
     const whatsapp = meta.whatsapp || ''
     const address2: string[] = meta.address2 || []
